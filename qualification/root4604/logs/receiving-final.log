@@ -1,0 +1,680 @@
+PASS src/settings/schema/migrations/89_to_90.customization.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/settings/schema/migrations/89_to_90.receiving.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_tokens","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_output_tokens","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"max_output_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"reasoning","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"reasoning":{"effort":"low"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_completion_tokens","streaming":false,"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-4.1-nano","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":128,"include":["reasoning.encrypted_content"],"max_completion_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_output_tokens","streaming":false,"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-4.1-nano","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":128,"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_tokens","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":64,"stream":true,"stream_options":{"include_usage":true}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_output_tokens","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"stream":true,"stream_options":{"include_usage":true},"max_output_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"reasoning","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"stream":true,"stream_options":{"include_usage":true},"reasoning":{"effort":"low"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_completion_tokens","streaming":true,"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-4.1-nano","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"include":["reasoning.encrypted_content"],"max_completion_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_output_tokens","streaming":true,"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-4.1-nano","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_tokens","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":64,"reasoning":{"effort":"high"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_output_tokens","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"reasoning":{"effort":"high"},"max_output_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"reasoning","streaming":false,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"reasoning":{"effort":"low"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_completion_tokens","streaming":false,"url":"https://api.openai.com/v1/responses","body":{"model":"o4-mini","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"],"max_completion_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_output_tokens","streaming":false,"url":"https://api.openai.com/v1/responses","body":{"model":"o4-mini","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_tokens","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":64,"stream":true,"stream_options":{"include_usage":true},"reasoning":{"effort":"high"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"max_output_tokens","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"stream":true,"stream_options":{"include_usage":true},"reasoning":{"effort":"high"},"max_output_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-compatible","key":"reasoning","streaming":true,"url":"https://api.openai.com/v1/chat/completions","body":{"model":"o4-mini","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic capture"}],"max_tokens":128,"stream":true,"stream_options":{"include_usage":true},"reasoning":{"effort":"low"}}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_completion_tokens","streaming":true,"url":"https://api.openai.com/v1/responses","body":{"model":"o4-mini","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"],"max_completion_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-WIRE {"apiType":"openai-responses","key":"max_output_tokens","streaming":true,"url":"https://api.openai.com/v1/responses","body":{"model":"o4-mini","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic capture","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:615:21
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-EXACT-WIRE {"url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-4.1-nano","messages":[],"max_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:677:15
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-COMPATIBLE-WIRE {"apiType":"openai-compatible","key":"max_completion_tokens","url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-5.6-luna","reasoning_effort":"high","messages":[{"role":"user","content":"synthetic"}],"max_completion_tokens":64}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:720:17
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-COMPATIBLE-WIRE {"apiType":"openai-responses","key":"max_tokens","url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":64,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:720:17
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-COMPATIBLE-WIRE {"apiType":"openai-compatible","key":"reasoning_effort","url":"https://api.openai.com/v1/chat/completions","body":{"model":"gpt-5.6-luna","reasoning_effort":"low","messages":[{"role":"user","content":"synthetic"}],"max_completion_tokens":128}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:720:17
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-COMPATIBLE-WIRE {"apiType":"openai-responses","key":"reasoning_effort","url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":false,"store":false,"max_output_tokens":128,"reasoning":{"effort":"low","summary":"auto"},"include":["reasoning.encrypted_content"]}}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:720:17
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-RESPONSES-STREAM {"oldId":"openai/gpt-4.1-nano","replacement":"gpt-5.6-luna","calls":[{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-luna","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}}],"receivedText":"Useful synthetic answer.","receivedUsage":{"prompt_tokens":10,"completion_tokens":2,"total_tokens":12},"sequence":["healthy","response.failed propagated","healthy recovery","HTTP 401 propagated","healthy recovery"]}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:854:17
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      ROOT4604-RESPONSES-STREAM {"oldId":"openai/o4-mini","replacement":"gpt-5.6-terra","calls":[{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-terra","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-terra","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-terra","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-terra","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}},{"url":"https://api.openai.com/v1/responses","body":{"model":"gpt-5.6-terra","instructions":"You are a helpful assistant.","input":[{"role":"user","content":"synthetic","type":"message"}],"parallel_tool_calls":true,"stream":true,"store":false,"max_output_tokens":128,"reasoning":{"effort":"high","summary":"auto"},"include":["reasoning.encrypted_content"]}}],"receivedText":"Useful synthetic answer.","receivedUsage":{"prompt_tokens":10,"completion_tokens":2,"total_tokens":12},"sequence":["healthy","response.failed propagated","healthy recovery","HTTP 401 propagated","healthy recovery"]}
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:854:17
+
+PASS src/settings/schema/migrations/89_to_90.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+
+Test Suites: 3 passed, 3 total
+Tests:       91 passed, 91 total
+Snapshots:   0 total
+Time:        1.493 s, estimated 2 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90/i.

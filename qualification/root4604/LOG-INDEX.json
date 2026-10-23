@@ -1,0 +1,159 @@
+{
+  "maxExportedLogBytes": 32768,
+  "note": "All synthetic serialized wire captures are exported separately without truncation. Raw log copies are host-local; exported bounded logs retain first 8KiB and final remainder.",
+  "logs": [
+    {
+      "path": "logs/baseline-red.log",
+      "originalBytes": 60245,
+      "originalSha256": "74e8b86da63f8025f23c3fa074654b2a88646d13848dc7bbeb10fdcbd876ad73",
+      "exportedBytes": 32768,
+      "exportedSha256": "a22c18447e865fb2e225560c11edaa8aa9cb652c13b369f684036babc9d2c13a",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/baseline-red.log",
+      "truncated": true
+    },
+    {
+      "path": "logs/baseline-replay.log",
+      "originalBytes": 56165,
+      "originalSha256": "568225119bc86a7b005b4885001fed8c54caaa60e0a177b40a57fd6265ea91ae",
+      "exportedBytes": 32768,
+      "exportedSha256": "78fddefd906e249aeef694140a19a55d9b2b00f0e9dca41a28644c538a9a2628",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/baseline-replay.log",
+      "truncated": true
+    },
+    {
+      "path": "logs/eslint-scoped-final.log",
+      "originalBytes": 0,
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exportedBytes": 0,
+      "exportedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/eslint-scoped-final.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/eslint-scoped-repaired.log",
+      "originalBytes": 0,
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exportedBytes": 0,
+      "exportedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/eslint-scoped-repaired.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/eslint-scoped.log",
+      "originalBytes": 964,
+      "originalSha256": "828d92465606e582bb977b0ecd523d141a8ca477a027fa16428fc5a508ba9e4a",
+      "exportedBytes": 964,
+      "exportedSha256": "828d92465606e582bb977b0ecd523d141a8ca477a027fa16428fc5a508ba9e4a",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/eslint-scoped.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/focused-final.log",
+      "originalBytes": 52732,
+      "originalSha256": "24b3cc68daa4f8a63ce3ca340794a025ec6f208897eeac49ff744340bffc6b68",
+      "exportedBytes": 32768,
+      "exportedSha256": "4855f71d0584fe6ccca65f09f5f42bc2d691a4980bfefcc851c0dc4ef783ee36",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/focused-final.log",
+      "truncated": true
+    },
+    {
+      "path": "logs/format-review.log",
+      "originalBytes": 143,
+      "originalSha256": "fab463a2bda9fda805f85cf904c0e4437e579c875f12972c5af67ad0b1d483e8",
+      "exportedBytes": 143,
+      "exportedSha256": "fab463a2bda9fda805f85cf904c0e4437e579c875f12972c5af67ad0b1d483e8",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/format-review.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/format-stream-evidence.log",
+      "originalBytes": 64,
+      "originalSha256": "76cb0d701e5324f634bee3611781a65c65c7be7945b8ad5295a39551f8b453a8",
+      "exportedBytes": 64,
+      "exportedSha256": "76cb0d701e5324f634bee3611781a65c65c7be7945b8ad5295a39551f8b453a8",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/format-stream-evidence.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/format-write.log",
+      "originalBytes": 247,
+      "originalSha256": "db84e7e0a25522dcff733c4dc088e2f83a158bb03665106d9b7b2926f1c8e2a9",
+      "exportedBytes": 247,
+      "exportedSha256": "db84e7e0a25522dcff733c4dc088e2f83a158bb03665106d9b7b2926f1c8e2a9",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/format-write.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/full-jest-final.log",
+      "originalBytes": 399464,
+      "originalSha256": "abeaa9915d13a1eb43dab5d7c9a5876bbc151732a68b31e9a29585fcae805b7c",
+      "exportedBytes": 32768,
+      "exportedSha256": "fdd8437d2960bcaa3d0a5db693977c334ffa36d0a49fe40e441c0fcf9bf1a1b7",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/full-jest-final.log",
+      "truncated": true
+    },
+    {
+      "path": "logs/migration-green-final.log",
+      "originalBytes": 23967,
+      "originalSha256": "07f8c40847b517a94316b569aa6c9943be5377637fe6193a913c26b7c82fd829",
+      "exportedBytes": 23967,
+      "exportedSha256": "07f8c40847b517a94316b569aa6c9943be5377637fe6193a913c26b7c82fd829",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/migration-green-final.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/migration-green.log",
+      "originalBytes": 23600,
+      "originalSha256": "6e717780694f252070a02e1772bab2259aaf70fff498e8acb573fdf915c49dec",
+      "exportedBytes": 23600,
+      "exportedSha256": "6e717780694f252070a02e1772bab2259aaf70fff498e8acb573fdf915c49dec",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/migration-green.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/prettier-final.log",
+      "originalBytes": 66,
+      "originalSha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+      "exportedBytes": 66,
+      "exportedSha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/prettier-final.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/production-build-final.log",
+      "originalBytes": 858,
+      "originalSha256": "22fadf48daaffe9b79c42e8569721da3ff09268d945606b073ea8ee79585723c",
+      "exportedBytes": 858,
+      "exportedSha256": "22fadf48daaffe9b79c42e8569721da3ff09268d945606b073ea8ee79585723c",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/production-build-final.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/receiving-final.log",
+      "originalBytes": 30224,
+      "originalSha256": "45b46ee0e09a94c6eff79dc8671674ac962f494e741107b8b8e3a41d500b65f8",
+      "exportedBytes": 30224,
+      "exportedSha256": "45b46ee0e09a94c6eff79dc8671674ac962f494e741107b8b8e3a41d500b65f8",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/receiving-final.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/typecheck-repaired.log",
+      "originalBytes": 134,
+      "originalSha256": "90bdf29738d4017322f55f7ab18f7f1c6193264aefd1e7c2723c7833550dc65b",
+      "exportedBytes": 134,
+      "exportedSha256": "90bdf29738d4017322f55f7ab18f7f1c6193264aefd1e7c2723c7833550dc65b",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/typecheck-repaired.log",
+      "truncated": false
+    },
+    {
+      "path": "logs/typecheck.log",
+      "originalBytes": 288,
+      "originalSha256": "517ac9c264649ff7e19850019231f145ccda4afe8239063f68b6aff939dd6672",
+      "exportedBytes": 288,
+      "exportedSha256": "517ac9c264649ff7e19850019231f145ccda4afe8239063f68b6aff939dd6672",
+      "completeEphemeralCopy": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/evidence/raw-logs/typecheck.log",
+      "truncated": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "started": "2026-10-23T11:59:56.258054+00:00",
+  "finished": "2026-10-23T12:00:25.465826+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1830656,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 21730,
+      "rssKiB": 12860,
+      "name": "python3"
+    },
+    {
+      "pid": 21731,
+      "rssKiB": 61760,
+      "name": "npm run build"
+    },
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 21742,
+      "rssKiB": 1772,
+      "name": "sh"
+    },
+    {
+      "pid": 21743,
+      "rssKiB": 1444484,
+      "name": "node"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 220884,
+      "name": "codex"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 22768,
+      "name": "codex-code-mode"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/production-build-final.log"
+}

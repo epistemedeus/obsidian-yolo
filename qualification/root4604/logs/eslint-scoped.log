@@ -1,0 +1,13 @@
+
+/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/settings/schema/migrations/89_to_90.receiving.test.ts
+   23:1   error  `../../../types/llm/request` type import should occur before type import of `../../../types/llm/response`  import/order
+   32:3   error  Member 'requestConflictsV89' of the import declaration should be sorted alphabetically                     sort-imports
+  615:13  error  Unexpected console statement. Only these console methods are allowed: warn, error, debug                   no-console
+  677:7   error  Unexpected console statement. Only these console methods are allowed: warn, error, debug                   no-console
+
+/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/settings/schema/migrations/89_to_90.ts
+  1:1  error  There should be no empty line within import group  import/order
+
+✖ 5 problems (5 errors, 0 warnings)
+  3 errors and 0 warnings potentially fixable with the `--fix` option.
+

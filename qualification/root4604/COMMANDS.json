@@ -1,0 +1,310 @@
+[
+  {
+    "label": "baseline-red",
+    "command": [
+      "env",
+      "ROOT4604_CAPTURE=1",
+      "npx",
+      "jest",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+      "--runInBand"
+    ],
+    "exit": 1,
+    "started": "2026-10-23T11:52:34.036602+00:00",
+    "finished": "2026-10-23T11:52:35.908762+00:00",
+    "peakKiB": 699260,
+    "resourceLimit": false,
+    "receipt": "logs/baseline-red.json",
+    "log": "logs/baseline-red.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "baseline-replay",
+    "command": [
+      "bash",
+      "qualification/root4604/baseline.sh"
+    ],
+    "exit": 1,
+    "started": "2026-10-23T11:58:09.004340+00:00",
+    "finished": "2026-10-23T11:58:13.175078+00:00",
+    "peakKiB": 780060,
+    "resourceLimit": false,
+    "receipt": "logs/baseline-replay.json",
+    "log": "logs/baseline-replay.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "eslint-scoped-final",
+    "command": [
+      "node",
+      "node_modules/eslint/bin/eslint.js",
+      "src/settings/schema/migrations/89_to_90.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T12:00:58.362676+00:00",
+    "finished": "2026-10-23T12:01:04.757796+00:00",
+    "peakKiB": 1534860,
+    "resourceLimit": false,
+    "receipt": "logs/eslint-scoped-final.json",
+    "log": "logs/eslint-scoped-final.log",
+    "nodeOptions": "--max-old-space-size=1250"
+  },
+  {
+    "label": "eslint-scoped-repaired",
+    "command": [
+      "node",
+      "node_modules/eslint/bin/eslint.js",
+      "src/settings/schema/migrations/89_to_90.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:56:50.890840+00:00",
+    "finished": "2026-10-23T11:56:57.389099+00:00",
+    "peakKiB": 1526572,
+    "resourceLimit": false,
+    "receipt": "logs/eslint-scoped-repaired.json",
+    "log": "logs/eslint-scoped-repaired.log",
+    "nodeOptions": "--max-old-space-size=1250"
+  },
+  {
+    "label": "eslint-scoped",
+    "command": [
+      "node",
+      "node_modules/eslint/bin/eslint.js",
+      "src/settings/schema/migrations/89_to_90.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 1,
+    "started": "2026-10-23T11:56:10.972370+00:00",
+    "finished": "2026-10-23T11:56:18.804795+00:00",
+    "peakKiB": 1528216,
+    "resourceLimit": false,
+    "receipt": "logs/eslint-scoped.json",
+    "log": "logs/eslint-scoped.log",
+    "nodeOptions": "--max-old-space-size=1250"
+  },
+  {
+    "label": "focused-final",
+    "command": [
+      "npx",
+      "jest",
+      "src/settings/schema",
+      "src/core/llm",
+      "src/utils/llm/provider-config.test.ts",
+      "src/utils/llm/model-capability-registry.test.ts",
+      "--runInBand"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:57:12.904903+00:00",
+    "finished": "2026-10-23T11:57:19.892229+00:00",
+    "peakKiB": 872584,
+    "resourceLimit": false,
+    "receipt": "logs/focused-final.json",
+    "log": "logs/focused-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "format-review",
+    "command": [
+      "node",
+      "node_modules/prettier/bin/prettier.cjs",
+      "--write",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:55:46.273616+00:00",
+    "finished": "2026-10-23T11:55:46.641302+00:00",
+    "peakKiB": 424820,
+    "resourceLimit": false,
+    "receipt": "logs/format-review.json",
+    "log": "logs/format-review.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "format-stream-evidence",
+    "command": [
+      "node",
+      "node_modules/prettier/bin/prettier.cjs",
+      "--write",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:58:08.644970+00:00",
+    "finished": "2026-10-23T11:58:08.958426+00:00",
+    "peakKiB": 422664,
+    "resourceLimit": false,
+    "receipt": "logs/format-stream-evidence.json",
+    "log": "logs/format-stream-evidence.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "format-write",
+    "command": [
+      "node",
+      "node_modules/prettier/bin/prettier.cjs",
+      "--write",
+      "src/settings/schema/migrations/89_to_90.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:54:22.108436+00:00",
+    "finished": "2026-10-23T11:54:22.478462+00:00",
+    "peakKiB": 425928,
+    "resourceLimit": false,
+    "receipt": "logs/format-write.json",
+    "log": "logs/format-write.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "full-jest-final",
+    "command": [
+      "npx",
+      "jest",
+      "--runInBand"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:58:54.809812+00:00",
+    "finished": "2026-10-23T11:59:40.245465+00:00",
+    "peakKiB": 1550052,
+    "resourceLimit": false,
+    "receipt": "logs/full-jest-final.json",
+    "log": "logs/full-jest-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "migration-green-final",
+    "command": [
+      "env",
+      "ROOT4604_CAPTURE=1",
+      "npx",
+      "jest",
+      "src/settings/schema/migrations/89_to_90",
+      "--runInBand"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:54:31.053762+00:00",
+    "finished": "2026-10-23T11:54:33.147929+00:00",
+    "peakKiB": 714132,
+    "resourceLimit": false,
+    "receipt": "logs/migration-green-final.json",
+    "log": "logs/migration-green-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "migration-green",
+    "command": [
+      "env",
+      "ROOT4604_CAPTURE=1",
+      "npx",
+      "jest",
+      "src/settings/schema/migrations/89_to_90",
+      "--runInBand"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:53:21.434193+00:00",
+    "finished": "2026-10-23T11:53:23.308035+00:00",
+    "peakKiB": 700396,
+    "resourceLimit": false,
+    "receipt": "logs/migration-green.json",
+    "log": "logs/migration-green.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "prettier-final",
+    "command": [
+      "node",
+      "node_modules/prettier/bin/prettier.cjs",
+      "--check",
+      "src/settings/schema/migrations/89_to_90.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T12:00:57.948664+00:00",
+    "finished": "2026-10-23T12:00:58.317094+00:00",
+    "peakKiB": 426496,
+    "resourceLimit": false,
+    "receipt": "logs/prettier-final.json",
+    "log": "logs/prettier-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "production-build-final",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:59:56.258054+00:00",
+    "finished": "2026-10-23T12:00:25.465826+00:00",
+    "peakKiB": 1830656,
+    "resourceLimit": false,
+    "receipt": "logs/production-build-final.json",
+    "log": "logs/production-build-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "receiving-final",
+    "command": [
+      "env",
+      "ROOT4604_CAPTURE=1",
+      "npx",
+      "jest",
+      "src/settings/schema/migrations/89_to_90",
+      "--runInBand"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:58:23.006400+00:00",
+    "finished": "2026-10-23T11:58:25.098289+00:00",
+    "peakKiB": 716588,
+    "resourceLimit": false,
+    "receipt": "logs/receiving-final.json",
+    "log": "logs/receiving-final.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "typecheck-repaired",
+    "command": [
+      "npm",
+      "run",
+      "type:check"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T11:55:46.689677+00:00",
+    "finished": "2026-10-23T11:55:51.589578+00:00",
+    "peakKiB": 1331432,
+    "resourceLimit": false,
+    "receipt": "logs/typecheck-repaired.json",
+    "log": "logs/typecheck-repaired.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  },
+  {
+    "label": "typecheck",
+    "command": [
+      "npm",
+      "run",
+      "type:check"
+    ],
+    "exit": 2,
+    "started": "2026-10-23T11:54:55.493416+00:00",
+    "finished": "2026-10-23T11:55:06.350000+00:00",
+    "peakKiB": 1526924,
+    "resourceLimit": false,
+    "receipt": "logs/typecheck.json",
+    "log": "logs/typecheck.log",
+    "nodeOptions": "--max-old-space-size=1400"
+  }
+]

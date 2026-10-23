@@ -1,0 +1,11 @@
+{
+  "frozenBeforeImplementationAt": "2026-10-23T11:53:21.363570+00:00",
+  "predecessor": "9859d257feaf4cb13dc10a1f546504df7009f491",
+  "sha256": {
+    "src/settings/schema/migrations/89_to_90.ts": "2690ca0d430eb44b00b0e3b5d482473e7014bdba7dd0e1c1e2049b02d29c65cf",
+    "src/settings/schema/migrations/89_to_90.fixtures.ts": "11da7bb171b567fd9976175ab8f528cde1ffb6c673e4472d04dc5f92f5dacab2",
+    "src/settings/schema/migrations/89_to_90.customization.test.ts": "42a09627fef0c58269a2cebafaa4ecc09677c38bbe0e9ff9644ad82d913488ce",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts": "62a715e298320ebe4f111eecb928eed01a67ec14fb6a1e67c6cd2b898de35e31",
+    "qualification/root4604/PREDICATE.md": "235df0017c80945a74146ad47f36bbf0fae1f469a76f6a27df7ef547ab93aa06"
+  }
+}

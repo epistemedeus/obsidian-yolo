@@ -1,0 +1,34 @@
+{
+  "status": "checkpoint-source-and-focused-tests-complete",
+  "checkedAt": "2026-10-23T11:54:55.468318+00:00",
+  "branch": "codex/root4410-b-yolo-model-migration-20261023",
+  "predecessor": "9859d257feaf4cb13dc10a1f546504df7009f491",
+  "checkpointBy": "2026-10-23T11:55:38.059Z",
+  "requiredUntil": "2026-10-23T13:56:13.591Z",
+  "completed": [
+    "Full staged assignment and completed review read",
+    "New operating inputs and horizon read; unchanged clean admitted branch verified",
+    "Source-bound transport-specific hold predicate frozen before implementation; existing dependencies retained"
+  ],
+  "remaining": [
+    "Self-review and final baseline replay",
+    "Serial relevant settings/provider, type, full Jest, scoped lint and production build gates",
+    "Commit/push/readback and complete final product/controller handbacks"
+  ],
+  "testsRunThisAmendment": [
+    {
+      "receipt": "qualification/root4604/logs/baseline-red.json",
+      "exit": 1,
+      "result": "26 expected hold failures; 30 passed; 20 serialized SDK counterexamples"
+    },
+    {
+      "receipt": "qualification/root4604/logs/migration-green-final.json",
+      "exit": 0,
+      "result": "3 suites, 91 tests passed"
+    }
+  ],
+  "modelChildren": 0,
+  "resourceReserveKiB": 2097152,
+  "originalEvidence": "qualification/root4410-b remains unchanged",
+  "unmetCondition": "Broad verification and export remain incomplete; no unrun gate claimed passed."
+}

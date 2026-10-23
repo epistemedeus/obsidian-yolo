@@ -1,0 +1,42 @@
+{
+  "pilotPublication": "62e31da4d78393f930a0df27db68d6ab36a5edd8",
+  "receiptSha256": "2587b0b474d3405261c5e7ba185cd4ddf9b4af631efd60f9bc75c502a06ab2d4",
+  "verifiedMembers": [
+    {
+      "path": "AGENTS.md",
+      "blob": "1948fb788970e41ca2524cb7f743e58241ba04c5",
+      "sha256": "c2dc6304ed19e7ec9d3370353408667ebb61355b0c54b8f750fa4390f59c68a3",
+      "bytes": 33312
+    },
+    {
+      "path": "overview/STATE.md",
+      "blob": "c36e12b04714e8e61bf7aed16dac83ba0cbf521e",
+      "sha256": "777d73101d0e074b168fc238336270b5bab5785a828bc9fd476378122fae6081",
+      "bytes": 30422
+    },
+    {
+      "path": "overview/MACHINE-COMMERCE-EXECUTION-PLAN.md",
+      "blob": "573044663237c78830bba77eaa365c39e861e73c",
+      "sha256": "edacc976381d966b4c655ce7cf57e555b2be6b8e2b199bd288170fb585ca38dd",
+      "bytes": 32283
+    },
+    {
+      "path": "overview/remote-worker/assignments/ROOT4604-YOLO-MIGRATION-AMENDMENT.md",
+      "blob": "9b5d5c2b1d6b098c4a458b6158b102aa5ff9fd71",
+      "sha256": "4d9f28c6aec5e3de14c64cde19299230331b6521bfcb0557d6785d3eff1831a3",
+      "bytes": 10187
+    },
+    {
+      "path": "overview/self-evaluations/2026-10-23-repeat-use-scale/ANSWER-COMPATIBILITY-SOL-PRO.md",
+      "blob": "5fe68a008c6ae17fec8370d6baac64a6d32f7529",
+      "sha256": "d692e0a6685036db03d48d504d2919f8e013fe2864e99cfec5183a93f6cd4f46",
+      "bytes": 31805,
+      "read": "entire linked completed review before code"
+    }
+  ],
+  "productAuthority": {
+    "repository": "https://github.com/epistemedeus/obsidian-yolo.git",
+    "commit": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25"
+  },
+  "predecessorExport": "9859d257feaf4cb13dc10a1f546504df7009f491"
+}

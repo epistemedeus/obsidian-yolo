@@ -1,0 +1,63 @@
+{
+  "command": [
+    "env",
+    "ROOT4604_CAPTURE=1",
+    "npx",
+    "jest",
+    "src/settings/schema/migrations/89_to_90",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T11:58:23.006400+00:00",
+  "finished": "2026-10-23T11:58:25.098289+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 716588,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 21537,
+      "rssKiB": 12840,
+      "name": "python3"
+    },
+    {
+      "pid": 21538,
+      "rssKiB": 87776,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 21552,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 21553,
+      "rssKiB": 302748,
+      "name": "node"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 221180,
+      "name": "codex"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 24140,
+      "name": "codex-code-mode"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/receiving-final.log"
+}

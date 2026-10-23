@@ -1,0 +1,64 @@
+{
+  "command": [
+    "env",
+    "ROOT4604_CAPTURE=1",
+    "npx",
+    "jest",
+    "src/settings/schema/migrations/89_to_90.customization.test.ts",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T11:52:34.036602+00:00",
+  "finished": "2026-10-23T11:52:35.908762+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 699260,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 20932,
+      "rssKiB": 1772,
+      "name": "sh"
+    },
+    {
+      "pid": 20933,
+      "rssKiB": 289984,
+      "name": "node"
+    },
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 20914,
+      "rssKiB": 12828,
+      "name": "python3"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 219108,
+      "name": "codex"
+    },
+    {
+      "pid": 20918,
+      "rssKiB": 85912,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 23528,
+      "name": "codex-code-mode"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/baseline-red.log"
+}

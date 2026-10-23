@@ -1,0 +1,5 @@
+
+> obsidian-yolo@1.6.12 type:check
+> tsc --noEmit --incremental --tsBuildInfoFile node_modules/.cache/tsconfig.typecheck.tsbuildinfo
+
+src/settings/schema/migrations/89_to_90.receiving.test.ts(608,18): error TS18048: 'settings.chatOptions.reasoningLevelByModelId' is possibly 'undefined'.

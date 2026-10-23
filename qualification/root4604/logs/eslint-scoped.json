@@ -1,0 +1,53 @@
+{
+  "command": [
+    "node",
+    "node_modules/eslint/bin/eslint.js",
+    "src/settings/schema/migrations/89_to_90.ts",
+    "src/settings/schema/migrations/89_to_90.fixtures.ts",
+    "src/settings/schema/migrations/89_to_90.customization.test.ts",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+  ],
+  "started": "2026-10-23T11:56:10.972370+00:00",
+  "finished": "2026-10-23T11:56:18.804795+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 1528216,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 220004,
+      "name": "codex"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 23804,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 21309,
+      "rssKiB": 12868,
+      "name": "python3"
+    },
+    {
+      "pid": 21310,
+      "rssKiB": 1205412,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1250",
+  "log": "logs/eslint-scoped.log"
+}

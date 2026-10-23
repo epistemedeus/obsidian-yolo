@@ -1,0 +1,478 @@
+[
+  {
+    "apiType": "openai-compatible",
+    "key": "max_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_tokens": 64,
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_output_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_completion_tokens": 128,
+      "max_output_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "reasoning",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_completion_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": false,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ],
+      "max_completion_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_output_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": false,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ]
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_tokens": 64,
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_output_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "max_completion_tokens": 128,
+      "max_output_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "reasoning",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_completion_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": true,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ],
+      "max_completion_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_output_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-luna",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": true,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ]
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_tokens": 64,
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_output_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_completion_tokens": 128,
+      "max_output_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "reasoning",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_completion_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": false,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ],
+      "max_completion_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_output_tokens",
+    "streaming": false,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": false,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ]
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "max_tokens": 64,
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "max_output_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "max_completion_tokens": 128,
+      "max_output_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-compatible",
+    "key": "reasoning",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/chat/completions",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "messages": [
+        {
+          "role": "user",
+          "content": "synthetic capture"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_completion_tokens": 128
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_completion_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": true,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ],
+      "max_completion_tokens": 64
+    }
+  },
+  {
+    "apiType": "openai-responses",
+    "key": "max_output_tokens",
+    "streaming": true,
+    "url": "https://api.openai.com/v1/responses",
+    "body": {
+      "model": "gpt-5.6-terra",
+      "instructions": "You are a helpful assistant.",
+      "input": [
+        {
+          "role": "user",
+          "content": "synthetic capture",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "stream": true,
+      "store": false,
+      "max_output_tokens": 128,
+      "reasoning": {
+        "effort": "high",
+        "summary": "auto"
+      },
+      "include": [
+        "reasoning.encrypted_content"
+      ]
+    }
+  }
+]

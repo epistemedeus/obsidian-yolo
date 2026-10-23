@@ -1,0 +1,509 @@
+{
+  "schema": "root4604.worker-result.v1",
+  "status": "source-and-offline-receiving-complete",
+  "completedAt": "2026-10-23T12:04:17.332448+00:00",
+  "identity": {
+    "origin": {
+      "host": "github.com",
+      "path": "/epistemedeus/obsidian-yolo.git",
+      "canonical": "https://github.com/epistemedeus/obsidian-yolo.git"
+    },
+    "branch": "codex/root4410-b-yolo-model-migration-20261023",
+    "originalBase": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25",
+    "predecessor": "9859d257feaf4cb13dc10a1f546504df7009f491",
+    "nativeSession": "01a16839-cd1f-7871-a243-c794eaaf81fd",
+    "declaredModel": "gpt-6.1-sol",
+    "declaredEffort": "xhigh",
+    "modelChildren": 0,
+    "reserveKiB": 2097152,
+    "bootId": "d9551aaa-044f-4a54-90ae-4b19ff129cac",
+    "runtime": {
+      "node": "v22.23.4",
+      "npm": "10.9.9"
+    },
+    "packages": {
+      "openai": "4.91.1",
+      "typescript": "5.6.2",
+      "jest": "29.7.0",
+      "ts-jest": "29.2.5",
+      "esbuild": "0.17.3",
+      "obsidian": "1.8.7"
+    },
+    "unchangedFileSha256": {
+      "package.json": "6926d85d76e60c6921fde561ef65ad4aa1a8dfd8bdfdca8345f608aeca3b771f",
+      "package-lock.json": "5371aec26e72be83af7fb4c4f185cd121ddbb91b08c3f773a307ec78843dd783"
+    },
+    "testedSourceHead": "7cb0734050ebb0061bd9a312f468dfa276e9ad22",
+    "testedSourceTree": "6d308c7d2652fa8520e451e423b130d75d2552e3",
+    "amendmentSourcePaths": [
+      "src/settings/schema/migrations/89_to_90.customization.test.ts",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+      "src/settings/schema/migrations/89_to_90.ts"
+    ],
+    "preservedOriginalQualificationTree": "ce8ee890172810edbcb1b8e77e9667d4e2ae0628",
+    "sourceSha256": {
+      "src/settings/schema/migrations/89_to_90.customization.test.ts": "c19cab5cc4556c718dbf34391b8336c2eef3164444bb8072b5ba79db5cbb24b3",
+      "src/settings/schema/migrations/89_to_90.fixtures.ts": "23d29ba605f6b088874e4264d4e20b1508665bcad429ab7fb1fe7f1e9220ed20",
+      "src/settings/schema/migrations/89_to_90.receiving.test.ts": "cd6975a626a8f1215b0ebabcacc82d89c04bc7d35c400dd1e1e6172e8dd1c3ec",
+      "src/settings/schema/migrations/89_to_90.ts": "65024eef433ecb61ccdf71293a3b525d8a1f4912f2421331b044f61c3f3bfe0a"
+    }
+  },
+  "qualificationSubtree": "qualification/root4604/",
+  "changedPathsManifest": "qualification/root4604/CHANGED-PATHS.txt",
+  "operatingInputVerification": "qualification/root4604/INPUT-VERIFICATION.json",
+  "checkpoint": {
+    "record": "qualification/root4604/EARLY-CHECKPOINT.json",
+    "checkpointBy": "2026-10-23T11:55:38.059Z",
+    "requiredUntil": "2026-10-23T13:56:13.591Z"
+  },
+  "predicate": {
+    "chatActiveKeysHeld": [
+      "max_tokens",
+      "max_output_tokens",
+      "reasoning"
+    ],
+    "responsesActiveKeysHeld": [
+      "max_completion_tokens",
+      "max_output_tokens"
+    ],
+    "source": "qualification/root4604/PREDICATE.md",
+    "runtimePrecedenceChanged": false,
+    "globalValidation": false,
+    "versionBump": false,
+    "heldV90AutomaticRetry": false
+  },
+  "semanticReceiving": {
+    "firstBaseline": {
+      "exit": 1,
+      "expectedFailures": 26,
+      "passed": 30,
+      "wireCaptures": 20
+    },
+    "finalBaseline": {
+      "exit": 1,
+      "expectedFailures": 27,
+      "intentionallySelectedOut": 30,
+      "wire": "qualification/root4604/BASELINE-FINAL-WIRE.json",
+      "counterexample": {
+        "model": "gpt-5.6-luna",
+        "max_completion_tokens": 128,
+        "max_tokens": 64
+      }
+    },
+    "repaired": {
+      "exit": 0,
+      "suites": 3,
+      "tests": 91,
+      "wire": "qualification/root4604/REPAIRED-WIRE.json",
+      "selectedCounterexampleRetained": "openai/gpt-4.1-nano"
+    },
+    "preservation": [
+      "full raw records and references serialize identically except version progression",
+      "selected old records resolve to their own provider and model",
+      "one held alias does not prevent independent eligible alias migration",
+      "padded keys, duplicate active writes and inactive entries",
+      "deterministic, input-nonmutating, repeat-load/direct-reapplication idempotence",
+      "benign seed and compatible transport-specific custom overrides",
+      "labels/order/disabled/modalities/tuning/credentials/unrelated pins",
+      "custom identity, proxy/Azure, collision and model override controls unchanged"
+    ],
+    "recovery": [
+      "corrected/removed customization on unmigrated v89 migrates and parses useful text",
+      "explicit v90 custom last-write authority unchanged",
+      "existing buffered HTTP/network/malformed-response and recovery controls pass"
+    ],
+    "responsesStreaming": {
+      "targets": [
+        "gpt-5.6-luna",
+        "gpt-5.6-terra"
+      ],
+      "sourcePath": "saved data.json -> extraction/parser/migration -> resolver -> production provider/adapter -> locked SDK stream",
+      "endpoint": "/v1/responses",
+      "request": {
+        "stream": true,
+        "max_output_tokens": 128,
+        "reasoning": {
+          "effort": "high"
+        }
+      },
+      "events": [
+        "response.output_text.delta",
+        "response.completed",
+        "response.failed"
+      ],
+      "receivedText": "Useful synthetic answer.",
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 2,
+        "total_tokens": 12
+      },
+      "failureAndRecovery": [
+        "response.failed propagates -> healthy same-provider stream",
+        "HTTP 401 propagates -> healthy same-provider stream"
+      ],
+      "providerCodeChanged": false
+    }
+  },
+  "checks": [
+    {
+      "label": "baseline-red",
+      "command": [
+        "env",
+        "ROOT4604_CAPTURE=1",
+        "npx",
+        "jest",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+        "--runInBand"
+      ],
+      "exit": 1,
+      "started": "2026-10-23T11:52:34.036602+00:00",
+      "finished": "2026-10-23T11:52:35.908762+00:00",
+      "peakKiB": 699260,
+      "resourceLimit": false,
+      "receipt": "logs/baseline-red.json",
+      "log": "logs/baseline-red.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "baseline-replay",
+      "command": [
+        "bash",
+        "qualification/root4604/baseline.sh"
+      ],
+      "exit": 1,
+      "started": "2026-10-23T11:58:09.004340+00:00",
+      "finished": "2026-10-23T11:58:13.175078+00:00",
+      "peakKiB": 780060,
+      "resourceLimit": false,
+      "receipt": "logs/baseline-replay.json",
+      "log": "logs/baseline-replay.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "eslint-scoped-final",
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T12:00:58.362676+00:00",
+      "finished": "2026-10-23T12:01:04.757796+00:00",
+      "peakKiB": 1534860,
+      "resourceLimit": false,
+      "receipt": "logs/eslint-scoped-final.json",
+      "log": "logs/eslint-scoped-final.log",
+      "nodeOptions": "--max-old-space-size=1250"
+    },
+    {
+      "label": "eslint-scoped-repaired",
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:56:50.890840+00:00",
+      "finished": "2026-10-23T11:56:57.389099+00:00",
+      "peakKiB": 1526572,
+      "resourceLimit": false,
+      "receipt": "logs/eslint-scoped-repaired.json",
+      "log": "logs/eslint-scoped-repaired.log",
+      "nodeOptions": "--max-old-space-size=1250"
+    },
+    {
+      "label": "eslint-scoped",
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 1,
+      "started": "2026-10-23T11:56:10.972370+00:00",
+      "finished": "2026-10-23T11:56:18.804795+00:00",
+      "peakKiB": 1528216,
+      "resourceLimit": false,
+      "receipt": "logs/eslint-scoped.json",
+      "log": "logs/eslint-scoped.log",
+      "nodeOptions": "--max-old-space-size=1250"
+    },
+    {
+      "label": "focused-final",
+      "command": [
+        "npx",
+        "jest",
+        "src/settings/schema",
+        "src/core/llm",
+        "src/utils/llm/provider-config.test.ts",
+        "src/utils/llm/model-capability-registry.test.ts",
+        "--runInBand"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:57:12.904903+00:00",
+      "finished": "2026-10-23T11:57:19.892229+00:00",
+      "peakKiB": 872584,
+      "resourceLimit": false,
+      "receipt": "logs/focused-final.json",
+      "log": "logs/focused-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "format-review",
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--write",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:55:46.273616+00:00",
+      "finished": "2026-10-23T11:55:46.641302+00:00",
+      "peakKiB": 424820,
+      "resourceLimit": false,
+      "receipt": "logs/format-review.json",
+      "log": "logs/format-review.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "format-stream-evidence",
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--write",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:58:08.644970+00:00",
+      "finished": "2026-10-23T11:58:08.958426+00:00",
+      "peakKiB": 422664,
+      "resourceLimit": false,
+      "receipt": "logs/format-stream-evidence.json",
+      "log": "logs/format-stream-evidence.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "format-write",
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--write",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:54:22.108436+00:00",
+      "finished": "2026-10-23T11:54:22.478462+00:00",
+      "peakKiB": 425928,
+      "resourceLimit": false,
+      "receipt": "logs/format-write.json",
+      "log": "logs/format-write.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "full-jest-final",
+      "command": [
+        "npx",
+        "jest",
+        "--runInBand"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:58:54.809812+00:00",
+      "finished": "2026-10-23T11:59:40.245465+00:00",
+      "peakKiB": 1550052,
+      "resourceLimit": false,
+      "receipt": "logs/full-jest-final.json",
+      "log": "logs/full-jest-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "migration-green-final",
+      "command": [
+        "env",
+        "ROOT4604_CAPTURE=1",
+        "npx",
+        "jest",
+        "src/settings/schema/migrations/89_to_90",
+        "--runInBand"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:54:31.053762+00:00",
+      "finished": "2026-10-23T11:54:33.147929+00:00",
+      "peakKiB": 714132,
+      "resourceLimit": false,
+      "receipt": "logs/migration-green-final.json",
+      "log": "logs/migration-green-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "migration-green",
+      "command": [
+        "env",
+        "ROOT4604_CAPTURE=1",
+        "npx",
+        "jest",
+        "src/settings/schema/migrations/89_to_90",
+        "--runInBand"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:53:21.434193+00:00",
+      "finished": "2026-10-23T11:53:23.308035+00:00",
+      "peakKiB": 700396,
+      "resourceLimit": false,
+      "receipt": "logs/migration-green.json",
+      "log": "logs/migration-green.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "prettier-final",
+      "command": [
+        "node",
+        "node_modules/prettier/bin/prettier.cjs",
+        "--check",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts",
+        "src/settings/schema/migrations/89_to_90.customization.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T12:00:57.948664+00:00",
+      "finished": "2026-10-23T12:00:58.317094+00:00",
+      "peakKiB": 426496,
+      "resourceLimit": false,
+      "receipt": "logs/prettier-final.json",
+      "log": "logs/prettier-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "production-build-final",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:59:56.258054+00:00",
+      "finished": "2026-10-23T12:00:25.465826+00:00",
+      "peakKiB": 1830656,
+      "resourceLimit": false,
+      "receipt": "logs/production-build-final.json",
+      "log": "logs/production-build-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "receiving-final",
+      "command": [
+        "env",
+        "ROOT4604_CAPTURE=1",
+        "npx",
+        "jest",
+        "src/settings/schema/migrations/89_to_90",
+        "--runInBand"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:58:23.006400+00:00",
+      "finished": "2026-10-23T11:58:25.098289+00:00",
+      "peakKiB": 716588,
+      "resourceLimit": false,
+      "receipt": "logs/receiving-final.json",
+      "log": "logs/receiving-final.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "typecheck-repaired",
+      "command": [
+        "npm",
+        "run",
+        "type:check"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T11:55:46.689677+00:00",
+      "finished": "2026-10-23T11:55:51.589578+00:00",
+      "peakKiB": 1331432,
+      "resourceLimit": false,
+      "receipt": "logs/typecheck-repaired.json",
+      "log": "logs/typecheck-repaired.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    },
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "type:check"
+      ],
+      "exit": 2,
+      "started": "2026-10-23T11:54:55.493416+00:00",
+      "finished": "2026-10-23T11:55:06.350000+00:00",
+      "peakKiB": 1526924,
+      "resourceLimit": false,
+      "receipt": "logs/typecheck.json",
+      "log": "logs/typecheck.log",
+      "nodeOptions": "--max-old-space-size=1400"
+    }
+  ],
+  "resource": {
+    "reserveKiB": 2097152,
+    "maximumSampledAggregateKiB": 1830656,
+    "exceptionsThisAmendment": [],
+    "guardFired": false,
+    "modelChildren": 0,
+    "heavyChecksSerial": true,
+    "measurement": "native/check descendants + CLI wrapper + supervisor; 50ms RSS samples; shared RSS can double count; 128MiB guard margin; not a hard cap",
+    "smallestLargerRequirement": null
+  },
+  "preservedFirstFailures": {
+    "originalQualification": "qualification/root4410-b/",
+    "originalSubtreeTree": "ce8ee890172810edbcb1b8e77e9667d4e2ae0628",
+    "amendment": [
+      "logs/baseline-red.json: expected semantic red",
+      "logs/typecheck.json: exit2 optional test map access, fixed",
+      "logs/eslint-scoped.json: exit1 imports/debug logging, fixed"
+    ],
+    "originalLimits": [
+      "partial initial install measurements excluded control overhead; not full-total fit proofs",
+      "prior ignored-script install left esbuild unavailable; earlier repaired",
+      "full lint pinned unrelated ragIndexService.test.ts formatting failure",
+      "wide ESLint resource guard at1968048KiB and reduced heap OOM at1665384KiB"
+    ],
+    "wideLintRerun": false,
+    "dependenciesReinstalled": false
+  },
+  "remainingLimits": [
+    "OY-1 pre-existing missing-record normalization fallback/clearing; unchanged",
+    "arbitrary custom key/value and untested Responses reasoning-object compatibility",
+    "no installed Obsidian/vault load-save-restart receiving",
+    "no live provider/account/model availability/shutdown/quality parity qualification",
+    "full lint incomplete; scoped lint pass does not close it",
+    "issue624 is not maintainer alignment; Root owns issue-first discussion, AI disclosure, any PR/install"
+  ],
+  "noExternalActions": [
+    "provider inference/account/credential work",
+    "issue/comment/PR",
+    "paid test/payment",
+    "release/publication/deployment/installation"
+  ],
+  "selfReview": "qualification/root4604/SELF-REVIEW.md",
+  "export": {
+    "branch": "codex/root4410-b-yolo-model-migration-20261023",
+    "origin": "https://github.com/epistemedeus/obsidian-yolo.git",
+    "sourceHead": "7cb0734050ebb0061bd9a312f468dfa276e9ad22",
+    "sourceTree": "6d308c7d2652fa8520e451e423b130d75d2552e3",
+    "packet": "Evidence-only commit follows tested source; final HEAD/tree and push/readback are recorded in controller handbacks.",
+    "controllerResult": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/ROOT4604-WORKER-RESULT.json",
+    "controllerHandback": "/home/ubuntu/root-sol-window100337/root4604-yolo-migration-amendment-20261023/ROOT4604-WORKER-HANDBACK.md"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "command": [
+    "node",
+    "node_modules/prettier/bin/prettier.cjs",
+    "--check",
+    "src/settings/schema/migrations/89_to_90.ts",
+    "src/settings/schema/migrations/89_to_90.fixtures.ts",
+    "src/settings/schema/migrations/89_to_90.customization.test.ts",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts"
+  ],
+  "started": "2026-10-23T12:00:57.948664+00:00",
+  "finished": "2026-10-23T12:00:58.317094+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 426496,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 21969,
+      "rssKiB": 12856,
+      "name": "python3"
+    },
+    {
+      "pid": 21970,
+      "rssKiB": 101884,
+      "name": "node"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 220560,
+      "name": "codex"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 25068,
+      "name": "codex-code-mode"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/prettier-final.log"
+}

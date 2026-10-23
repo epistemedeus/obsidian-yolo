@@ -1,0 +1,670 @@
+PASS src/core/agent/bash/session-manager.test.ts (5.256 s)
+  ● Console
+
+    console.warn
+      [YOLO] Unable to disable Electron background throttling for active tasks. Error: Node.js modules are unavailable in this Obsidian runtime.
+          at getDesktopRequire (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/utils/platform/desktopNodeModule.ts:19:9)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/utils/platform/desktopNodeModule.ts:23:3
+          at Generator.next (<anonymous>)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:118:75
+          at new Promise (<anonymous>)
+          at Object.__awaiter (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:114:16)
+          at loadDesktopNodeModule (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/utils/platform/desktopNodeModule.ts:22:81)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:24:34
+          at Generator.next (<anonymous>)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:118:75
+          at new Promise (<anonymous>)
+          at Object.__awaiter (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:114:16)
+          at BackgroundExecutionController.loadDesktopTarget [as loadTarget] (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:19:52)
+          at BackgroundExecutionController.<anonymous> (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:97:35)
+          at Generator.next (<anonymous>)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:118:75
+          at new Promise (<anonymous>)
+          at Object.__awaiter (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:114:16)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:95:42
+          at BackgroundExecutionController.<anonymous> (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:119:7)
+          at Generator.next (<anonymous>)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:118:75
+          at new Promise (<anonymous>)
+          at Object.__awaiter (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:114:16)
+          at BackgroundExecutionController.ensureActive (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:77:24)
+          at BackgroundExecutionController.<anonymous> (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:57:16)
+          at Generator.next (<anonymous>)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:118:75
+          at new Promise (<anonymous>)
+          at Object.__awaiter (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:114:16)
+          at BackgroundExecutionController.acquire (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:39:24)
+          at acquireBackgroundExecution (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/background/backgroundExecutionController.ts:154:33)
+          at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/agent/bash/session-manager.ts:1202:43
+          at Generator.next (<anonymous>)
+          at fulfilled (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:115:62)
+
+      25 |     return remote.getCurrentWebContents()
+      26 |   } catch (error) {
+    > 27 |     console.warn(
+         |             ^
+      28 |       '[YOLO] Unable to disable Electron background throttling for active tasks.',
+      29 |       error,
+      30 |     )
+
+      at src/core/background/backgroundExecutionController.ts:27:13
+          at Generator.throw (<anonymous>)
+      at rejected (node_modules/tslib/tslib.js:116:69)
+
+PASS src/main.cli-runtime.test.ts
+PASS src/core/distribution/distributionFeed.test.ts
+PASS src/core/distribution/distributionFeedClient.test.ts
+PASS src/settings/schema/migrations/89_to_90.customization.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/core/cli-runtime/acp/AcpCliRuntime.test.ts
+PASS src/settings/schema/migrations/89_to_90.receiving.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/sch
+
+[bounded export: 399464 original bytes; full SHA-256 abeaa9915d13a1eb43dab5d7c9a5876bbc151732a68b31e9a29585fcae805b7c; see LOG-INDEX.json]
+
+teboard/src/domain/edges.test.ts
+PASS src/core/cli-runtime/pi/transport.test.ts
+PASS src/core/modules/moduleToolSetRegistry.test.ts
+PASS src/core/llm/anthropicReplay.test.ts
+PASS src/components/chat-view/LLMDebugButton.test.ts
+PASS src/settings/schema/migrations/87_to_88.test.ts
+PASS src/settings/schema/migrations/13_to_14.test.ts
+PASS src/core/rag/local-embedding/download.test.ts
+PASS src/core/modules/obsidianModuleConfigBackend.test.ts
+  ● Console
+
+    console.error
+      [YOLO] Module config write listener failed {
+        path: 'YOLO/data/module-settings/learning.json',
+        error: Error: listener
+            at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/modules/obsidianModuleConfigBackend.test.ts:142:13
+            at publishConfigWrite (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/modules/obsidianModuleConfigBackend.ts:31:7)
+            at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/core/modules/obsidianModuleConfigBackend.ts:279:5
+            at Generator.next (<anonymous>)
+            at fulfilled (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:115:62)
+      }
+
+      31 |       listener()
+      32 |     } catch (error) {
+    > 33 |       console.error('[YOLO] Module config write listener failed', {
+         |               ^
+      34 |         path,
+      35 |         error,
+      36 |       })
+
+      at publishConfigWrite (src/core/modules/obsidianModuleConfigBackend.ts:33:15)
+      at src/core/modules/obsidianModuleConfigBackend.ts:279:5
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+PASS src/core/modules/obsidianMarkdownEditor.test.ts
+PASS src/core/modules/moduleSettingsContributions.test.ts
+PASS src/core/modules/moduleArtifactVerifier.test.ts
+PASS src/core/runtime-components/runtimeComponentManifest.test.ts
+PASS src/core/runtime-components/runtimeComponentDownloader.test.ts
+PASS src/core/llm/requestPolicy.test.ts
+PASS src/components/chat-view/UserMessageCard.test.tsx
+PASS src/utils/fuzzy-search.test.ts
+PASS modules/whiteboard/src/ui/lod.test.ts
+PASS src/settings/schema/migrations/79_to_80.test.ts
+PASS src/settings/schema/migrations/73_to_74.test.ts
+PASS src/features/chat/chatViewNavigator.test.ts
+PASS src/database/local-cache/localCacheStore.test.ts
+PASS src/core/llm/deepseekAnthropicProvider.test.ts
+PASS src/core/llm/claudeReasoning.test.ts
+PASS modules/learning/src/host/settings/model.test.ts
+PASS modules/learning/src/anki/import/importWriter.test.ts
+PASS modules/whiteboard/src/domain/camera.test.ts
+PASS modules/learning/src/host/srsStorage.test.ts
+PASS src/settings/schema/migrations/12_to_13.test.ts
+PASS src/core/cli-runtime/codex/history.test.ts
+PASS src/utils/office/office.test.ts
+PASS src/database/vector-store/vectorDatabase.test.ts
+PASS src/core/modules/modulePdf.test.ts
+PASS src/core/modules/lifecycleScope.test.ts
+PASS src/core/cli-runtime/session-service.test.ts
+PASS src/components/chat-view/conversation-timeline-renderer.test.tsx
+PASS src/components/ActionToast.test.ts
+PASS modules/learning/src/ui/home/HomeView.test.ts
+PASS modules/learning/src/generation/serialChapterEngine.test.ts
+PASS src/settings/schema/migrations/8_to_9.test.ts
+PASS src/core/tools/native/paths.test.ts
+PASS src/core/cli-runtime/turn-input.test.ts
+PASS src/core/agent/workspaceScope.test.ts
+PASS modules/learning/src/generation/resumePlan.test.ts
+PASS src/core/cli-runtime/codex/process.test.ts
+PASS src/core/tools/file-change-resolver.test.ts
+PASS src/core/update/updateChecker.test.ts
+PASS src/core/update/pluginUpdater.test.ts
+PASS src/core/modules/moduleDeviceStateStore.test.ts
+PASS src/core/modules/moduleActivationCoordinator.test.ts
+PASS src/core/rag/embedding.test.ts
+PASS src/core/mcp/desktopMcpFetch.test.ts
+PASS src/utils/model-id-utils.test.ts
+PASS src/types/mcp.types.test.ts
+PASS modules/learning/src/ui/wizard/Wizard.test.ts
+PASS modules/learning/src/host/runtime.test.ts
+PASS src/features/editor/selection-highlight/selectionHighlightController.test.ts
+PASS src/core/modules/officialModuleCatalog.test.ts
+PASS src/core/skills/githubSkillImporter.test.ts
+PASS src/core/llm/copilotModelCatalog.test.ts
+PASS src/core/memory/legacyMemoryMigration.test.ts
+PASS src/components/chat-view/editTargetIo.test.ts
+PASS modules/whiteboard/src/host/annotationStore.test.ts
+PASS src/settings/schema/migrations/75_to_76.test.ts
+PASS src/core/tools/vault_search/definition.test.ts
+PASS src/core/cli-runtime/hermes/profiles.test.ts
+PASS src/core/cli-runtime/codex/mapping.test.ts
+PASS src/components/settings/scope/scopeRules.test.ts
+PASS src/utils/llm/pdf.test.ts
+  ● Console
+
+    console.warn
+      [YOLO] Failed to extract PDF text at upload for doc.pdf; native-PDF path will still work, non-native fallback will re-attempt later: load failed
+
+      73 |     extractedPages = result.pages
+      74 |   } catch (error) {
+    > 75 |     console.warn(
+         |             ^
+      76 |       `[YOLO] Failed to extract PDF text at upload for ${file.name}; native-PDF path will still work, non-native fallback will re-attempt later:`,
+      77 |       error instanceof Error ? error.message : error,
+      78 |     )
+
+      at src/utils/llm/pdf.ts:75:13
+          at Generator.throw (<anonymous>)
+      at rejected (node_modules/tslib/tslib.js:116:69)
+
+    console.warn
+      [YOLO] Failed to extract PDF text at upload for doc.pdf; native-PDF path will still work, non-native fallback will re-attempt later: text extraction failed
+
+      73 |     extractedPages = result.pages
+      74 |   } catch (error) {
+    > 75 |     console.warn(
+         |             ^
+      76 |       `[YOLO] Failed to extract PDF text at upload for ${file.name}; native-PDF path will still work, non-native fallback will re-attempt later:`,
+      77 |       error instanceof Error ? error.message : error,
+      78 |     )
+
+      at src/utils/llm/pdf.ts:75:13
+          at Generator.throw (<anonymous>)
+      at rejected (node_modules/tslib/tslib.js:116:69)
+
+PASS src/core/modules/moduleWorkerHost.test.ts
+PASS src/core/modules/moduleReadinessArtifactRepair.test.ts
+PASS src/core/persistence/persistentDataRegistry.test.ts
+PASS src/core/mcp/toolCatalogTokenCache.test.ts
+PASS src/core/mcp/mcpOAuthCallbackServer.test.ts
+PASS src/core/cli-runtime/index.test.ts
+PASS src/core/auth/copilotOAuthService.test.ts
+PASS src/components/chat-view/useLLMResponseInfo.test.ts
+PASS modules/whiteboard/src/ui/pdf/paragraphs.test.ts
+PASS src/components/panels/quick-ask/utils/createQuickAskEditorState.test.ts
+PASS src/settings/schema/migrations/17_to_18.test.ts
+PASS src/core/cli-runtime/claude/fileChange.test.ts
+PASS src/core/cli-runtime/acp/host.test.ts
+PASS src/components/chat-view/chat-input/FileUploadButton.test.tsx
+PASS src/utils/chat/editSummary.test.ts
+PASS src/core/skills/skillValidation.test.ts
+PASS src/core/skills/builtinSkills.test.ts
+PASS src/core/llm/chatgptOAuthResponsesAdapter.test.ts
+PASS src/core/background/backgroundExecutionController.test.ts
+PASS modules/whiteboard/src/domain/groups.test.ts
+PASS src/settings/schema/migrations/80_to_81.test.ts
+PASS src/settings/schema/migrations/5_to_6.test.ts
+PASS src/settings/schema/migrations/1_to_2.test.ts
+PASS src/core/cli-runtime/claude/plugin-cli.test.ts
+PASS src/components/chat-view/scroll/paging.test.ts
+PASS src/utils/llm/resolve-wikilink-target.test.ts
+PASS src/utils/chat/assistant-group-edit-parser.test.ts
+PASS src/database/local-cache/legacyImageCacheImport.test.ts
+PASS src/core/modules/moduleRuntimeReservation.test.ts
+PASS src/core/modules/moduleLoader.test.ts
+PASS src/core/snippets/snippetsManager.test.ts
+PASS src/core/llm/proxyDispatcherAgent.test.ts
+PASS src/core/mcp/remoteTransport.test.ts
+PASS src/core/cli-runtime/model-catalog-store.test.ts
+PASS src/core/edits/textEditEngine.test.ts
+PASS modules/whiteboard/src/ui/pdf/annotationGeometry.test.ts
+PASS modules/whiteboard/src/ui/canvas/cardContent.test.ts
+PASS modules/learning/src/domain/runtime/learningRuntime.test.ts
+PASS modules/whiteboard/src/domain/snapping.test.ts
+PASS modules/whiteboard/src/domain/cardContext.test.ts
+PASS modules/learning/src/generation/cardGenerator.test.ts
+PASS src/settings/schema/migrations/70_to_71.test.ts
+PASS src/settings/schema/migrations/65_to_66.test.ts
+PASS src/features/editor/quick-ask/quickAsk.trigger.test.ts
+PASS src/core/tools/native/current-text.test.ts
+PASS src/core/cli-runtime/hermes/factory.refcount.test.ts
+PASS src/core/cli-runtime/claude/process.test.ts
+PASS src/utils/pdf/extractPdfText.test.ts
+PASS src/utils/llm/expand-prompt-embeds.test.ts
+PASS src/core/tools/file-change-rows.test.ts
+PASS src/core/modules/moduleReadinessReconciler.test.ts
+PASS src/core/modules/managedModuleDataLock.test.ts
+PASS src/core/llm/requestTransport.test.ts
+PASS src/core/llm/anthropicPromptCache.test.ts
+PASS src/core/cli-runtime/yolo-actions.test.ts
+PASS src/core/cli-runtime/vault-session-index-store.test.ts
+PASS src/utils/obsidian.test.ts
+PASS modules/learning/src/ui/outline/OutlineView.test.ts
+PASS modules/learning/src/ui/exercises/ExercisesView.test.ts
+PASS modules/whiteboard/src/domain/virtualization.test.ts
+PASS modules/whiteboard/src/domain/naming.test.ts
+PASS modules/whiteboard/src/host/boardDocuments.test.ts
+PASS src/settings/schema/migrations/24_to_25.test.ts
+PASS src/settings/schema/migrations/23_to_24.test.ts
+PASS src/settings/schema/migrations/20_to_21.test.ts
+PASS src/settings/schema/migrations/19_to_20.test.ts
+PASS src/core/llm/claude-sdk/sessionPool.test.ts
+PASS src/core/cli-runtime/hermes/resolve-command.test.ts
+PASS src/core/cli-runtime/hermes/factory.test.ts
+PASS src/core/cli-runtime/codex/launch.test.ts
+PASS src/core/cli-runtime/codebuddy/resolve-command.test.ts
+PASS src/core/cli-runtime/claude/sdk-loader.test.ts
+PASS src/utils/pdf/slicePdfPages.test.ts
+PASS src/utils/chat/mentionable.test.ts
+PASS src/features/config-transfer/vault-module-configs.test.ts
+PASS src/core/modules/verifiedModuleArtifactRegistry.test.ts
+PASS src/core/modules/officialModuleCompatibilityProvider.test.ts
+PASS src/core/modules/officialModuleCatalogSource.test.ts
+PASS src/core/modules/moduleReleaseUrl.test.ts
+PASS src/core/modules/moduleArtifactArrivalGrace.test.ts
+PASS src/core/modules/learningLegacyUpgrade.integration.test.ts
+PASS src/core/llm/copilotFetch.test.ts
+PASS src/core/llm/copilotAutoSession.test.ts
+PASS src/core/mcp/tool-name-utils.test.ts
+PASS src/core/memory/memoryStore.test.ts
+PASS src/core/cli-runtime/registry.test.ts
+PASS src/core/agent/systemPromptSnapshotStore.test.ts
+PASS src/core/agent/agent-api-context.test.ts
+PASS src/core/auth/geminiOAuthService.test.ts
+PASS src/core/ai/toolCallAccumulator.test.ts
+PASS src/components/chat-view/streamingMath.test.ts
+PASS src/components/chat-view/chat-runtime-actions-context.test.tsx
+PASS modules/whiteboard/src/ui/pdf/textSearch.test.ts
+PASS modules/whiteboard/src/ui/pictures/cardPictures.test.ts
+PASS modules/whiteboard/src/domain/textAnchor.test.ts
+PASS modules/whiteboard/src/domain/summary.test.ts
+PASS modules/whiteboard/src/domain/resize.test.ts
+PASS modules/whiteboard/src/domain/canvasImport.test.ts
+PASS modules/learning/src/domain/cardFile.test.ts
+PASS modules/learning/src/generation/outlineGenerator.test.ts
+PASS modules/learning/src/host/paths.test.ts
+PASS src/core/cli-runtime/pi/process.test.ts
+PASS src/core/cli-runtime/grok/factory.test.ts
+PASS src/core/cli-runtime/claude/setupToken.test.ts
+PASS src/utils/net/systemProxyResolver.test.ts
+PASS src/utils/llm/provider-base-url.test.ts
+PASS src/utils/llm/model-capability-registry.test.ts
+PASS src/utils/chat/editUndoSnapshotStore.test.ts
+PASS src/utils/chat/conversationTitle.test.ts
+PASS src/core/runtime-components/runtimeComponentDeviceStateStore.test.ts
+PASS src/core/llm/openRouterMessageAdapter.test.ts
+PASS src/core/llm/bedrockCatalog.test.ts
+PASS src/core/llm/baseUrlDetection.test.ts
+PASS src/core/llm/base.test.ts
+PASS src/core/mcp/mcpOAuthStore.test.ts
+PASS src/core/mcp/mcpOAuthProvider.test.ts
+PASS src/core/cli-runtime/windows-spawn.test.ts
+PASS src/core/cli-runtime/session-index.test.ts
+PASS src/core/cli-runtime/model-catalog.test.ts
+PASS src/core/cli-runtime/cli-actions.test.ts
+PASS src/core/agent/repeated-read-call-guard.test.ts
+PASS src/core/edits/textEditPlan.test.ts
+PASS src/components/chat-view/useChatTimelineReadModel.test.ts
+PASS src/components/chat-view/latex-copy.test.ts
+PASS modules/whiteboard/src/ui/pdf/readerLayout.test.ts
+PASS modules/whiteboard/src/ui/pictures/pictureStyles.test.ts
+PASS modules/whiteboard/src/ui/pictures/idle.test.ts
+PASS modules/whiteboard/src/ui/pictures/activity.test.ts
+PASS modules/learning/src/domain/stats/learningStats.test.ts
+PASS modules/learning/src/ui/anki/ankiImportUtils.test.ts
+PASS modules/learning/src/anki/import/importPlan.test.ts
+PASS modules/whiteboard/src/domain/tidy.test.ts
+PASS modules/whiteboard/src/domain/color.test.ts
+PASS modules/whiteboard/src/domain/cardInstructions.test.ts
+PASS src/settings/schema/migrations/30_to_31.test.ts
+PASS src/settings/schema/migrations/22_to_23.test.ts
+PASS src/settings/schema/migrations/15_to_16.test.ts
+PASS src/core/cli-runtime/grok/resolve-command.test.ts
+PASS src/core/cli-runtime/codex/exec-envelope.test.ts
+PASS src/core/cli-runtime/codex/bare-hunk-rows.test.ts
+PASS src/core/agent/subagent/task-registry.test.ts
+PASS src/core/agent/subagent/accepted-result.test.ts
+PASS src/utils/llm/bedrock.test.ts
+PASS src/utils/chat/timeline.test.ts
+PASS src/utils/common/utf8-byte-length.test.ts
+PASS src/core/update/installationIntegrity.test.ts
+PASS src/core/modules/moduleI18n.test.ts
+PASS src/core/modules/defaultModuleInstalls.test.ts
+PASS src/core/rag/ragEngine.test.ts
+PASS src/core/llm/openaiCompatibleCapabilities.test.ts
+PASS src/core/notifications/notificationService.test.ts
+PASS src/core/notifications/agentNotificationCoordinator.test.ts
+PASS src/core/agent/loop-decision.test.ts
+PASS src/components/chat-view/useAutoScroll.test.ts
+PASS src/utils/markdown-escape.test.ts
+PASS modules/whiteboard/src/ui/constants.test.ts
+PASS modules/whiteboard/src/domain/placement.test.ts
+PASS modules/whiteboard/src/domain/pdfExport.test.ts
+PASS modules/whiteboard/src/domain/pdfAnnotations.test.ts
+PASS modules/whiteboard/src/domain/excerpt.test.ts
+PASS modules/whiteboard/src/domain/commit.test.ts
+PASS src/settings/schema/migrations/9_to_10.test.ts
+PASS src/settings/schema/migrations/85_to_86.test.ts
+PASS src/settings/schema/migrations/7_to_8.test.ts
+PASS src/settings/schema/migrations/74_to_75.test.ts
+PASS src/settings/schema/migrations/6_to_7.test.ts
+PASS src/settings/schema/migrations/67_to_68.test.ts
+PASS src/settings/schema/migrations/48_to_49.test.ts
+PASS src/settings/schema/migrations/14_to_15.test.ts
+PASS src/features/editor/selection-chat/tableSelectionResolver.test.ts
+PASS src/features/editor/selection-chat/getPdfSelectionData.test.ts
+PASS src/core/cli-runtime/grok/profile.test.ts
+PASS src/core/cli-runtime/codex/factory.test.ts
+PASS src/core/cli-runtime/claude/factory.test.ts
+PASS src/core/agent/bash/which.test.ts
+PASS src/utils/chat/tool-arguments.test.ts
+PASS src/utils/chat/requestContextBuilder.tool-boundary.test.ts
+PASS src/utils/chat/inject-annotation-markers.test.ts
+PASS src/features/pdf-screenshot/captureCanvasRegion.test.ts
+PASS src/features/pdf-screenshot/RegionSelector.test.ts
+PASS src/database/vector-store/quantization.test.ts
+PASS src/core/modules/runtimeBridge.test.ts
+PASS src/core/modules/learningModuleSettingsHandoff.test.ts
+PASS src/core/modules/learningLegacyInstallMigration.test.ts
+PASS src/core/retry/limitedAutomaticRetry.test.ts
+PASS src/core/rag/reconciler.test.ts
+PASS src/core/rag/ragIndexErrors.test.ts
+PASS src/core/cli-runtime/tool-call.test.ts
+PASS src/core/i18n/localeStore.test.ts
+PASS src/core/agent/runtime-mode-prompt.test.ts
+PASS src/core/agent/chat-runtime-inputs.test.ts
+PASS src/components/chat-view/streamingReveal.test.ts
+PASS src/components/chat-view/chat-history-list.test.ts
+PASS src/utils/custom-parameters.test.ts
+PASS modules/whiteboard/src/ui/canvas/cameraController.test.ts
+PASS modules/learning/src/domain/srs/masteryMapping.test.ts
+PASS modules/whiteboard/src/domain/fileReferences.test.ts
+PASS modules/whiteboard/src/domain/clipboard.test.ts
+PASS modules/learning/src/domain/projectScanner.test.ts
+PASS modules/learning/src/generation/projectWriter.test.ts
+PASS src/utils/chat/contextual-injections/surfaceContext.test.ts
+PASS src/settings/schema/migrations/88_to_89.test.ts
+PASS src/settings/schema/migrations/83_to_84.test.ts
+PASS src/settings/schema/migrations/4_to_5.test.ts
+PASS src/settings/schema/migrations/3_to_4.test.ts
+PASS src/settings/schema/migrations/34_to_35.test.ts
+PASS src/settings/schema/migrations/2_to_3.test.ts
+PASS src/settings/schema/migrations/10_to_11.test.ts
+PASS src/core/cli-runtime/omp/dialect.test.ts
+PASS src/core/agent/live-stream/taskStreamBus.test.ts
+PASS src/core/agent/bash/outputBudget.test.ts
+PASS src/core/agent/bash/command-classifier.test.ts
+PASS src/components/chat-view/chat-input/chatInputDraft.test.ts
+PASS src/utils/llm/contextTokenEstimate.test.ts
+PASS src/utils/chat/foregroundAgentVisualTurns.test.ts
+PASS src/utils/chat/externalAgentResultSerializer.test.ts
+PASS src/features/config-transfer/merge-utils.test.ts
+PASS src/core/modules/scriptExecutor.test.ts
+PASS src/core/modules/moduleReadinessArtifactArrival.test.ts
+PASS src/core/modules/moduleManager.test.ts
+PASS src/core/modules/moduleCatalogPresentation.test.ts
+PASS src/core/skills/skillImportLimits.test.ts
+PASS src/core/runtime-components/runtimeComponentLoader.test.ts
+PASS src/core/runtime-components/embeddingEngineModelFileMatcher.test.ts
+PASS src/core/search/searchResultAggregation.test.ts
+PASS src/core/llm/copilotRequestTraits.test.ts
+PASS src/core/llm/chatgptOAuthModelCatalog.test.ts
+PASS src/core/cli-runtime/permission-profile.test.ts
+PASS src/core/agent/promptSourceWatcher.test.ts
+PASS src/core/agent/citationRegistry.test.ts
+PASS src/core/background/backgroundStatusModel.test.ts
+PASS src/components/chat-view/inputOverlayReserve.test.ts
+PASS src/components/chat-view/cliSubagentReadModel.test.ts
+PASS src/components/chat-view/chatRetry.test.ts
+PASS src/components/chat-view/chat-input/plugins/drop/resolveDrop.test.ts
+PASS modules/learning/src/anki/worker/browserWorkerFactory.test.ts
+PASS src/core/tools/internal/invoke_tool/definition.test.ts
+PASS modules/whiteboard/src/domain/toolbar.test.ts
+PASS modules/whiteboard/src/domain/split.test.ts
+PASS modules/whiteboard/src/domain/selection.test.ts
+PASS modules/whiteboard/src/domain/ids.test.ts
+PASS modules/whiteboard/src/domain/hash.test.ts
+PASS modules/whiteboard/src/domain/arrange.test.ts
+PASS src/settings/schema/migrations/82_to_83.test.ts
+PASS src/settings/schema/migrations/76_to_77.test.ts
+PASS src/settings/schema/migrations/71_to_72.test.ts
+PASS src/settings/schema/migrations/63_to_64.test.ts
+PASS src/settings/schema/migrations/47_to_48.test.ts
+PASS src/settings/schema/migrations/26_to_27.test.ts
+PASS src/settings/schema/migrations/0_to_1.test.ts
+PASS src/features/editor/quick-ask/quickAsk.anchor.test.ts
+PASS src/core/cli-runtime/pi/resolve-command.test.ts
+PASS src/core/cli-runtime/grok/auth.test.ts
+PASS src/components/chat-view/chat-input/lexicalExternalState.test.ts
+PASS src/utils/llm/provider-config.test.ts
+PASS src/utils/chat/parse-tag-content.test.ts
+PASS src/core/modules/moduleDeviceStateInstalledStateSource.test.ts
+PASS src/core/rag/ragCoordinator.test.ts
+PASS src/core/llm/responseDeliveryMode.test.ts
+PASS src/core/llm/openaiMessageAdapter.test.ts
+PASS src/core/llm/lightweight-request-policy.test.ts
+PASS src/core/cli-runtime/environment-context.test.ts
+PASS src/core/agent/capability-profile.test.ts
+PASS src/core/background/backgroundActivityRegistry.test.ts
+PASS src/components/chat-view/reasoningActivity.test.ts
+PASS src/components/chat-view/providerSessionAccessor.test.ts
+PASS src/components/chat-view/TransitioningMarkdown.test.tsx
+PASS src/utils/error-message.test.ts
+PASS src/types/provider.types.test.ts
+PASS modules/whiteboard/src/ui/pictures/selectorNeeds.test.ts
+PASS modules/whiteboard/src/ui/pictures/cardSignature.test.ts
+PASS modules/learning/src/ui/cards/cardsWorkspace.test.ts
+PASS src/components/chat-view/chat-input/utils/editor-state-to-plain-text.test.ts
+PASS modules/whiteboard/src/domain/history.test.ts
+PASS modules/whiteboard/src/domain/exportLayout.test.ts
+PASS modules/learning/src/domain/hostVaultAdapter.test.ts
+PASS modules/learning/src/generation/referenceStaging.test.ts
+PASS modules/learning/src/i18n/index.test.ts
+PASS src/settings/schema/migrations/81_to_82.test.ts
+PASS src/settings/schema/migrations/77_to_78.test.ts
+PASS src/settings/schema/migrations/72_to_73.test.ts
+PASS src/settings/schema/migrations/51_to_52.test.ts
+PASS src/core/agent/bash/dangerousOperationGate.test.ts
+PASS src/utils/llm/model-tools.test.ts
+PASS src/core/modules/officialModuleArtifactSources.test.ts
+PASS src/core/llm/reasoningContentMessageAdapter.test.ts
+PASS src/core/llm/providerErrorClassification.test.ts
+PASS src/core/cli-runtime/desktop.test.ts
+PASS src/core/agent/repeated-tool-failure-guard.test.ts
+PASS src/core/agent/max-environment-prompt.test.ts
+PASS src/core/agent/assistant-model.test.ts
+PASS src/components/chat-view/runtime-action-handlers.test.ts
+PASS src/components/chat-view/markdownInsertionTarget.test.ts
+PASS modules/learning/src/domain/runtime/projectService.test.ts
+PASS modules/learning/src/ui/cards/reviewInteractions.test.ts
+PASS modules/learning/src/host/settings/contribution.test.ts
+PASS modules/learning/src/anki/import/journalStorage.test.ts
+PASS src/components/chat-view/chat-input/utils/file-upload.test.ts
+PASS modules/whiteboard/src/domain/selfHeal.test.ts
+PASS modules/learning/src/generation/moduleAgentAdapter.test.ts
+PASS src/utils/chat/contextual-injections/editorSnapshotContext.test.ts
+PASS src/utils/chat/contextual-injections/browserContext.test.ts
+PASS src/settings/schema/migrations/58_to_59.test.ts
+PASS src/settings/schema/migrations/38_to_39.test.ts
+PASS src/settings/schema/migrations/32_to_33.test.ts
+PASS src/core/cli-runtime/hermes/profile.test.ts
+PASS src/core/agent/subagent/runtime-registry.test.ts
+PASS src/core/agent/bash/shell-provider.test.ts
+PASS src/core/agent/background-task/completion-bus.test.ts
+PASS src/utils/llm/annotate-wikilinks.test.ts
+PASS src/utils/chat/tool-context-pruning.test.ts
+PASS src/utils/chat/selection-mentionables.test.ts
+PASS src/utils/chat/reasoningPhaseTracker.test.ts
+PASS src/utils/common/chunk-array.test.ts
+PASS src/core/modules/moduleRibbonSlots.test.ts
+PASS src/core/runtime-components/pdfEngineGeometry.test.ts
+PASS src/core/runtime-components/embeddingEngineRequestQueue.test.ts
+PASS src/core/search/hybridSearch.test.ts
+PASS src/core/llm/deepseekCapabilities.test.ts
+PASS src/core/cli-runtime/types.test.ts
+PASS modules/learning/src/ui/tabs/tabs.test.ts
+PASS modules/learning/src/ui/graph/graphModel.test.ts
+PASS modules/learning/src/host/lifecycle.test.ts
+PASS modules/learning/src/host/background.test.ts
+PASS src/settings/schema/migrations/43_to_44.test.ts
+PASS src/settings/schema/migrations/33_to_34.test.ts
+PASS src/settings/schema/migrations/11_to_12.test.ts
+PASS src/features/editor/selection-chat/resolveSelectionChatActions.test.ts
+PASS src/core/cli-runtime/codex/transport.test.ts
+PASS src/core/cli-runtime/codebuddy/profile.test.ts
+PASS src/utils/llm/request.test.ts
+PASS src/utils/llm/hosted-web-search.test.ts
+PASS src/utils/chat/tool-result-index.test.ts
+PASS src/utils/chat/subagentResultSerializer.test.ts
+PASS src/utils/chat/assistantToolPreview.test.ts
+PASS src/core/modules/moduleIntentStateSource.test.ts
+PASS src/core/agent/assistant-capabilities.test.ts
+PASS src/components/chat-view/useHistoricalUserMessageDismiss.test.ts
+PASS modules/learning/src/ui/markdown/cardMarkdownLifecycle.test.ts
+PASS src/settings/schema/migrations/86_to_87.test.ts
+PASS src/settings/schema/migrations/62_to_63.test.ts
+PASS src/settings/schema/migrations/55_to_56.test.ts
+PASS src/settings/schema/migrations/31_to_32.test.ts
+PASS src/core/paths/yoloPaths.test.ts
+PASS src/core/cli-runtime/title-sync.test.ts
+PASS src/components/selection/SelectionManager.test.ts
+PASS src/settings/schema/migrations/84_to_85.test.ts
+PASS src/core/modules/moduleFailure.test.ts
+
+Test Suites: 613 passed, 613 total
+Tests:       6454 passed, 6454 total
+Snapshots:   0 total
+Time:        44.794 s, estimated 46 s
+Ran all test suites.

@@ -1,0 +1,60 @@
+{
+  "command": [
+    "npx",
+    "jest",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T11:58:54.809812+00:00",
+  "finished": "2026-10-23T11:59:40.245465+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1550052,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 19925,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 21601,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 21602,
+      "rssKiB": 1148888,
+      "name": "node"
+    },
+    {
+      "pid": 19917,
+      "rssKiB": 12896,
+      "name": "python3"
+    },
+    {
+      "pid": 19918,
+      "rssKiB": 53232,
+      "name": "node"
+    },
+    {
+      "pid": 21584,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 21585,
+      "rssKiB": 78540,
+      "name": "npm exec jest -"
+    },
+    {
+      "pid": 19925,
+      "rssKiB": 218280,
+      "name": "codex"
+    },
+    {
+      "pid": 20538,
+      "rssKiB": 23588,
+      "name": "codex-code-mode"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/full-jest-final.log"
+}
