@@ -6,6 +6,11 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 /* eslint-enable import/no-nodejs-modules */
 
+import type {
+  Response as OpenAIResponse,
+  ResponseStreamEvent,
+} from 'openai/resources/responses/responses'
+
 import { getChatModelClient } from '../../../core/llm/manager'
 import { OpenAICompatibleProvider } from '../../../core/llm/openaiCompatibleProvider'
 import { OpenAIResponsesProvider } from '../../../core/llm/openaiResponsesProvider'
@@ -13,11 +18,19 @@ import {
   extractYoloDataMeta,
   stampYoloDataMeta,
 } from '../../../core/paths/yoloManagedData'
+import type { CustomParameter } from '../../../types/custom-parameter.types'
 import type { LLMRequestNonStreaming } from '../../../types/llm/request'
+import type { LLMResponseStreaming } from '../../../types/llm/response'
 import type { LLMProviderApiType } from '../../../types/provider.types'
 import { parseYoloSettings } from '../settings'
 
-import { nanoV89, o4V89, openaiV89, selectedV89 } from './89_to_90.fixtures'
+import {
+  nanoV89,
+  o4V89,
+  openaiV89,
+  requestConflictsV89,
+  selectedV89,
+} from './89_to_90.fixtures'
 
 const replacements = [
   [nanoV89.id, 'gpt-5.6-luna'],
@@ -29,32 +42,50 @@ const jsonResponse = (body: unknown, status = 200) =>
     headers: { 'content-type': 'application/json' },
   })
 
-function healthyResponse(model: string, responses: boolean) {
-  const usage = { prompt_tokens: 10, completion_tokens: 2, total_tokens: 12 }
-  return responses
-    ? {
-        id: 'resp_local',
-        object: 'response',
-        created_at: 1,
-        model,
+function healthyResponsesReply(model: string): OpenAIResponse {
+  return {
+    id: 'resp_local',
+    object: 'response',
+    created_at: 1,
+    model,
+    status: 'completed',
+    output_text: 'Useful synthetic answer.',
+    error: null,
+    incomplete_details: null,
+    instructions: null,
+    metadata: null,
+    parallel_tool_calls: true,
+    temperature: null,
+    top_p: null,
+    tool_choice: 'auto',
+    tools: [],
+    output: [
+      {
+        type: 'message',
+        id: 'msg_local',
+        role: 'assistant',
         status: 'completed',
-        output: [
+        content: [
           {
-            type: 'message',
-            id: 'msg_local',
-            role: 'assistant',
-            status: 'completed',
-            content: [
-              {
-                type: 'output_text',
-                text: 'Useful synthetic answer.',
-                annotations: [],
-              },
-            ],
+            type: 'output_text',
+            text: 'Useful synthetic answer.',
+            annotations: [],
           },
         ],
-        usage: { input_tokens: 10, output_tokens: 2, total_tokens: 12 },
-      }
+      },
+    ],
+    usage: {
+      input_tokens: 10,
+      output_tokens: 2,
+      total_tokens: 12,
+      input_tokens_details: { cached_tokens: 0 },
+      output_tokens_details: { reasoning_tokens: 0 },
+    },
+  }
+}
+function healthyResponse(model: string, responses: boolean) {
+  return responses
+    ? healthyResponsesReply(model)
     : {
         id: 'chat_local',
         object: 'chat.completion',
@@ -67,7 +98,7 @@ function healthyResponse(model: string, responses: boolean) {
             message: { role: 'assistant', content: 'Useful synthetic answer.' },
           },
         ],
-        usage,
+        usage: { prompt_tokens: 10, completion_tokens: 2, total_tokens: 12 },
       }
 }
 
@@ -120,10 +151,22 @@ describe('v89 saved selection → real resolver/provider → locked OpenAI SDK',
     }
   })
 
-  const resolveSaved = (oldId: string, apiType: LLMProviderApiType) => {
-    const raw = selectedV89()
-    raw.chatModelId = oldId
-    raw.providers = [{ ...openaiV89, apiType }]
+  const resolveSaved = (
+    oldId: string,
+    apiType: LLMProviderApiType,
+    customParameters?: CustomParameter[],
+    version = 89,
+  ) => {
+    const fixture = selectedV89()
+    const raw = {
+      ...fixture,
+      version,
+      chatModelId: oldId,
+      providers: [{ ...openaiV89, apiType }],
+      chatModels: fixture.chatModels.map((m) =>
+        m.id === oldId && customParameters ? { ...m, customParameters } : m,
+      ),
+    }
     const directory = mkdtempSync(join(tmpdir(), 'root4410-b-v89-'))
     try {
       const file = join(directory, 'data.json')
@@ -148,6 +191,54 @@ describe('v89 saved selection → real resolver/provider → locked OpenAI SDK',
     } finally {
       rmSync(directory, { recursive: true, force: true })
     }
+  }
+
+  // No provider return is mocked: SSE goes through locked OpenAI SDK decoding
+  // and the production Responses adapter, including its usage/failure handling.
+  const responsesSSE = (model: string, failed = false) => {
+    const events: ResponseStreamEvent[] = failed
+      ? [
+          {
+            type: 'response.failed',
+            response: {
+              ...healthyResponsesReply(model),
+              status: 'failed',
+              output: [],
+              error: {
+                code: 'server_error',
+                message: 'Synthetic stream failure',
+              },
+            },
+          },
+        ]
+      : [
+          ...['Useful ', 'synthetic answer.'].map(
+            (delta): ResponseStreamEvent => ({
+              type: 'response.output_text.delta',
+              item_id: 'msg_local',
+              output_index: 0,
+              content_index: 0,
+              delta,
+            }),
+          ),
+          {
+            type: 'response.completed',
+            response: healthyResponsesReply(model),
+          },
+        ]
+    return new Response(
+      events
+        .map(
+          (event) => `event: ${event.type}\ndata: ${JSON.stringify(event)}\n\n`,
+        )
+        .join(''),
+      { headers: { 'content-type': 'text/event-stream' } },
+    )
+  }
+  const collect = async (stream: AsyncIterable<LLMResponseStreaming>) => {
+    const chunks: LLMResponseStreaming[] = []
+    for await (const chunk of stream) chunks.push(chunk)
+    return chunks
   }
 
   for (const apiType of ['openai-responses', 'openai-compatible'] as const) {
@@ -478,4 +569,309 @@ describe('v89 saved selection → real resolver/provider → locked OpenAI SDK',
     expect(calls[0].body).not.toHaveProperty('max_tokens')
     expect(calls[0].body).not.toHaveProperty('reasoning')
   })
+
+  for (const [oldId, replacement] of replacements) {
+    for (const streaming of [false, true]) {
+      it.each(requestConflictsV89)(
+        `holds saved ${oldId} request conflict $apiType $key (streaming ${streaming})`,
+        async ({ apiType, key, value, type }) => {
+          jest.spyOn(console, 'warn').mockImplementation(() => {})
+          const { model, providerClient, settings } = resolveSaved(
+            oldId,
+            apiType,
+            [
+              { key: ` ${key} `, value: '32', type: 'number' },
+              { key: ` ${key} `, value: ` ${value} `, type },
+              { key, value: ' ', type },
+            ],
+          )
+          if (streaming)
+            fetchCapture.mockImplementationOnce(async (input, init) => {
+              const { body } = captureRequest(input, init)
+              // Synthetic replies allow capture; no old-model health is asserted.
+              if (apiType === 'openai-responses')
+                return responsesSSE(String(body.model))
+              return new Response('data: [DONE]\n\n', {
+                headers: { 'content-type': 'text/event-stream' },
+              })
+            })
+          const request = {
+            model: model.model,
+            messages: [{ role: 'user' as const, content: 'synthetic capture' }],
+            max_tokens: 128,
+            reasoningLevel: 'high' as const,
+          }
+          if (streaming)
+            await collect(
+              await providerClient.streamResponse(model, {
+                ...request,
+                stream: true,
+              }),
+            )
+          else await providerClient.generateResponse(model, request)
+          // This optional baseline log is synthetic serialized JSON, no headers,
+          // custom secrets, credentials or original fetch/socket ever received.
+          if (process.env.ROOT4604_CAPTURE === '1')
+            console.debug(
+              'ROOT4604-WIRE',
+              JSON.stringify({ apiType, key, streaming, ...calls[0] }),
+            )
+          expect(calls[0].body.model).toBe(oldId.slice('openai/'.length))
+          expect(settings.chatModelId).toBe(oldId)
+          expect(model.id).toBe(oldId)
+          expect(calls[0].body.model).not.toBe(replacement)
+          const otherId =
+            oldId === nanoV89.id
+              ? 'openai/gpt-5.6-terra'
+              : 'openai/gpt-5.6-luna'
+          expect(settings.chatTitleModelId).toBe(
+            oldId === o4V89.id ? oldId : otherId,
+          )
+          expect(settings.continuationOptions.continuationModelId).toBe(
+            oldId === nanoV89.id ? oldId : otherId,
+          )
+          expect(settings.continuationOptions.tabCompletionModelId).toBe(
+            oldId === o4V89.id ? oldId : otherId,
+          )
+          expect(settings.assistants[0].modelId).toBe(
+            oldId === o4V89.id ? oldId : otherId,
+          )
+          expect(settings.chatOptions.reasoningLevelByModelId?.[oldId]).toBe(
+            oldId === nanoV89.id ? 'off' : 'high',
+          )
+          expect(
+            settings.chatOptions.reasoningLevelByModelId,
+          ).not.toHaveProperty(`openai/${replacement}`)
+          expect(
+            settings.mcp.builtinCapabilityOptions.subagent_delegation,
+          ).toMatchObject({
+            allowedModelIds:
+              oldId === nanoV89.id
+                ? [oldId, otherId, 'openai/gpt-5']
+                : [otherId, oldId, 'openai/gpt-5'],
+            preferredModelId: oldId === nanoV89.id ? oldId : otherId,
+          })
+          expect(model.customParameters).toEqual([
+            { key: ` ${key} `, value: '32', type: 'number' },
+            { key: ` ${key} `, value: ` ${value} `, type },
+            { key, value: ' ', type },
+          ])
+        },
+      )
+    }
+  }
+
+  it('holds the exact saved max_tokens counterexample after real SDK serialization', async () => {
+    jest.spyOn(console, 'warn').mockImplementation(() => {})
+    const { model, providerClient, settings } = resolveSaved(
+      nanoV89.id,
+      'openai-compatible',
+      [{ key: 'max_tokens', value: '64', type: 'number' }],
+    )
+    await providerClient.generateResponse(model, {
+      model: model.model,
+      messages: [],
+      max_tokens: 128,
+    })
+    if (process.env.ROOT4604_CAPTURE === '1')
+      console.debug('ROOT4604-EXACT-WIRE', JSON.stringify(calls[0]))
+    expect(calls[0]).toMatchObject({
+      url: 'https://api.openai.com/v1/chat/completions',
+      body: { model: 'gpt-4.1-nano', max_tokens: 64 },
+    })
+    expect(settings.chatModelId).toBe(nanoV89.id)
+    expect(model).toMatchObject(nanoV89)
+  })
+
+  it.each([
+    ['openai-compatible', 'max_completion_tokens', '64', 'number'],
+    ['openai-responses', 'max_tokens', '64', 'number'],
+    ['openai-compatible', 'reasoning_effort', 'low', 'text'],
+    ['openai-responses', 'reasoning_effort', 'low', 'text'],
+  ] as const)(
+    'keeps a compatible saved %s %s customization eligible and effective',
+    async (apiType, key, value, type) => {
+      const { model, providerClient } = resolveSaved(nanoV89.id, apiType, [
+        { key, value, type },
+      ])
+      expect(model.id).toBe('openai/gpt-5.6-luna')
+      const result = await providerClient.generateResponse(model, {
+        model: model.model,
+        messages: [{ role: 'user', content: 'synthetic' }],
+        max_tokens: 128,
+        reasoningLevel: 'high',
+      })
+      expect(result.choices[0].message.content).toBe('Useful synthetic answer.')
+      expect(calls[0].body.model).toBe('gpt-5.6-luna')
+      if (key === 'reasoning_effort') {
+        if (apiType === 'openai-responses')
+          expect(calls[0].body.reasoning).toMatchObject({ effort: 'low' })
+        else expect(calls[0].body.reasoning_effort).toBe('low')
+      } else
+        expect(
+          calls[0].body[
+            apiType === 'openai-responses'
+              ? 'max_output_tokens'
+              : 'max_completion_tokens'
+          ],
+        ).toBe(64)
+      expect(calls[0].body).not.toHaveProperty('max_tokens')
+      if (process.env.ROOT4604_CAPTURE === '1')
+        console.debug(
+          'ROOT4604-COMPATIBLE-WIRE',
+          JSON.stringify({ apiType, key, ...calls[0] }),
+        )
+    },
+  )
+
+  it.each([false, true])(
+    'receives corrected unmigrated v89 input (remove conflict: %s)',
+    async (remove) => {
+      const customization: CustomParameter[] = remove
+        ? []
+        : [{ key: 'max_completion_tokens', value: '64', type: 'number' }]
+      const { model, providerClient } = resolveSaved(
+        nanoV89.id,
+        'openai-compatible',
+        customization,
+      )
+      expect(model.id).toBe('openai/gpt-5.6-luna')
+      const result = await providerClient.generateResponse(model, {
+        model: model.model,
+        messages: [{ role: 'user', content: 'synthetic' }],
+        max_tokens: 128,
+      })
+      expect(result.choices[0].message.content).toBe('Useful synthetic answer.')
+      expect(calls[0].body).toMatchObject({
+        model: 'gpt-5.6-luna',
+        max_completion_tokens: remove ? 128 : 64,
+      })
+      expect(calls[0].body).not.toHaveProperty('max_tokens')
+    },
+  )
+
+  it('retains explicit custom last-write authority for an already configured v90 target', async () => {
+    const { settings } = resolveSaved(nanoV89.id, 'openai-compatible')
+    settings.chatModels = settings.chatModels.map((m) =>
+      m.id === settings.chatModelId
+        ? {
+            ...m,
+            customParameters: [
+              { key: ' max_tokens ', value: '64', type: 'number' },
+            ],
+          }
+        : m,
+    )
+    const loaded = parseYoloSettings(JSON.parse(JSON.stringify(settings)))
+    const { model, providerClient } = getChatModelClient({
+      settings: loaded,
+      modelId: loaded.chatModelId,
+    })
+    await providerClient.generateResponse(model, {
+      model: model.model,
+      messages: [],
+      max_tokens: 128,
+    })
+    expect(calls[0].body).toMatchObject({
+      model: 'gpt-5.6-luna',
+      max_completion_tokens: 128,
+      max_tokens: 64,
+    })
+  })
+
+  it.each(replacements)(
+    'receives migrated %s Responses streaming as %s, failures and recovery',
+    async (oldId, replacement) => {
+      const { model, providerClient, settings } = resolveSaved(
+        oldId,
+        'openai-responses',
+      )
+      expect(settings.chatModelId).toBe(`openai/${replacement}`)
+      expect(providerClient).toBeInstanceOf(OpenAIResponsesProvider)
+      const request = {
+        model: model.model,
+        messages: [{ role: 'user' as const, content: 'synthetic' }],
+        max_tokens: 128,
+        reasoningLevel: 'high' as const,
+        stream: true as const,
+      }
+      fetchCapture.mockImplementation(async (input, init) => {
+        captureRequest(input, init)
+        return responsesSSE(model.model)
+      })
+      const receive = async () =>
+        collect(await providerClient.streamResponse(model, request))
+      const assertHealthy = (chunks: LLMResponseStreaming[]) => {
+        expect(
+          chunks
+            .flatMap((chunk) =>
+              chunk.choices.map((choice) => choice.delta.content ?? ''),
+            )
+            .join(''),
+        ).toBe('Useful synthetic answer.')
+        expect(chunks[chunks.length - 1]).toMatchObject({
+          model: replacement,
+          usage: { prompt_tokens: 10, completion_tokens: 2, total_tokens: 12 },
+          choices: [{ finish_reason: 'stop' }],
+        })
+      }
+      assertHealthy(await receive())
+      fetchCapture.mockImplementationOnce(async (input, init) => {
+        captureRequest(input, init)
+        return responsesSSE(model.model, true)
+      })
+      await expect(receive()).rejects.toThrow('Synthetic stream failure')
+      assertHealthy(await receive())
+      fetchCapture.mockImplementationOnce(async (input, init) => {
+        captureRequest(input, init)
+        return jsonResponse(
+          {
+            error: {
+              message: 'Synthetic stream HTTP failure',
+              type: 'invalid_request_error',
+            },
+          },
+          401,
+        )
+      })
+      await expect(receive()).rejects.toThrow()
+      assertHealthy(await receive())
+      expect(calls).toHaveLength(5)
+      for (const call of calls) {
+        expect(call.url).toBe('https://api.openai.com/v1/responses')
+        expect(call.body).toMatchObject({
+          model: replacement,
+          stream: true,
+          max_output_tokens: 128,
+          reasoning: { effort: 'high' },
+          store: false,
+        })
+        expect(call.body).not.toHaveProperty('max_tokens')
+        expect(call.body).not.toHaveProperty('max_completion_tokens')
+        expect(call.body).not.toHaveProperty('reasoning_effort')
+      }
+      if (process.env.ROOT4604_CAPTURE === '1')
+        console.debug(
+          'ROOT4604-RESPONSES-STREAM',
+          JSON.stringify({
+            oldId,
+            replacement,
+            calls,
+            receivedText: 'Useful synthetic answer.',
+            receivedUsage: {
+              prompt_tokens: 10,
+              completion_tokens: 2,
+              total_tokens: 12,
+            },
+            sequence: [
+              'healthy',
+              'response.failed propagated',
+              'healthy recovery',
+              'HTTP 401 propagated',
+              'healthy recovery',
+            ],
+          }),
+        )
+    },
+  )
 })

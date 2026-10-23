@@ -69,3 +69,37 @@ export const selectedV89 = () => ({
   },
   systemPrompt: 'Preserve this user setting.',
 })
+
+// Concrete saved-field counterexamples, qualified at the serialized SDK boundary.
+export const requestConflictsV89 = [
+  {
+    apiType: 'openai-compatible',
+    key: 'max_tokens',
+    value: '64',
+    type: 'number',
+  },
+  {
+    apiType: 'openai-compatible',
+    key: 'max_output_tokens',
+    value: '64',
+    type: 'number',
+  },
+  {
+    apiType: 'openai-compatible',
+    key: 'reasoning',
+    value: '{"effort":"low"}',
+    type: 'json',
+  },
+  {
+    apiType: 'openai-responses',
+    key: 'max_completion_tokens',
+    value: '64',
+    type: 'number',
+  },
+  {
+    apiType: 'openai-responses',
+    key: 'max_output_tokens',
+    value: '64',
+    type: 'number',
+  },
+] as const

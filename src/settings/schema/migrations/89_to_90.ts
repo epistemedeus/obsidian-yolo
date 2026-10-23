@@ -1,3 +1,4 @@
+import { getDefaultApiTypeForPresetType } from '../../../types/provider.types'
 import type { SettingMigration } from '../setting.types'
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -29,6 +30,35 @@ const isDirectOpenAI = (provider: Record<string, unknown>): boolean => {
   return url === '' || url === 'https://api.openai.com/v1'
 }
 
+// Match the consumer's active-entry rules without parsing or altering values.
+// Empty entries do not undo earlier active writes, including duplicate keys.
+const activeCustomKeys = (parameters: unknown): string[] =>
+  Array.isArray(parameters)
+    ? parameters.flatMap((entry) =>
+        isRecord(entry) &&
+        typeof entry.key === 'string' &&
+        entry.key.trim() !== '' &&
+        typeof entry.value === 'string' &&
+        entry.value.trim() !== ''
+          ? [entry.key.trim()]
+          : [],
+      )
+    : []
+
+const hasUnqualifiedRequestCustomization = (
+  keys: string[],
+  apiType: unknown,
+): boolean =>
+  keys.some((key) =>
+    apiType === 'openai-compatible'
+      ? // These restore fields outside the replacement's Chat request shape
+        // after provider shaping. Explicit runtime precedence stays intact.
+        ['max_tokens', 'max_output_tokens', 'reasoning'].includes(key)
+      : // Responses forwards the Chat field unchanged; its adapter also ignores
+        // custom max_output_tokens in favor of ordinary request.max_tokens.
+        ['max_completion_tokens', 'max_output_tokens'].includes(key),
+  )
+
 // Developer diagnostics contain only fixed catalog IDs/reasons, never user
 // labels, endpoints, headers, custom parameters or credentials.
 const unresolved = (id: string, reason: string): void =>
@@ -54,6 +84,9 @@ export const migrateFrom89To90: SettingMigration['migrate'] = (data) => {
     providers.length === 1 &&
     isRecord(providers[0]) &&
     isDirectOpenAI(providers[0])
+  const apiType = isRecord(providers[0])
+    ? (providers[0].apiType ?? getDefaultApiTypeForPresetType('openai'))
+    : undefined
   const renames = new Map<string, string>()
 
   const chatModels = models.map((raw) => {
@@ -61,6 +94,7 @@ export const migrateFrom89To90: SettingMigration['migrate'] = (data) => {
     const source = REPLACEMENTS.find((entry) => entry.id === raw.id)
     if (!source) return raw
     const replacementId = `openai/${source.replacement}`
+    const customKeys = activeCustomKeys(raw.customParameters)
     let reason: string | undefined
     if (!direct) reason = 'provider identity is not uniquely direct OpenAI'
     else if (
@@ -68,17 +102,12 @@ export const migrateFrom89To90: SettingMigration['migrate'] = (data) => {
       raw.model !== source.model ||
       (raw.providerType !== undefined && raw.providerType !== 'openai') ||
       raw.baseUrl !== undefined ||
-      (Array.isArray(raw.customParameters) &&
-        raw.customParameters.some(
-          (parameter) =>
-            isRecord(parameter) &&
-            typeof parameter.key === 'string' &&
-            parameter.key.trim() === 'model' &&
-            typeof parameter.value === 'string' &&
-            parameter.value.trim() !== '',
-        ))
+      customKeys.includes('model')
     )
       reason = 'model identity is customized'
+    else if (hasUnqualifiedRequestCustomization(customKeys, apiType))
+      reason =
+        'saved request customization is incompatible or ambiguous for the replacement API'
     else if (
       models.filter((model) => isRecord(model) && model.id === source.id)
         .length !== 1
