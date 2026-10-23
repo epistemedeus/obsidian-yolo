@@ -1,0 +1,132 @@
+{
+  "at": "2026-10-23T17:05:26.116736+00:00",
+  "beforeDataHashCaveat": "Manifest seals original fixture bytes before invocation; setup copy command succeeded. A separate read/hash of each target data.json was not sampled before launch. Post-failure copies equal sealed fixtures; this is not application load/save evidence.",
+  "cases": [
+    {
+      "id": "eligible-nano",
+      "fixtureSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "eligible-o4",
+      "fixtureSha256": "aa32bae4c6169b44b4b3907b767ff5de7f53e7860dd02bff38fdc202a80022b4",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "aa32bae4c6169b44b4b3907b767ff5de7f53e7860dd02bff38fdc202a80022b4",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "held-max-tokens",
+      "fixtureSha256": "07b6c0d2375172714f600ad5aedbd756e13a140cf3bb140fc208e7c43fc5bce4",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "07b6c0d2375172714f600ad5aedbd756e13a140cf3bb140fc208e7c43fc5bce4",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "held-endpoint",
+      "fixtureSha256": "9b3034b1392a88cf03836118ac3f6bff93e6c7e0daef086913c184d55e93cfdc",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "9b3034b1392a88cf03836118ac3f6bff93e6c7e0daef086913c184d55e93cfdc",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "held-provider",
+      "fixtureSha256": "db94462123c1e0904b7114b69958cd272df74cefbbbc77c0e4446e1f3ec2d9bd",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "db94462123c1e0904b7114b69958cd272df74cefbbbc77c0e4446e1f3ec2d9bd",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "held-collision",
+      "fixtureSha256": "d5bc85db367ca009d1984ab016bcb912017aee627b68739bafe97c3d06d4acfc",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "d5bc85db367ca009d1984ab016bcb912017aee627b68739bafe97c3d06d4acfc",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "explicit-v90",
+      "fixtureSha256": "1d669e5b095fc33b5307a26433234fd664451af91a04da5d0d60fb897443bafe",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "1d669e5b095fc33b5307a26433234fd664451af91a04da5d0d60fb897443bafe",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "restored-v89",
+      "fixtureSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    },
+    {
+      "id": "malformed",
+      "fixtureSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f",
+      "preparedVaultDataSha256ObservedAfterFailedAppStart": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f",
+      "dataStillEqualsFixture": true,
+      "copiedMemberSha256": {
+        "main.js": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413",
+        "manifest.json": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e",
+        "styles.css": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+      },
+      "liveObservation": null,
+      "appLoadSaveRestartReload": "unreceived",
+      "outcome": "unrun: app failed before UI/vault/plugin load"
+    }
+  ]
+}

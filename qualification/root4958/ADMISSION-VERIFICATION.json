@@ -1,0 +1,72 @@
+{
+  "verifiedAt": "2026-10-23T16:59:07.187755+00:00",
+  "contextSha256": "3069cdb0479367fbec23041e8a604e948b935f8674902a0b7e3d4df6b94b19dc",
+  "allManifestAndNestedImmutablePointersMatch": true,
+  "mutablePredecessorRunJoinedThroughFrozenCopy": true,
+  "canonicalRun": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/RUN.json",
+  "ownAdmissionPath": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/admissions/bf4807b2-9b5f-453b-b88f-386e3745b23b/OWN-ADMISSION.json",
+  "operation": "root4998-yolo-admitted-lifecycle-20261023",
+  "session": "01a16839-cd1f-7871-a243-c794eaaf81fd",
+  "selectedClaimId": "912416ed3693469fa0d6cd04bbed3038",
+  "selectedRegistryClaimHasOwnSolAndExecutionBindings": true,
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh",
+  "jobKiB": 2097152,
+  "executionLifetime": {
+    "enrollment": {
+      "path": "/home/ubuntu/root-sol-window100337/root4998-yolo-admitted-lifecycle-20261023/LIFETIME-ENROLLMENT.json",
+      "sha256": "b5d334beb1cc441d6ea46a73fa806643868949841f94476f794af0259a7834df"
+    },
+    "host": {
+      "provider": "cursor",
+      "agentId": "bc-5f9c9a54-299d-4699-929e-589622608e64",
+      "bootId": "d9551aaa-044f-4a54-90ae-4b19ff129cac"
+    },
+    "operationId": "root4998-yolo-admitted-lifecycle-20261023",
+    "route": "finite-foreground",
+    "requiredUntil": "2026-10-23T17:15:00.000Z",
+    "checkpointBy": "2026-10-23T17:03:38.661Z",
+    "expiresAt": "2026-10-23T18:06:35.713483Z",
+    "providerRetentionGuaranteed": false
+  },
+  "nativeProcessReceipt": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/admissions/bf4807b2-9b5f-453b-b88f-386e3745b23b/NATIVE.json",
+  "ordinaryUsageAllowed": false,
+  "creditAuthorityExpires": "2026-10-23T17:15:00.000Z",
+  "creditPurchaseOrReset": false,
+  "sourceHead": "3f25806a7e4b253cb29e73d0a89a4880860a395d",
+  "stagedInputs": [
+    {
+      "path": "AGENTS.md",
+      "blob": "1948fb788970e41ca2524cb7f743e58241ba04c5",
+      "sha256": "c2dc6304ed19e7ec9d3370353408667ebb61355b0c54b8f750fa4390f59c68a3"
+    },
+    {
+      "path": "overview/STATE.md",
+      "blob": "79231f9e359ccf1538966762fb0398cfdce2aa2c",
+      "sha256": "238348e281002101e984b384421f348f9c487061724f93f6d0513519353ddc1a"
+    },
+    {
+      "path": "overview/MACHINE-COMMERCE-EXECUTION-PLAN.md",
+      "blob": "4f4181d211fccd79f5b3a80c3e18d2b24c5d3c57",
+      "sha256": "536a3a19a93a1842756f5f9d98650e2bcb31379e1c7af45dd86b2710ee496357"
+    },
+    {
+      "path": "overview/remote-worker/assignments/ROOT4958-YOLO-APPLICATION-LIFECYCLE.md",
+      "blob": "dc4c744b8344cf18a926334e7e87e2ec3df04fbc",
+      "sha256": "529113009432c6ada464cd6771e9ebf2772a8df00d274affcbec02de84bc932c"
+    }
+  ],
+  "predecessorObservation": {
+    "path": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/resumes/1792772888606-cAP4ad/RESULT.md",
+    "bytes": 258,
+    "sha256": "2d29d03546074437adc09387ac9a5f1092587c0645a9f8117c16b3a2e5eb0494"
+  },
+  "probeFirstFailure": {
+    "path": "/home/ubuntu/root-sol-window100337/root4984-yolo-app-lifecycle-20261023/RESULT.md",
+    "observation": "ENOENT: actual runner RESULT is in canonical predecessor receiptDirectory; located and preserved unchanged."
+  },
+  "priorAssignmentBlobsUnchanged": {
+    "ROOT4410-DEADLINE-COMPATIBILITY-COHORT.md": "d36e9f251c387da1613bdf2c520749e84582db60",
+    "ROOT4604-YOLO-MIGRATION-AMENDMENT.md": "9b5d5c2b1d6b098c4a458b6158b102aa5ff9fd71"
+  }
+}

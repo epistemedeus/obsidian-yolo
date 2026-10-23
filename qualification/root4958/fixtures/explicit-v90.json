@@ -1,0 +1,88 @@
+{
+  "version": 90,
+  "providers": [
+    {
+      "id": "openai",
+      "presetType": "openai",
+      "apiType": "openai-responses",
+      "additionalSettings": {
+        "requestTransportMode": "browser"
+      }
+    }
+  ],
+  "chatModels": [
+    {
+      "id": "openai/gpt-5",
+      "providerId": "openai",
+      "model": "gpt-5",
+      "enable": true
+    },
+    {
+      "id": "openai/gpt-5.6-luna",
+      "providerId": "openai",
+      "model": "gpt-5.6-luna",
+      "enable": true,
+      "customParameters": [
+        {
+          "key": "max_tokens",
+          "value": "64",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "providerId": "openai",
+      "model": "gpt-5.6-terra",
+      "enable": false,
+      "reasoningType": "openai"
+    }
+  ],
+  "chatModelId": "openai/gpt-5.6-luna",
+  "chatTitleModelId": "openai/gpt-5.6-terra",
+  "continuationOptions": {
+    "continuationModelId": "openai/gpt-5.6-luna",
+    "tabCompletionModelId": "openai/gpt-5.6-terra",
+    "primaryRequestTimeoutMs": 1000
+  },
+  "assistants": [
+    {
+      "id": "writer",
+      "name": "Writer",
+      "modelId": "openai/gpt-5.6-terra",
+      "createdAt": 1,
+      "updatedAt": 1
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "modelId": "openai/gpt-5",
+      "createdAt": 2,
+      "updatedAt": 2
+    }
+  ],
+  "chatOptions": {
+    "includeCurrentFileContent": true,
+    "reasoningLevelByModelId": {
+      "openai/gpt-5.6-luna": "off",
+      "openai/gpt-5.6-terra": "high"
+    },
+    "cliModelIdByRuntime": {
+      "codex": "gpt-4.1-nano"
+    }
+  },
+  "mcp": {
+    "builtinCapabilityOptions": {
+      "subagent_delegation": {
+        "allowedModelIds": [
+          "openai/gpt-5.6-luna",
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "preferredModelId": "openai/gpt-5.6-luna",
+        "disabled": true
+      }
+    }
+  },
+  "systemPrompt": "ROOT4958 synthetic unrelated control"
+}

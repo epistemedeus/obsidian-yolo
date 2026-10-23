@@ -1,0 +1,28 @@
+{
+  "officialEntry": "https://obsidian.md/help/install",
+  "officialDownload": "https://obsidian.md/download",
+  "officialCli": "https://obsidian.md/help/cli",
+  "officialReleaseApi": "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/tags/v1.14.5",
+  "releaseTag": "v1.14.5",
+  "releasePublishedAt": "2026-10-22T21:19:14Z",
+  "versionFromOfficialAsset": "1.14.5",
+  "runtimeVersionOutput": "not yet received",
+  "requestedUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage",
+  "redirects": [
+    {
+      "urlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/262342594/e662ca78-a4ab-4dc0-bf56-6f384ccb2524",
+      "querySha256": "38f5a4281cea1611f630903f1d6f4984424952fcf243df642775941b61c037ec",
+      "queryOmitted": "ephemeral signed public-download redirect parameters retained only in ignored private runtime"
+    }
+  ],
+  "bytes": 139238201,
+  "sha256": "306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+  "publisherAssetDigest": "sha256:306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+  "publisherAssetDigestMatches": true,
+  "separateSignatureVerification": "not established",
+  "officialIntegrityEvidence": "GitHub official publisher release asset metadata; digest presence recorded, not an independent signature attestation",
+  "downloadRawHeadersSha256": "6d0264870983d3a58b2484391b4dc3b3ef1c5afc400067b595d16b51a9726705",
+  "runtimePrivateAndIgnored": true,
+  "installStrategy": "Official AppImage, no global install; sandbox remains enabled. XDG profile/cache/data/state paths restricted to private runtime.",
+  "cliPrerequisites": "Installer>=1.12.7; enable CLI in General settings; running app required; plugin:reload id=yolo and eval code=... documented. Not yet executed."
+}

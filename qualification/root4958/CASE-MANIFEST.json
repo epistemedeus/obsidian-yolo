@@ -1,0 +1,588 @@
+{
+  "sealedAt": "2026-10-23T16:59:07.052Z",
+  "sourceHead": "3f25806a7e4b253cb29e73d0a89a4880860a395d",
+  "fixtureSource": "src/settings/schema/migrations/89_to_90.fixtures.ts",
+  "fixtureSourceSha256": "23d29ba605f6b088874e4264d4e20b1508665bcad429ab7fb1fe7f1e9220ed20",
+  "runtime": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root4998-private",
+  "builtMembers": {
+    "main.js": {
+      "bytes": 5821537,
+      "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+    },
+    "manifest.json": {
+      "bytes": 412,
+      "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+    },
+    "styles.css": {
+      "bytes": 496523,
+      "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+    }
+  },
+  "cases": [
+    {
+      "id": "eligible-nano",
+      "fixture": "qualification/root4958/fixtures/eligible-nano.json",
+      "sha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "expected": {
+        "chatModelId": "openai/gpt-5.6-luna",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-luna",
+            "providerId": "openai",
+            "model": "gpt-5.6-luna",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-5.6-luna",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-5.6-luna": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-5.6-luna",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-5.6-luna",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Both seeded aliases migrate; unrelated primary remains GPT-5.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "eligible-o4",
+      "fixture": "qualification/root4958/fixtures/eligible-o4.json",
+      "sha256": "aa32bae4c6169b44b4b3907b767ff5de7f53e7860dd02bff38fdc202a80022b4",
+      "expected": {
+        "chatModelId": "openai/gpt-5.6-terra",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-luna",
+            "providerId": "openai",
+            "model": "gpt-5.6-luna",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-5.6-luna",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-5.6-luna": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-5.6-luna",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-5.6-luna",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Disabled o4 remains disabled after replacing its saved selection.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-max-tokens",
+      "fixture": "qualification/root4958/fixtures/held-max-tokens.json",
+      "sha256": "07b6c0d2375172714f600ad5aedbd756e13a140cf3bb140fc208e7c43fc5bce4",
+      "expected": {
+        "chatModelId": "openai/gpt-4.1-nano",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-4.1-nano",
+            "providerId": "openai",
+            "model": "gpt-4.1-nano",
+            "enable": true,
+            "customParameters": [
+              {
+                "key": "max_tokens",
+                "value": "64",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-4.1-nano",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-4.1-nano": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-4.1-nano",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-4.1-nano",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-compatible",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Do not claim old-model availability.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-endpoint",
+      "fixture": "qualification/root4958/fixtures/held-endpoint.json",
+      "sha256": "9b3034b1392a88cf03836118ac3f6bff93e6c7e0daef086913c184d55e93cfdc",
+      "expected": {
+        "chatModelId": "openai/gpt-4.1-nano",
+        "chatTitleModelId": "openai/o4-mini",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-4.1-nano",
+            "providerId": "openai",
+            "model": "gpt-4.1-nano",
+            "enable": true
+          },
+          {
+            "id": "openai/o4-mini",
+            "providerId": "openai",
+            "model": "o4-mini",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-4.1-nano",
+        "tabCompletionModelId": "openai/o4-mini",
+        "assistantModelIds": [
+          "openai/o4-mini",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-4.1-nano": "off",
+          "openai/o4-mini": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-4.1-nano",
+            "openai/o4-mini",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-4.1-nano",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            },
+            "baseUrl": "https://proxy.example.invalid/v1"
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Custom endpoint does not inherit direct OpenAI authority.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-provider",
+      "fixture": "qualification/root4958/fixtures/held-provider.json",
+      "sha256": "db94462123c1e0904b7114b69958cd272df74cefbbbc77c0e4446e1f3ec2d9bd",
+      "expected": {
+        "chatModelId": "openai/gpt-4.1-nano",
+        "chatTitleModelId": "openai/o4-mini",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-4.1-nano",
+            "providerId": "openai",
+            "model": "gpt-4.1-nano",
+            "enable": true
+          },
+          {
+            "id": "openai/o4-mini",
+            "providerId": "openai",
+            "model": "o4-mini",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-4.1-nano",
+        "tabCompletionModelId": "openai/o4-mini",
+        "assistantModelIds": [
+          "openai/o4-mini",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-4.1-nano": "off",
+          "openai/o4-mini": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-4.1-nano",
+            "openai/o4-mini",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-4.1-nano",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai-compatible",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Same ID with a different provider identity stays intact.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-collision",
+      "fixture": "qualification/root4958/fixtures/held-collision.json",
+      "sha256": "d5bc85db367ca009d1984ab016bcb912017aee627b68739bafe97c3d06d4acfc",
+      "expected": {
+        "chatModelId": "openai/gpt-4.1-nano",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-4.1-nano",
+            "providerId": "openai",
+            "model": "gpt-4.1-nano",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          },
+          {
+            "id": "openai/gpt-5.6-luna",
+            "providerId": "openai",
+            "model": "explicit-deployment",
+            "enable": false,
+            "name": "Unrelated occupied destination"
+          }
+        ],
+        "continuationModelId": "openai/gpt-4.1-nano",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-4.1-nano": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-4.1-nano",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-4.1-nano",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Occupied Luna ID cannot absorb saved nano.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "explicit-v90",
+      "fixture": "qualification/root4958/fixtures/explicit-v90.json",
+      "sha256": "1d669e5b095fc33b5307a26433234fd664451af91a04da5d0d60fb897443bafe",
+      "expected": {
+        "chatModelId": "openai/gpt-5.6-luna",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-luna",
+            "providerId": "openai",
+            "model": "gpt-5.6-luna",
+            "enable": true,
+            "customParameters": [
+              {
+                "key": "max_tokens",
+                "value": "64",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-5.6-luna",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-5.6-luna": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-5.6-luna",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-5.6-luna",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Observe stored explicit override preservation; no provider request is authorized.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "restored-v89",
+      "fixture": "qualification/root4958/fixtures/restored-v89.json",
+      "sha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "expected": {
+        "chatModelId": "openai/gpt-5.6-luna",
+        "chatTitleModelId": "openai/gpt-5.6-terra",
+        "models": [
+          {
+            "id": "openai/gpt-5",
+            "providerId": "openai",
+            "model": "gpt-5",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-luna",
+            "providerId": "openai",
+            "model": "gpt-5.6-luna",
+            "enable": true
+          },
+          {
+            "id": "openai/gpt-5.6-terra",
+            "providerId": "openai",
+            "model": "gpt-5.6-terra",
+            "enable": false,
+            "reasoningType": "openai"
+          }
+        ],
+        "continuationModelId": "openai/gpt-5.6-luna",
+        "tabCompletionModelId": "openai/gpt-5.6-terra",
+        "assistantModelIds": [
+          "openai/gpt-5.6-terra",
+          "openai/gpt-5"
+        ],
+        "reasoningLevelByModelId": {
+          "openai/gpt-5.6-luna": "off",
+          "openai/gpt-5.6-terra": "high"
+        },
+        "delegation": {
+          "allowedModelIds": [
+            "openai/gpt-5.6-luna",
+            "openai/gpt-5.6-terra",
+            "openai/gpt-5"
+          ],
+          "preferredModelId": "openai/gpt-5.6-luna",
+          "disabled": true
+        },
+        "systemPrompt": "ROOT4958 synthetic unrelated control",
+        "providers": [
+          {
+            "id": "openai",
+            "presetType": "openai",
+            "apiType": "openai-responses",
+            "additionalSettings": {
+              "requestTransportMode": "browser"
+            }
+          }
+        ],
+        "cliModelIdByRuntime": {
+          "codex": "gpt-4.1-nano"
+        }
+      },
+      "note": "Separate original valid bytes for recovery; never edit the source fixture.",
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "malformed",
+      "fixture": "qualification/root4958/fixtures/malformed.txt",
+      "sha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f",
+      "expected": {
+        "notice": "settings unreadable; save refused; original malformed bytes retained"
+      },
+      "lifecycleStatus": "unrun"
+    }
+  ],
+  "actions": [
+    "Actual app/plugin load; inspect live settings using supported developer tools",
+    "Benign setting change using actual settings UI and receive setSettings/saveData",
+    "Graceful close and reopen same vault; compare persisted/live projections",
+    "Documented plugin reload or disable/re-enable, then another graceful restart",
+    "Malformed isolated vault: observe load notice/save refusal; restore separate valid copy while closed; receive recovery"
+  ],
+  "prohibited": [
+    "live inference",
+    "API keys or credentials",
+    "direct JSON writes as substitute for save lifecycle",
+    "sandbox disabling",
+    "global installation"
+  ]
+}

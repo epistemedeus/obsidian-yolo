@@ -1,0 +1,68 @@
+{
+  "command": [
+    "timeout",
+    "100",
+    "curl",
+    "--fail",
+    "--location",
+    "--max-time",
+    "90",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "runtime/root4998-private/download.headers",
+    "--output",
+    "runtime/root4998-private/Obsidian-1.14.5.AppImage",
+    "--write-out",
+    "http=%{http_code} bytes=%{size_download} final=%{url_effective}\\n",
+    "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage"
+  ],
+  "started": "2026-10-23T16:57:27.462012+00:00",
+  "finished": "2026-10-23T16:57:28.455371+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 342212,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25196,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96595,
+      "rssKiB": 12868,
+      "name": "python3"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 96599,
+      "rssKiB": 1956,
+      "name": "timeout"
+    },
+    {
+      "pid": 96600,
+      "rssKiB": 15248,
+      "name": "curl"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 220492,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/download-appimage.log"
+}

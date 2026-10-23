@@ -1,0 +1,129 @@
+[
+  {
+    "label": "app-preflight",
+    "command": [
+      "timeout",
+      "30",
+      "python3",
+      "qualification/root4958/app-preflight.py"
+    ],
+    "exit": 1,
+    "started": "2026-10-23T17:00:56.853594+00:00",
+    "finished": "2026-10-23T17:00:57.428159+00:00",
+    "aggregateSampledPeakKiB": 364296,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/app-preflight.json",
+    "log": "logs/app-preflight.log"
+  },
+  {
+    "label": "download-appimage",
+    "command": [
+      "timeout",
+      "100",
+      "curl",
+      "--fail",
+      "--location",
+      "--max-time",
+      "90",
+      "--silent",
+      "--show-error",
+      "--dump-header",
+      "runtime/root4998-private/download.headers",
+      "--output",
+      "runtime/root4998-private/Obsidian-1.14.5.AppImage",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download} final=%{url_effective}\\n",
+      "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T16:57:27.462012+00:00",
+    "finished": "2026-10-23T16:57:28.455371+00:00",
+    "aggregateSampledPeakKiB": 342212,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/download-appimage.json",
+    "log": "logs/download-appimage.log"
+  },
+  {
+    "label": "native-prerequisite-diagnostic",
+    "command": [
+      "sh",
+      "-c",
+      "ldconfig -p | rg \"libfuse\\.so\\.2\"; test -e /usr/lib/x86_64-linux-gnu/libfuse.so.2"
+    ],
+    "exit": 1,
+    "started": "2026-10-23T17:02:42.487491+00:00",
+    "finished": "2026-10-23T17:02:42.541911+00:00",
+    "aggregateSampledPeakKiB": 330868,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/native-prerequisite-diagnostic.json",
+    "log": "logs/native-prerequisite-diagnostic.log"
+  },
+  {
+    "label": "official-release-metadata",
+    "command": [
+      "timeout",
+      "30",
+      "curl",
+      "--fail",
+      "--location",
+      "--max-time",
+      "25",
+      "--silent",
+      "--show-error",
+      "--output",
+      "runtime/root4998-private/release.json",
+      "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/tags/v1.14.5"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T16:59:07.232523+00:00",
+    "finished": "2026-10-23T16:59:07.390511+00:00",
+    "aggregateSampledPeakKiB": 344744,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/official-release-metadata.json",
+    "log": "logs/official-release-metadata.log"
+  },
+  {
+    "label": "qa-javascript-syntax",
+    "command": [
+      "node",
+      "--check",
+      "qualification/root4958/prepare-cases.cjs"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T17:05:26.143275+00:00",
+    "finished": "2026-10-23T17:05:26.197897+00:00",
+    "aggregateSampledPeakKiB": 338988,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/qa-javascript-syntax.json",
+    "log": "logs/qa-javascript-syntax.log"
+  },
+  {
+    "label": "qa-python-syntax",
+    "command": [
+      "python3",
+      "-c",
+      "import ast,pathlib; ast.parse(pathlib.Path(\"qualification/root4958/app-preflight.py\").read_text()); ast.parse(pathlib.Path(\"qualification/root4958/run-bounded.py\").read_text()); print(\"QA Python source parses; no application or fixture is executed\")"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T17:05:26.223210+00:00",
+    "finished": "2026-10-23T17:05:26.277907+00:00",
+    "aggregateSampledPeakKiB": 334840,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/qa-python-syntax.json",
+    "log": "logs/qa-python-syntax.log"
+  },
+  {
+    "label": "seal-cases",
+    "command": [
+      "node",
+      "qualification/root4958/prepare-cases.cjs"
+    ],
+    "exit": 0,
+    "started": "2026-10-23T16:59:06.847246+00:00",
+    "finished": "2026-10-23T16:59:07.162048+00:00",
+    "aggregateSampledPeakKiB": 430172,
+    "resourceLimit": false,
+    "receipt": "qualification/root4958/logs/seal-cases.json",
+    "log": "logs/seal-cases.log"
+  }
+]

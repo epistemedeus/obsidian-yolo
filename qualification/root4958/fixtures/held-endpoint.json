@@ -1,0 +1,82 @@
+{
+  "version": 89,
+  "providers": [
+    {
+      "id": "openai",
+      "presetType": "openai",
+      "apiType": "openai-responses",
+      "additionalSettings": {
+        "requestTransportMode": "browser"
+      },
+      "baseUrl": "https://proxy.example.invalid/v1"
+    }
+  ],
+  "chatModels": [
+    {
+      "id": "openai/gpt-5",
+      "providerId": "openai",
+      "model": "gpt-5",
+      "enable": true
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "providerId": "openai",
+      "model": "gpt-4.1-nano",
+      "enable": true
+    },
+    {
+      "id": "openai/o4-mini",
+      "providerId": "openai",
+      "model": "o4-mini",
+      "enable": false,
+      "reasoningType": "openai"
+    }
+  ],
+  "chatModelId": "openai/gpt-4.1-nano",
+  "chatTitleModelId": "openai/o4-mini",
+  "continuationOptions": {
+    "continuationModelId": "openai/gpt-4.1-nano",
+    "tabCompletionModelId": "openai/o4-mini",
+    "primaryRequestTimeoutMs": 1000
+  },
+  "assistants": [
+    {
+      "id": "writer",
+      "name": "Writer",
+      "modelId": "openai/o4-mini",
+      "createdAt": 1,
+      "updatedAt": 1
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "modelId": "openai/gpt-5",
+      "createdAt": 2,
+      "updatedAt": 2
+    }
+  ],
+  "chatOptions": {
+    "includeCurrentFileContent": true,
+    "reasoningLevelByModelId": {
+      "openai/gpt-4.1-nano": "off",
+      "openai/o4-mini": "high"
+    },
+    "cliModelIdByRuntime": {
+      "codex": "gpt-4.1-nano"
+    }
+  },
+  "mcp": {
+    "builtinCapabilityOptions": {
+      "subagent_delegation": {
+        "allowedModelIds": [
+          "openai/gpt-4.1-nano",
+          "openai/o4-mini",
+          "openai/gpt-5"
+        ],
+        "preferredModelId": "openai/gpt-4.1-nano",
+        "disabled": true
+      }
+    }
+  },
+  "systemPrompt": "ROOT4958 synthetic unrelated control"
+}

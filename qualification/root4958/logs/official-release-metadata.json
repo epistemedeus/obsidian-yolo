@@ -1,0 +1,64 @@
+{
+  "command": [
+    "timeout",
+    "30",
+    "curl",
+    "--fail",
+    "--location",
+    "--max-time",
+    "25",
+    "--silent",
+    "--show-error",
+    "--output",
+    "runtime/root4998-private/release.json",
+    "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/tags/v1.14.5"
+  ],
+  "started": "2026-10-23T16:59:07.232523+00:00",
+  "finished": "2026-10-23T16:59:07.390511+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 344744,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25204,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96672,
+      "rssKiB": 13532,
+      "name": "curl"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 96668,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 224752,
+      "name": "codex"
+    },
+    {
+      "pid": 96671,
+      "rssKiB": 1952,
+      "name": "timeout"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/official-release-metadata.log"
+}

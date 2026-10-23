@@ -1,0 +1,55 @@
+{
+  "command": [
+    "node",
+    "--check",
+    "qualification/root4958/prepare-cases.cjs"
+  ],
+  "started": "2026-10-23T17:05:26.143275+00:00",
+  "finished": "2026-10-23T17:05:26.197897+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 338988,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25040,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96967,
+      "rssKiB": 3516,
+      "name": "bash"
+    },
+    {
+      "pid": 96970,
+      "rssKiB": 12824,
+      "name": "python3"
+    },
+    {
+      "pid": 96971,
+      "rssKiB": 6500,
+      "name": "node"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 224656,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/qa-javascript-syntax.log"
+}

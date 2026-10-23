@@ -1,0 +1,50 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "ldconfig -p | rg \"libfuse\\.so\\.2\"; test -e /usr/lib/x86_64-linux-gnu/libfuse.so.2"
+  ],
+  "started": "2026-10-23T17:02:42.487491+00:00",
+  "finished": "2026-10-23T17:02:42.541911+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 330868,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25080,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96820,
+      "rssKiB": 12840,
+      "name": "python3"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 96822,
+      "rssKiB": 1904,
+      "name": "sh"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 224592,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/native-prerequisite-diagnostic.log"
+}

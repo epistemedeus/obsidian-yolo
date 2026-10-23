@@ -1,0 +1,66 @@
+{
+  "command": [
+    "timeout",
+    "30",
+    "python3",
+    "qualification/root4958/app-preflight.py"
+  ],
+  "started": "2026-10-23T17:00:56.853594+00:00",
+  "finished": "2026-10-23T17:00:57.428159+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 364296,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25140,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96746,
+      "rssKiB": 12856,
+      "name": "python3"
+    },
+    {
+      "pid": 96748,
+      "rssKiB": 1956,
+      "name": "timeout"
+    },
+    {
+      "pid": 96749,
+      "rssKiB": 17136,
+      "name": "python3"
+    },
+    {
+      "pid": 96751,
+      "rssKiB": 15276,
+      "name": "Xvfb"
+    },
+    {
+      "pid": 96755,
+      "rssKiB": 0,
+      "name": "dbus-run-sessio"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 225480,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/app-preflight.log"
+}

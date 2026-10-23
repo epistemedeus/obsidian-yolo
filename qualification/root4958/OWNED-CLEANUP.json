@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-23T17:02:42.462044+00:00",
+  "ownedCheckProcessGroup": 96748,
+  "remainingGroupMembers": [
+    {
+      "pid": 96756,
+      "state": "Z",
+      "comm": "dbus-daemon"
+    }
+  ],
+  "recordedAppAndDisplayReaped": true,
+  "terminationScope": "Only this check group and its explicitly recorded child PIDs; no other job/cache/enrollment touched.",
+  "nativeAdmissionRelease": "Root/controller receives native terminal/admission cleanup separately; worker did not edit runner authority or reservation registry.",
+  "defunctResidual": {
+    "Name": "dbus-daemon",
+    "State": "Z (zombie)",
+    "PPid": "95765",
+    "VmRSS": null
+  },
+  "limitation": "One adopted defunct dbus-daemon PID96756 has PPid 95765 (native supervisor), awaiting parent reap. No live app/display/check-group process remains. Worker cannot wait/reap a non-child and did not signal or modify the native supervisor. Do not claim all descendants reaped."
+}

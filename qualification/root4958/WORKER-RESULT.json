@@ -1,0 +1,292 @@
+{
+  "schema": "root4958.application-lifecycle-result.v1",
+  "status": "application-lifecycle-unreceived",
+  "recordedAt": "2026-10-23T17:09:39.645178+00:00",
+  "sourceHead": "3f25806a7e4b253cb29e73d0a89a4880860a395d",
+  "sourceTree": "a24cee793f145a79a119f060808b7ec1a93d7336",
+  "base": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25",
+  "branch": "codex/root4410-b-yolo-model-migration-20261023",
+  "origin": "https://github.com/epistemedeus/obsidian-yolo.git",
+  "operation": "root4998-yolo-admitted-lifecycle-20261023",
+  "session": "01a16839-cd1f-7871-a243-c794eaaf81fd",
+  "declaredModel": "gpt-6.1-sol",
+  "declaredEffort": "xhigh",
+  "modelChildren": 0,
+  "admission": "qualification/root4958/ADMISSION-VERIFICATION.json",
+  "checkpoint": "qualification/root4958/EARLY-CHECKPOINT.json",
+  "requiredUntil": "2026-10-23T17:15:00.000Z",
+  "ordinaryUsageAllowed": false,
+  "existingCreditsOnly": true,
+  "newOrdinaryOrCreditAuthCheck": false,
+  "purchaseOrReset": false,
+  "applicationArtifact": {
+    "officialEntry": "https://obsidian.md/help/install",
+    "officialDownload": "https://obsidian.md/download",
+    "officialCli": "https://obsidian.md/help/cli",
+    "officialReleaseApi": "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/tags/v1.14.5",
+    "releaseTag": "v1.14.5",
+    "releasePublishedAt": "2026-10-22T21:19:14Z",
+    "versionFromOfficialAsset": "1.14.5",
+    "runtimeVersionOutput": "not yet received",
+    "requestedUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage",
+    "redirects": [
+      {
+        "urlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/262342594/e662ca78-a4ab-4dc0-bf56-6f384ccb2524",
+        "querySha256": "38f5a4281cea1611f630903f1d6f4984424952fcf243df642775941b61c037ec",
+        "queryOmitted": "ephemeral signed public-download redirect parameters retained only in ignored private runtime"
+      }
+    ],
+    "bytes": 139238201,
+    "sha256": "306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+    "publisherAssetDigest": "sha256:306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+    "publisherAssetDigestMatches": true,
+    "separateSignatureVerification": "not established",
+    "officialIntegrityEvidence": "GitHub official publisher release asset metadata; digest presence recorded, not an independent signature attestation",
+    "downloadRawHeadersSha256": "6d0264870983d3a58b2484391b4dc3b3ef1c5afc400067b595d16b51a9726705",
+    "runtimePrivateAndIgnored": true,
+    "installStrategy": "Official AppImage, no global install; sandbox remains enabled. XDG profile/cache/data/state paths restricted to private runtime.",
+    "cliPrerequisites": "Installer>=1.12.7; enable CLI in General settings; running app required; plugin:reload id=yolo and eval code=... documented. Not yet executed."
+  },
+  "firstAppFailure": {
+    "startedAt": "2026-10-23T17:00:56.880199+00:00",
+    "sealedManifestSha256": "bb1306821bfc8aa4549d85f5ff4a8dd776ead35d2b289016ade66cb6b1aea9c1",
+    "status": "application-lifecycle-unreceived",
+    "sandboxDisabled": false,
+    "runtime": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root4998-private",
+    "appProcessVersion": null,
+    "ownedPids": [
+      {
+        "pid": 96751,
+        "role": "private Xvfb",
+        "reaped": true
+      },
+      {
+        "pid": 96755,
+        "role": "owned application/dbus launcher",
+        "reaped": true
+      }
+    ],
+    "appInvoked": true,
+    "pluginLoaded": false,
+    "lifecycleCasesRun": 0,
+    "networkProxy": "owned loopback deny proxy; no forwarding; not a kernel egress guarantee",
+    "display": ":0",
+    "appCommand": [
+      "dbus-run-session",
+      "--",
+      "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root4998-private/Obsidian-1.14.5.AppImage",
+      "--proxy-server=http://127.0.0.1:47599"
+    ],
+    "applicationExitBeforeControl": 1,
+    "firstApplicationDiagnostic": "dlopen(): error loading libfuse.so.2\n\nAppImages require FUSE to run. \nYou might still be able to extract the contents of this AppImage \nif you run it with the --appimage-extract option. \nSee https://github.com/AppImage/AppImageKit/wiki/FUSE \nfor more information\n",
+    "boundary": "Official AppImage failed before application UI/control. Stop without sandbox disabling or unsupported retry flags.",
+    "finishedAt": "2026-10-23T17:00:57.380913+00:00"
+  },
+  "caseManifest": {
+    "path": "qualification/root4958/CASE-MANIFEST.json",
+    "sha256": "bb1306821bfc8aa4549d85f5ff4a8dd776ead35d2b289016ade66cb6b1aea9c1",
+    "cases": 9,
+    "appCasesPassed": 0,
+    "appCasesFailed": 0,
+    "appCasesUnrun": 9,
+    "distinction": "One failed application prerequisite is not a migration case failure or pass."
+  },
+  "caseObservations": "qualification/root4958/CASE-OBSERVATIONS.json",
+  "checks": [
+    {
+      "label": "app-preflight",
+      "command": [
+        "timeout",
+        "30",
+        "python3",
+        "qualification/root4958/app-preflight.py"
+      ],
+      "exit": 1,
+      "started": "2026-10-23T17:00:56.853594+00:00",
+      "finished": "2026-10-23T17:00:57.428159+00:00",
+      "aggregateSampledPeakKiB": 364296,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/app-preflight.json",
+      "log": "logs/app-preflight.log"
+    },
+    {
+      "label": "download-appimage",
+      "command": [
+        "timeout",
+        "100",
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "90",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "runtime/root4998-private/download.headers",
+        "--output",
+        "runtime/root4998-private/Obsidian-1.14.5.AppImage",
+        "--write-out",
+        "http=%{http_code} bytes=%{size_download} final=%{url_effective}\\n",
+        "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T16:57:27.462012+00:00",
+      "finished": "2026-10-23T16:57:28.455371+00:00",
+      "aggregateSampledPeakKiB": 342212,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/download-appimage.json",
+      "log": "logs/download-appimage.log"
+    },
+    {
+      "label": "native-prerequisite-diagnostic",
+      "command": [
+        "sh",
+        "-c",
+        "ldconfig -p | rg \"libfuse\\.so\\.2\"; test -e /usr/lib/x86_64-linux-gnu/libfuse.so.2"
+      ],
+      "exit": 1,
+      "started": "2026-10-23T17:02:42.487491+00:00",
+      "finished": "2026-10-23T17:02:42.541911+00:00",
+      "aggregateSampledPeakKiB": 330868,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/native-prerequisite-diagnostic.json",
+      "log": "logs/native-prerequisite-diagnostic.log"
+    },
+    {
+      "label": "official-release-metadata",
+      "command": [
+        "timeout",
+        "30",
+        "curl",
+        "--fail",
+        "--location",
+        "--max-time",
+        "25",
+        "--silent",
+        "--show-error",
+        "--output",
+        "runtime/root4998-private/release.json",
+        "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/tags/v1.14.5"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T16:59:07.232523+00:00",
+      "finished": "2026-10-23T16:59:07.390511+00:00",
+      "aggregateSampledPeakKiB": 344744,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/official-release-metadata.json",
+      "log": "logs/official-release-metadata.log"
+    },
+    {
+      "label": "qa-javascript-syntax",
+      "command": [
+        "node",
+        "--check",
+        "qualification/root4958/prepare-cases.cjs"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T17:05:26.143275+00:00",
+      "finished": "2026-10-23T17:05:26.197897+00:00",
+      "aggregateSampledPeakKiB": 338988,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/qa-javascript-syntax.json",
+      "log": "logs/qa-javascript-syntax.log"
+    },
+    {
+      "label": "qa-python-syntax",
+      "command": [
+        "python3",
+        "-c",
+        "import ast,pathlib; ast.parse(pathlib.Path(\"qualification/root4958/app-preflight.py\").read_text()); ast.parse(pathlib.Path(\"qualification/root4958/run-bounded.py\").read_text()); print(\"QA Python source parses; no application or fixture is executed\")"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T17:05:26.223210+00:00",
+      "finished": "2026-10-23T17:05:26.277907+00:00",
+      "aggregateSampledPeakKiB": 334840,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/qa-python-syntax.json",
+      "log": "logs/qa-python-syntax.log"
+    },
+    {
+      "label": "seal-cases",
+      "command": [
+        "node",
+        "qualification/root4958/prepare-cases.cjs"
+      ],
+      "exit": 0,
+      "started": "2026-10-23T16:59:06.847246+00:00",
+      "finished": "2026-10-23T16:59:07.162048+00:00",
+      "aggregateSampledPeakKiB": 430172,
+      "resourceLimit": false,
+      "receipt": "qualification/root4958/logs/seal-cases.json",
+      "log": "logs/seal-cases.log"
+    }
+  ],
+  "resource": {
+    "reserveKiB": 2097152,
+    "maximumBoundedCommandSampledAggregateKiB": 430172,
+    "applicationDisplayAttemptSampledAggregateKiB": 364296,
+    "scope": "Native descendants + owned app/display/test command + CLI wrapper + native supervisor, 50ms sampled RSS, serial commands, 128MiB margin. Not a cgroup hard cap or between-sample guarantee.",
+    "wholeTurnContinuousPeak": null,
+    "wholeTurnPeakLimitation": "Metadata hashing and read-only receipt/probe commands did not share a continuous whole-turn sampler. Exact whole-turn peak unmeasured.",
+    "guardFired": false,
+    "actualApplicationSteadyStatePeak": null,
+    "largerMinimumRequiredKiB": null
+  },
+  "cleanup": {
+    "at": "2026-10-23T17:02:42.462044+00:00",
+    "ownedCheckProcessGroup": 96748,
+    "remainingGroupMembers": [
+      {
+        "pid": 96756,
+        "state": "Z",
+        "comm": "dbus-daemon"
+      }
+    ],
+    "recordedAppAndDisplayReaped": true,
+    "terminationScope": "Only this check group and its explicitly recorded child PIDs; no other job/cache/enrollment touched.",
+    "nativeAdmissionRelease": "Root/controller receives native terminal/admission cleanup separately; worker did not edit runner authority or reservation registry.",
+    "defunctResidual": {
+      "Name": "dbus-daemon",
+      "State": "Z (zombie)",
+      "PPid": "95765",
+      "VmRSS": null
+    },
+    "limitation": "One adopted defunct dbus-daemon PID96756 has PPid 95765 (native supervisor), awaiting parent reap. No live app/display/check-group process remains. Worker cannot wait/reap a non-child and did not signal or modify the native supervisor. Do not claim all descendants reaped."
+  },
+  "preservation": {
+    "sourceChanged": false,
+    "packageLockOrVersionsChanged": false,
+    "priorQualificationChanged": false,
+    "prior4984Observation": "qualification/root4958/ROOT4984-UNCHANGED-OBSERVATION.txt",
+    "oldSourceTestResultsReplayed": false,
+    "runnerOwnedReceiptsEdited": false,
+    "otherJobsOrEnrollmentsChanged": false,
+    "privateRuntime": "runtime/root4998-private/",
+    "privateRuntimeGitIgnored": true
+  },
+  "knownUnknowns": [
+    "Actual running Obsidian version and plugin load unreceived",
+    "Eligible/held/explicitv90/malformed/recovery cases remain unrun in app",
+    "No actual UI settings change/save, graceful app restart or plugin reload received",
+    "Private FUSE/extraction alternatives and subsequent sandbox compatibility not attempted; no universal host impossibility claim",
+    "Original ROOT4464-Z-INPUT.json filename not located under staged root-sol paths; current immutable SOURCE-BINDING/RUN/own admission/source matched",
+    "OY-1 missing-record normalization pre-existing and unchanged",
+    "Original full-lint formatting/resource limitation unchanged",
+    "Maintainer approval, installed customer behavior, live provider availability/quality/shutdown unreceived"
+  ],
+  "unmetCondition": "Official AppImage invocation exited1 before UI: missing libfuse.so.2. Stop at first bounded application setup failure; no source fix is justified.",
+  "contribution": {
+    "upstreamContactOrPR": false,
+    "duplicateAlignmentQuestion": false,
+    "providerInferenceOrCredentials": false,
+    "globalInstallOrSandboxDisable": false,
+    "customerOrSyncedVault": false,
+    "aiAssisted": true
+  },
+  "export": {
+    "scope": "qualification/root4958 only",
+    "changedPaths": "qualification/root4958/CHANGED-PATHS.txt",
+    "finalHeadTreeAndPushReadback": "controller ROOT4958-WORKER-HANDBACK.json outside product repo records final identity after packet commit",
+    "controllerRoot": "/home/ubuntu/root-sol-window100337/root4998-yolo-admitted-lifecycle-20261023/"
+  }
+}

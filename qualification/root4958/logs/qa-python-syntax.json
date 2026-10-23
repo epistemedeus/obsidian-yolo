@@ -1,0 +1,50 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import ast,pathlib; ast.parse(pathlib.Path(\"qualification/root4958/app-preflight.py\").read_text()); ast.parse(pathlib.Path(\"qualification/root4958/run-bounded.py\").read_text()); print(\"QA Python source parses; no application or fixture is executed\")"
+  ],
+  "started": "2026-10-23T17:05:26.223210+00:00",
+  "finished": "2026-10-23T17:05:26.277907+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 334840,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 95773,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 96384,
+      "rssKiB": 25040,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 96967,
+      "rssKiB": 12844,
+      "name": "python3"
+    },
+    {
+      "pid": 96978,
+      "rssKiB": 5848,
+      "name": "python3"
+    },
+    {
+      "pid": 95765,
+      "rssKiB": 12908,
+      "name": "python3"
+    },
+    {
+      "pid": 95766,
+      "rssKiB": 53544,
+      "name": "node"
+    },
+    {
+      "pid": 95773,
+      "rssKiB": 224656,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/qa-python-syntax.log"
+}

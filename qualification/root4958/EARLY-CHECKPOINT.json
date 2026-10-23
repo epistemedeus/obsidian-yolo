@@ -1,0 +1,50 @@
+{
+  "status": "application-lifecycle-unreceived",
+  "at": "2026-10-23T17:02:42.460499+00:00",
+  "checkpointBy": "2026-10-23T17:03:38.661Z",
+  "requiredUntil": "2026-10-23T17:15:00.000Z",
+  "sourceHead": "3f25806a7e4b253cb29e73d0a89a4880860a395d",
+  "completed": [
+    "Immutable context, nested receipt hashes, canonical same-operation RUN/admission/spec/claim/source/lifetime joined",
+    "Official AppImage1.14.5 acquired and publisher digest matched",
+    "Nine credential-free expected cases sealed before app invocation",
+    "Bounded actual sandboxed AppImage/Xvfb attempt; first failure preserved; owned PIDs reaped"
+  ],
+  "unmetCondition": "Official AppImage cannot load libfuse.so.2; Obsidian UI/plugin load-save-restart-reload and malformed/recovery receiving all remain unrun. No sandbox disabling or retry flags used.",
+  "preflight": {
+    "startedAt": "2026-10-23T17:00:56.880199+00:00",
+    "sealedManifestSha256": "bb1306821bfc8aa4549d85f5ff4a8dd776ead35d2b289016ade66cb6b1aea9c1",
+    "status": "application-lifecycle-unreceived",
+    "sandboxDisabled": false,
+    "runtime": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root4998-private",
+    "appProcessVersion": null,
+    "ownedPids": [
+      {
+        "pid": 96751,
+        "role": "private Xvfb",
+        "reaped": true
+      },
+      {
+        "pid": 96755,
+        "role": "owned application/dbus launcher",
+        "reaped": true
+      }
+    ],
+    "appInvoked": true,
+    "pluginLoaded": false,
+    "lifecycleCasesRun": 0,
+    "networkProxy": "owned loopback deny proxy; no forwarding; not a kernel egress guarantee",
+    "display": ":0",
+    "appCommand": [
+      "dbus-run-session",
+      "--",
+      "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root4998-private/Obsidian-1.14.5.AppImage",
+      "--proxy-server=http://127.0.0.1:47599"
+    ],
+    "applicationExitBeforeControl": 1,
+    "firstApplicationDiagnostic": "dlopen(): error loading libfuse.so.2\n\nAppImages require FUSE to run. \nYou might still be able to extract the contents of this AppImage \nif you run it with the --appimage-extract option. \nSee https://github.com/AppImage/AppImageKit/wiki/FUSE \nfor more information\n",
+    "boundary": "Official AppImage failed before application UI/control. Stop without sandbox disabling or unsupported retry flags.",
+    "finishedAt": "2026-10-23T17:00:57.380913+00:00"
+  },
+  "remainingWork": "Package useful QA/provenance/first failure, verify ignored runtime and unchanged old source/evidence, commit/push/readback and final controller handbacks."
+}
