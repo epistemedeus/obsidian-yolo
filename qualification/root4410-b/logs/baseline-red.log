@@ -1,0 +1,746 @@
+npm warn Unknown env config "jobs". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+FAIL src/settings/schema/migrations/89_to_90.test.ts
+  v89 model retirement migration through the normal settings chain
+    ✕ updates the catalog without changing fresh empty settings or primary chat default (6 ms)
+    ✕ migrates saved selections, reasoning preferences and all owning reference slots (7 ms)
+    ✕ preserves labels, tuning, explicit modalities, order, credentials and unrelated selections (3 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"presetType":"openai-compatible"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"presetType":"azure-openai"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"presetType":"openai","type":"openai-compatible"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"presetType":"openai","apiType":"anthropic"} (2 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"baseUrl":"https://proxy.example/v1"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com.evil.example/v1"} (2 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com/v1?proxy=true"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"baseUrl":"http://api.openai.com/v1"} (1 ms)
+    ✕ holds a same-ID provider whose identity is customized: {"baseUrl":"https://user:secret@api.openai.com/v1"} (1 ms)
+    ✕ preserves a customized model byte-for-byte: {"providerId":"custom-openai"} (1 ms)
+    ✕ preserves a customized model byte-for-byte: {"model":"my-deployment"}
+    ✕ preserves a customized model byte-for-byte: {"model":"gpt-4.1-nano-2025-04-14"}
+    ✕ preserves a customized model byte-for-byte: {"id":"my-nano"}
+    ✕ preserves a customized model byte-for-byte: {"providerType":"openai-compatible"} (1 ms)
+    ✕ preserves a customized model byte-for-byte: {"customParameters":[{"key":"model","value":"another-model"}]}
+    ✕ accepts the exact direct endpoint:  (1 ms)
+    ✕ accepts the exact direct endpoint: https://api.openai.com/v1 (1 ms)
+    ✕ accepts the exact direct endpoint:  https://api.openai.com/v1/
+    ✕ recognizes the provider type alias that the owning schema still accepts (1 ms)
+    ✕ holds duplicate source IDs or any replacement ID collision
+    ✕ holds duplicate source IDs or any replacement ID collision
+    ✕ holds duplicate source IDs or any replacement ID collision (1 ms)
+    ✕ holds duplicate source IDs or any replacement ID collision (5 ms)
+    ✕ does not rewrite a selected missing record or invent a replacement (1 ms)
+    ✕ holds duplicate providers and preserves an absent provider list (1 ms)
+
+  ● v89 model retirement migration through the normal settings chain › updates the catalog without changing fresh empty settings or primary chat default
+
+    expect(received).toContainEqual(expected) // deep equality
+
+    Expected value: ObjectContaining {"enable": true, "id": "openai/gpt-5.6-luna", "model": "gpt-5.6-luna", "providerId": "openai", "reasoningType": "openai"}
+    Received array: [{"enable": false, "id": "anthropic/claude-sonnet-4.0", "model": "claude-sonnet-4-0", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-opus-4.1", "model": "claude-opus-4-1", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.7-sonnet", "model": "claude-3-7-sonnet-latest", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.5-sonnet", "model": "claude-3-5-sonnet-latest", "providerId": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.5-haiku", "model": "claude-3-5-haiku-latest", "providerId": "anthropic"}, {"enable": true, "id": "openai/gpt-5", "model": "gpt-5", "providerId": "openai"}, {"enable": false, "id": "chatgpt-oauth/gpt-5.3-codex-spark", "model": "gpt-5.3-codex-spark", "name": "GPT-5.3 Codex Spark", "providerId": "chatgpt-oauth", "reasoningType": "openai"}, {"enable": false, "id": "chatgpt-oauth/gpt-5.4", "model": "gpt-5.4", "name": "GPT-5.4", "providerId": "chatgpt-oauth", "reasoningType": "openai"}, {"enable": false, "id": "openai/gpt-5-mini", "model": "gpt-5-mini", "providerId": "openai"}, {"enable": false, "id": "openai/gpt-5-nano", "model": "gpt-5-nano", "providerId": "openai"}, …]
+
+      35 |       [terraId, 'gpt-5.6-terra', false],
+      36 |     ]) {
+    > 37 |       expect(DEFAULT_CHAT_MODELS).toContainEqual(
+         |                                   ^
+      38 |         expect.objectContaining({ id, model, providerId: 'openai', enable, reasoningType: 'openai' }),
+      39 |       )
+      40 |       expect(resolveKnownMaxContextTokens(model as string)).toBe(1050000)
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:37:35)
+
+  ● v89 model retirement migration through the normal settings chain › migrates saved selections, reasoning preferences and all owning reference slots
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 90
+    Received: 89
+
+      51 |     const before = JSON.stringify(raw)
+      52 |     const result = parseYoloSettings(raw)
+    > 53 |     expect(result.version).toBe(90)
+         |                            ^
+      54 |     expect(result.chatModels.map((m) => m.id)).toEqual([primaryV89.id, lunaId, terraId])
+      55 |     expect(result.chatModels[1]).toMatchObject({ model: 'gpt-5.6-luna', providerId: 'openai', enable: true, reasoningType: 'openai' })
+      56 |     expect(result.chatModels[2]).toMatchObject({ model: 'gpt-5.6-terra', providerId: 'openai', enable: false })
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:53:28)
+
+  ● v89 model retirement migration through the normal settings chain › preserves labels, tuning, explicit modalities, order, credentials and unrelated selections
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 3
+    + Received  + 2
+
+    @@ -6,19 +6,18 @@
+              "type": "number",
+              "value": "7",
+            },
+          ],
+          "enable": false,
+    -     "id": "openai/gpt-5.6-luna",
+    +     "id": "openai/gpt-4.1-nano",
+          "maxContextTokens": 8192,
+          "modalities": Array [
+            "text",
+          ],
+    -     "model": "gpt-5.6-luna",
+    +     "model": "gpt-4.1-nano",
+          "name": "My classifier",
+          "providerId": "openai",
+    -     "reasoningType": "openai",
+          "temperature": 0.4,
+          "topP": 0.8,
+        },
+        Object {
+          "enable": true,
+
+      78 |     }
+      79 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 80 |     expect(result.chatModels).toEqual([{ ...raw.chatModels[0], id: lunaId, model: 'gpt-5.6-luna', reasoningType: 'openai' }, primaryV89])
+         |                               ^
+      81 |     expect(result.providers).toBe(raw.providers)
+      82 |     expect(result.chatModelId).toBe(primaryV89.id)
+      83 |     expect(result.chatTitleModelId).toBe(primaryV89.id)
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:80:31)
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"presetType":"openai-compatible"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -75,7 +75,7 @@
+            "id": "openai",
+            "presetType": "openai-compatible",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"presetType":"azure-openai"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -75,7 +75,7 @@
+            "id": "openai",
+            "presetType": "azure-openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"presetType":"openai","type":"openai-compatible"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "presetType": "openai",
+            "type": "openai-compatible",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"presetType":"openai","apiType":"anthropic"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -75,7 +75,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"baseUrl":"https://proxy.example/v1"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com.evil.example/v1"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com/v1?proxy=true"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"baseUrl":"http://api.openai.com/v1"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › holds a same-ID provider whose identity is customized: {"baseUrl":"https://user:secret@api.openai.com/v1"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -76,7 +76,7 @@
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+        "systemPrompt": "Preserve this user setting.",
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+       97 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, ...overrides }] }
+       98 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    >  99 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      100 |     expect(warning).toHaveBeenCalled()
+      101 |     expect(JSON.stringify(warning.mock.calls)).not.toContain('secret')
+      102 |   })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:99:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"providerId":"custom-openai"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -17,7 +17,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"model":"my-deployment"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -17,7 +17,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"model":"gpt-4.1-nano-2025-04-14"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -17,7 +17,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"id":"my-nano"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -17,7 +17,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"providerType":"openai-compatible"}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -18,7 +18,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › preserves a customized model byte-for-byte: {"customParameters":[{"key":"model","value":"another-model"}]}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -23,7 +23,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      113 |     const raw = { version: 89, providers: [openaiV89], chatModels: [model], chatModelId: model.id }
+      114 |     const result = migrateYoloSettingsData(freezeDeep(raw))
+    > 115 |     expect(result).toEqual({ ...raw, version: 90 })
+          |                    ^
+      116 |     expect(JSON.stringify(result.chatModels)).toBe(JSON.stringify(raw.chatModels))
+      117 |   })
+      118 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:115:20
+
+  ● v89 model retirement migration through the normal settings chain › accepts the exact direct endpoint:
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "openai/gpt-5.6-luna"
+    Received: "openai/gpt-4.1-nano"
+
+      119 |   it.each(['', 'https://api.openai.com/v1', ' https://api.openai.com/v1/ '])('accepts the exact direct endpoint: %s', (baseUrl) => {
+      120 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, baseUrl }] }
+    > 121 |     expect(parseYoloSettings(raw).chatModelId).toBe(lunaId)
+          |                                                ^
+      122 |   })
+      123 |
+      124 |   it('recognizes the provider type alias that the owning schema still accepts', () => {
+
+      at src/settings/schema/migrations/89_to_90.test.ts:121:48
+
+  ● v89 model retirement migration through the normal settings chain › accepts the exact direct endpoint: https://api.openai.com/v1
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "openai/gpt-5.6-luna"
+    Received: "openai/gpt-4.1-nano"
+
+      119 |   it.each(['', 'https://api.openai.com/v1', ' https://api.openai.com/v1/ '])('accepts the exact direct endpoint: %s', (baseUrl) => {
+      120 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, baseUrl }] }
+    > 121 |     expect(parseYoloSettings(raw).chatModelId).toBe(lunaId)
+          |                                                ^
+      122 |   })
+      123 |
+      124 |   it('recognizes the provider type alias that the owning schema still accepts', () => {
+
+      at src/settings/schema/migrations/89_to_90.test.ts:121:48
+
+  ● v89 model retirement migration through the normal settings chain › accepts the exact direct endpoint:  https://api.openai.com/v1/
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "openai/gpt-5.6-luna"
+    Received: "openai/gpt-4.1-nano"
+
+      119 |   it.each(['', 'https://api.openai.com/v1', ' https://api.openai.com/v1/ '])('accepts the exact direct endpoint: %s', (baseUrl) => {
+      120 |     const raw = { ...selectedV89(), providers: [{ ...openaiV89, baseUrl }] }
+    > 121 |     expect(parseYoloSettings(raw).chatModelId).toBe(lunaId)
+          |                                                ^
+      122 |   })
+      123 |
+      124 |   it('recognizes the provider type alias that the owning schema still accepts', () => {
+
+      at src/settings/schema/migrations/89_to_90.test.ts:121:48
+
+  ● v89 model retirement migration through the normal settings chain › recognizes the provider type alias that the owning schema still accepts
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "openai/gpt-5.6-luna"
+    Received: "openai/gpt-4.1-nano"
+
+      124 |   it('recognizes the provider type alias that the owning schema still accepts', () => {
+      125 |     const { presetType: _, apiType: __, ...rest } = openaiV89
+    > 126 |     expect(parseYoloSettings({ ...selectedV89(), providers: [{ ...rest, type: 'openai' }] }).chatModelId).toBe(lunaId)
+          |                                                                                                           ^
+      127 |   })
+      128 |
+      129 |   it.each([
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:126:107)
+
+  ● v89 model retirement migration through the normal settings chain › holds duplicate source IDs or any replacement ID collision
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -23,7 +23,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      134 |   ])('holds duplicate source IDs or any replacement ID collision', (...chatModels) => {
+      135 |     const raw = { version: 89, providers: [openaiV89], chatModels, chatModelId: nanoV89.id }
+    > 136 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      137 |     expect(warning).toHaveBeenCalled()
+      138 |   })
+      139 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:136:54
+
+  ● v89 model retirement migration through the normal settings chain › holds duplicate source IDs or any replacement ID collision
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -23,7 +23,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      134 |   ])('holds duplicate source IDs or any replacement ID collision', (...chatModels) => {
+      135 |     const raw = { version: 89, providers: [openaiV89], chatModels, chatModelId: nanoV89.id }
+    > 136 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      137 |     expect(warning).toHaveBeenCalled()
+      138 |   })
+      139 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:136:54
+
+  ● v89 model retirement migration through the normal settings chain › holds duplicate source IDs or any replacement ID collision
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -22,7 +22,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      134 |   ])('holds duplicate source IDs or any replacement ID collision', (...chatModels) => {
+      135 |     const raw = { version: 89, providers: [openaiV89], chatModels, chatModelId: nanoV89.id }
+    > 136 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      137 |     expect(warning).toHaveBeenCalled()
+      138 |   })
+      139 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:136:54
+
+  ● v89 model retirement migration through the normal settings chain › holds duplicate source IDs or any replacement ID collision
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -22,7 +22,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      134 |   ])('holds duplicate source IDs or any replacement ID collision', (...chatModels) => {
+      135 |     const raw = { version: 89, providers: [openaiV89], chatModels, chatModelId: nanoV89.id }
+    > 136 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      137 |     expect(warning).toHaveBeenCalled()
+      138 |   })
+      139 |
+
+      at src/settings/schema/migrations/89_to_90.test.ts:136:54
+
+  ● v89 model retirement migration through the normal settings chain › does not rewrite a selected missing record or invent a replacement
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -17,7 +17,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      140 |   it('does not rewrite a selected missing record or invent a replacement', () => {
+      141 |     const raw = { version: 89, providers: [openaiV89], chatModels: [primaryV89], chatModelId: nanoV89.id }
+    > 142 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      143 |     // The normal loader's existing missing-reference fallback is unchanged.
+      144 |     expect(parseYoloSettings(raw).chatModelId).toBe(primaryV89.id)
+      145 |     expect(warning).toHaveBeenCalled()
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:142:54)
+
+  ● v89 model retirement migration through the normal settings chain › holds duplicate providers and preserves an absent provider list
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -26,7 +26,7 @@
+            "apiType": "openai-responses",
+            "id": "openai",
+            "presetType": "openai-compatible",
+          },
+        ],
+    -   "version": 90,
+    +   "version": 89,
+      }
+
+      148 |   it('holds duplicate providers and preserves an absent provider list', () => {
+      149 |     const raw = { version: 89, providers: [openaiV89, { ...openaiV89, presetType: 'openai-compatible' }], chatModels: [nanoV89], chatModelId: nanoV89.id }
+    > 150 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({ ...raw, version: 90 })
+          |                                                      ^
+      151 |     const absent = { version: 89, chatModels: [nanoV89], chatModelId: nanoV89.id }
+      152 |     expect(migrateYoloSettingsData(freezeDeep(absent))).toEqual({ ...absent, version: 90 })
+      153 |   })
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:150:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       28 failed, 28 total
+Snapshots:   0 total
+Time:        3.145 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90.test.ts/i.

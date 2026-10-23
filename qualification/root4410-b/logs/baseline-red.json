@@ -1,0 +1,45 @@
+{
+  "command": [
+    "npx",
+    "jest",
+    "src/settings/schema/migrations/89_to_90.test.ts",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T10:12:41.984564+00:00",
+  "finished": "2026-10-23T10:12:46.221834+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 688864,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 65536,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "peakProcesses": [
+    {
+      "pid": 14786,
+      "rssKiB": 12840,
+      "name": "python3"
+    },
+    {
+      "pid": 14787,
+      "rssKiB": 84572,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 14804,
+      "rssKiB": 372592,
+      "name": "node"
+    },
+    {
+      "pid": 14803,
+      "rssKiB": 1716,
+      "name": "sh"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 217144,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/baseline-red.log"
+}

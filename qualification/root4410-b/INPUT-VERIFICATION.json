@@ -1,0 +1,30 @@
+[
+  {
+    "role": "instructions",
+    "path": "AGENTS.md",
+    "expectedSha256": "5054aa9c80d1a146db66e0689349c036ce1c3cbeddc974513ceced8e39db7e16",
+    "actualSha256": "5054aa9c80d1a146db66e0689349c036ce1c3cbeddc974513ceced8e39db7e16",
+    "match": true
+  },
+  {
+    "role": "state",
+    "path": "overview/STATE.md",
+    "expectedSha256": "a7c58a7d611d2c3ec365aeaf4f6c208eb5e60eac0c314d703d96fd6c089bae67",
+    "actualSha256": "a7c58a7d611d2c3ec365aeaf4f6c208eb5e60eac0c314d703d96fd6c089bae67",
+    "match": true
+  },
+  {
+    "role": "execution-plan",
+    "path": "overview/MACHINE-COMMERCE-EXECUTION-PLAN.md",
+    "expectedSha256": "c744ef2b45330e86a1ec9df02ddbec594178c537d29df6a30af922ea4ba2b162",
+    "actualSha256": "c744ef2b45330e86a1ec9df02ddbec594178c537d29df6a30af922ea4ba2b162",
+    "match": true
+  },
+  {
+    "role": "assignment",
+    "path": "overview/remote-worker/assignments/ROOT4410-DEADLINE-COMPATIBILITY-COHORT.md",
+    "expectedSha256": "91853c553e27afe24c105556261076ed63e0cbae6e6330bf0f32d6669843332d",
+    "actualSha256": "91853c553e27afe24c105556261076ed63e0cbae6e6330bf0f32d6669843332d",
+    "match": true
+  }
+]

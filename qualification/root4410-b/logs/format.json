@@ -1,0 +1,53 @@
+{
+  "command": [
+    "npx",
+    "prettier",
+    "--write",
+    "src/constants.ts",
+    "src/settings/schema/migrations/89_to_90.ts",
+    "src/settings/schema/migrations/89_to_90.test.ts",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+    "src/settings/schema/migrations/89_to_90.fixtures.ts",
+    "src/settings/schema/migrations/index.ts",
+    "src/settings/schema/migrations/version.ts",
+    "src/core/llm/openaiCompatibleProvider.ts",
+    "src/utils/llm/model-capability-registry.ts"
+  ],
+  "started": "2026-10-23T10:18:45.159789+00:00",
+  "finished": "2026-10-23T10:18:45.901402+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 426484,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 65536,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "peakProcesses": [
+    {
+      "pid": 15272,
+      "rssKiB": 12856,
+      "name": "python3"
+    },
+    {
+      "pid": 15273,
+      "rssKiB": 87056,
+      "name": "npm exec pretti"
+    },
+    {
+      "pid": 15290,
+      "rssKiB": 107396,
+      "name": "node"
+    },
+    {
+      "pid": 15289,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 217400,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/format.log"
+}

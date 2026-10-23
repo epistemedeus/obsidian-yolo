@@ -1,0 +1,65 @@
+{
+  "command": [
+    "bash",
+    "qualification/root4410-b/baseline.sh",
+    "provider"
+  ],
+  "started": "2026-10-23T10:32:52.005359+00:00",
+  "finished": "2026-10-23T10:32:55.913173+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 777152,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 25056,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 16966,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 16967,
+      "rssKiB": 358712,
+      "name": "node"
+    },
+    {
+      "pid": 16937,
+      "rssKiB": 12856,
+      "name": "python3"
+    },
+    {
+      "pid": 16938,
+      "rssKiB": 3468,
+      "name": "bash"
+    },
+    {
+      "pid": 16952,
+      "rssKiB": 87068,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 221988,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/provider-baseline-final.log"
+}

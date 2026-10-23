@@ -1,0 +1,64 @@
+{
+  "command": [
+    "npx",
+    "jest",
+    "src/settings/schema",
+    "src/core/llm",
+    "src/utils/llm/provider-config.test.ts",
+    "src/utils/llm/model-capability-registry.test.ts",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T10:29:21.084277+00:00",
+  "finished": "2026-10-23T10:29:28.088547+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 855660,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 25188,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 16453,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 16454,
+      "rssKiB": 442292,
+      "name": "node"
+    },
+    {
+      "pid": 16439,
+      "rssKiB": 86124,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 16438,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 221200,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/focused-final.log"
+}

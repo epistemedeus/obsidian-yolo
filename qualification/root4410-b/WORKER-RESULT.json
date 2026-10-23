@@ -1,0 +1,1209 @@
+{
+  "schema": "root4410-b.worker-result.v1",
+  "outcome": "implemented and tested offline; full lint remains limited",
+  "owner": "ROOT4410-B",
+  "origin": {
+    "scheme": "https",
+    "host": "github.com",
+    "path": "epistemedeus/obsidian-yolo.git",
+    "userinfo": false
+  },
+  "writerBranch": "codex/root4410-b-yolo-model-migration-20261023",
+  "base": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25",
+  "baseTree": "29cafb49f963fc2bc01fa70f24b4b5fb32e8f047",
+  "implementationHead": "1e9e1e17b38a4208cb14f12b8969fca8f056a583",
+  "implementationTree": "26e574114727627c6930a8fd6a4ff72ff22317ea",
+  "exportIdentityNote": "The qualification-only child commit contains this packet; its final export head/tree and push readback are returned in the worker final message, avoiding self-referential commit hashes.",
+  "changedSourcePaths": [
+    "src/constants.ts",
+    "src/core/llm/openaiCompatibleProvider.ts",
+    "src/settings/schema/migrations/89_to_90.fixtures.ts",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+    "src/settings/schema/migrations/89_to_90.test.ts",
+    "src/settings/schema/migrations/89_to_90.ts",
+    "src/settings/schema/migrations/index.ts",
+    "src/settings/schema/migrations/version.ts",
+    "src/utils/llm/model-capability-registry.ts"
+  ],
+  "sourceManifest": [
+    {
+      "path": "src/constants.ts",
+      "sha256": "afdf724dd35dcdad6d6a0231dae59d3c40b37cab85ec06ad01c394326a94ba87"
+    },
+    {
+      "path": "src/core/llm/openaiCompatibleProvider.ts",
+      "sha256": "a616caeba02f7c2f0a5a490bbfe4cbd4ef78729ea43a2c6812910be006517a4d"
+    },
+    {
+      "path": "src/settings/schema/migrations/89_to_90.fixtures.ts",
+      "sha256": "37edc77c6bab2d78c693596d5f65b22a2217eb41715673315d63c2e739b3cf93"
+    },
+    {
+      "path": "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+      "sha256": "f4a52751692f75d713087b39faaf23924c0cfb90630f496be7fbe08fa20e7276"
+    },
+    {
+      "path": "src/settings/schema/migrations/89_to_90.test.ts",
+      "sha256": "3a4cd19e941631bcbdb12e5c037ad3956fc43046966d62e80706129de92377d8"
+    },
+    {
+      "path": "src/settings/schema/migrations/89_to_90.ts",
+      "sha256": "2690ca0d430eb44b00b0e3b5d482473e7014bdba7dd0e1c1e2049b02d29c65cf"
+    },
+    {
+      "path": "src/settings/schema/migrations/index.ts",
+      "sha256": "e916cb5e7a6c32bd8fe5972ed8692d46aede6c018fef77a23a3618defdc4d3b6"
+    },
+    {
+      "path": "src/settings/schema/migrations/version.ts",
+      "sha256": "b3c2e0def929bddebf8ee1810eff96abf3428700f021d5f950de833d86b65f54"
+    },
+    {
+      "path": "src/utils/llm/model-capability-registry.ts",
+      "sha256": "f26659d35a4973d474373fbc882eeecf4837a841fdbb2cc3db2b28d5d3f889e1"
+    }
+  ],
+  "qualificationPath": "qualification/root4410-b/",
+  "package": {
+    "name": "obsidian-yolo",
+    "version": "1.6.12",
+    "packageSha256": "6926d85d76e60c6921fde561ef65ad4aa1a8dfd8bdfdca8345f608aeca3b771f",
+    "lockfile": "package-lock.json",
+    "lockSha256": "5371aec26e72be83af7fb4c4f185cd121ddbb91b08c3f773a307ec78843dd783"
+  },
+  "runtime": {
+    "openai": "4.91.1",
+    "jest": "29.7.0",
+    "typescript": "5.6.2",
+    "ts-jest": "29.2.5",
+    "esbuild": "0.17.3",
+    "obsidian": "1.8.7",
+    "node": "v22.23.4",
+    "npm": "10.9.9"
+  },
+  "admission": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "modelChildren": 0,
+    "reserveKiB": 2097152,
+    "checkpointBy": "2026-10-23T13:34:13.591Z",
+    "requiredUntil": "2026-10-23T13:49:13.591Z",
+    "hostProvider": "cursor",
+    "bootId": "d9551aaa-044f-4a54-90ae-4b19ff129cac"
+  },
+  "inputs": {
+    "operatingCommit": "8aded3ca3bb5f22b32454f962091ef3750715a76",
+    "receiptSha256": "214cd8ef32c21041b90e79dc16353c9d1ae4b89c1c7b9a323471c4967c0f0474",
+    "memberVerification": "INPUT-VERIFICATION.json"
+  },
+  "implementation": {
+    "schema": "89 -> 90 in the existing migration chain",
+    "replacements": {
+      "openai/gpt-4.1-nano": "openai/gpt-5.6-luna",
+      "openai/o4-mini": "openai/gpt-5.6-terra"
+    },
+    "primaryChatDefault": "openai/gpt-5 (unchanged)",
+    "titleDefault": "openai/gpt-4.1-mini (unchanged)",
+    "identity": "exact seeded ID/provider/model; one direct OpenAI provider; exact/default official endpoint; free destination and reasoning key",
+    "holds": [
+      "custom provider/type/base URL/model",
+      "custom model override",
+      "renamed IDs and snapshot pins",
+      "duplicate source or provider IDs",
+      "occupied replacement ID",
+      "existing replacement reasoning preference"
+    ],
+    "references": [
+      "chatModelId",
+      "chatTitleModelId",
+      "continuationModelId",
+      "tabCompletionModelId",
+      "assistant.modelId",
+      "subagent allowed/preferred IDs",
+      "reasoningLevelByModelId"
+    ],
+    "providerSeam": "only the two direct OpenAI target models: max_completion_tokens and reasoning_effort on Chat Completions, streaming and buffered; explicit custom parameters applied afterwards",
+    "preserved": [
+      "providers and credentials",
+      "custom endpoints/models",
+      "ordering and labels",
+      "enable/disable choices",
+      "sampling/context/modalities configuration",
+      "unrelated pins/settings",
+      "locks and generated tracked artifacts"
+    ]
+  },
+  "receiving": {
+    "normalLoad": "real temporary synthetic v89 data.json -> host metadata extraction -> existing parser/migration/normalizer -> resolver -> real provider -> locked SDK capture and output parsing",
+    "positive": "both target models over Responses and Chat Completions; chat SDK streaming; useful content and usage",
+    "adverse": [
+      "HTTP 400/401/429/500",
+      "network failure",
+      "malformed response",
+      "custom/proxy full identities",
+      "duplicate resolver IDs",
+      "collision and disabled records",
+      "missing record and invalid-field controls"
+    ],
+    "recovery": "same provider succeeds after failures; repeat load and re-applied migration are idempotent; frozen input not mutated",
+    "egress": "fetch captured in memory; http/https request guards asserted unused; synthetic keys only",
+    "freshSettings": "intentionally empty model list unchanged; catalog/reset choices receive replacements"
+  },
+  "checks": {
+    "baseline-final": {
+      "command": ["bash", "qualification/root4410-b/baseline.sh"],
+      "started": "2026-10-23T10:22:59.337115+00:00",
+      "finished": "2026-10-23T10:23:03.390609+00:00",
+      "exit": 1,
+      "aggregateSampledPeakKiB": 769012,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 25112,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 15813,
+          "rssKiB": 86076,
+          "name": "npm exec jest s"
+        },
+        {
+          "pid": 15827,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 15828,
+          "rssKiB": 353488,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 15804,
+          "rssKiB": 12816,
+          "name": "python3"
+        },
+        {
+          "pid": 15805,
+          "rssKiB": 3476,
+          "name": "bash"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 220040,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/baseline-final.log",
+      "receipt": "logs/baseline-final.json",
+      "interpretation": "expected two semantic failures; 32 intentionally unselected controls"
+    },
+    "provider-baseline-final": {
+      "command": ["bash", "qualification/root4410-b/baseline.sh", "provider"],
+      "started": "2026-10-23T10:32:52.005359+00:00",
+      "finished": "2026-10-23T10:32:55.913173+00:00",
+      "exit": 1,
+      "aggregateSampledPeakKiB": 777152,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 25056,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16966,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 16967,
+          "rssKiB": 358712,
+          "name": "node"
+        },
+        {
+          "pid": 16937,
+          "rssKiB": 12856,
+          "name": "python3"
+        },
+        {
+          "pid": 16938,
+          "rssKiB": 3468,
+          "name": "bash"
+        },
+        {
+          "pid": 16952,
+          "rssKiB": 87068,
+          "name": "npm exec jest s"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 221988,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/provider-baseline-final.log",
+      "receipt": "logs/provider-baseline-final.json",
+      "interpretation": "expected two SDK parameter failures; 17 intentionally unselected controls"
+    },
+    "focused-final": {
+      "command": [
+        "npx",
+        "jest",
+        "src/settings/schema",
+        "src/core/llm",
+        "src/utils/llm/provider-config.test.ts",
+        "src/utils/llm/model-capability-registry.test.ts",
+        "--runInBand"
+      ],
+      "started": "2026-10-23T10:29:21.084277+00:00",
+      "finished": "2026-10-23T10:29:28.088547+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 855660,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 25188,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16453,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 16454,
+          "rssKiB": 442292,
+          "name": "node"
+        },
+        {
+          "pid": 16439,
+          "rssKiB": 86124,
+          "name": "npm exec jest s"
+        },
+        {
+          "pid": 16438,
+          "rssKiB": 12852,
+          "name": "python3"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 221200,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/focused-final.log",
+      "receipt": "logs/focused-final.json",
+      "interpretation": "109 suites / 763 tests passed; 53 new cases"
+    },
+    "full-jest-repaired": {
+      "command": ["npx", "jest", "--runInBand"],
+      "started": "2026-10-23T10:30:02.381671+00:00",
+      "finished": "2026-10-23T10:30:48.691990+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 1445492,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 23972,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16521,
+          "rssKiB": 14728,
+          "name": "downloaded-@esb"
+        },
+        {
+          "pid": 16490,
+          "rssKiB": 12848,
+          "name": "python3"
+        },
+        {
+          "pid": 16491,
+          "rssKiB": 78092,
+          "name": "npm exec jest -"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 16506,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 16507,
+          "rssKiB": 1031024,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 216824,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/full-jest-repaired.log",
+      "receipt": "logs/full-jest-repaired.json",
+      "interpretation": "612 suites / 6416 tests passed; no skips"
+    },
+    "typecheck-final": {
+      "command": ["npm", "run", "type:check"],
+      "started": "2026-10-23T10:23:52.283981+00:00",
+      "finished": "2026-10-23T10:24:05.498002+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 1608656,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 23952,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 15920,
+          "rssKiB": 12860,
+          "name": "python3"
+        },
+        {
+          "pid": 15921,
+          "rssKiB": 62052,
+          "name": "npm run type:ch"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 15932,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 15933,
+          "rssKiB": 1223912,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 217876,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/typecheck-final.log",
+      "receipt": "logs/typecheck-final.json",
+      "interpretation": "host typecheck passed; production build separately checks final code"
+    },
+    "production-build": {
+      "command": ["npm", "run", "build"],
+      "started": "2026-10-23T10:31:51.000775+00:00",
+      "finished": "2026-10-23T10:32:21.175461+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 1815568,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 23912,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16679,
+          "rssKiB": 12868,
+          "name": "python3"
+        },
+        {
+          "pid": 16680,
+          "rssKiB": 62140,
+          "name": "npm run build"
+        },
+        {
+          "pid": 16691,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 16692,
+          "rssKiB": 1430060,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 218584,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/production-build.log",
+      "receipt": "logs/production-build.json",
+      "interpretation": "host/module/runtime checks and builds plus runtime verification passed"
+    },
+    "scoped-format": {
+      "command": [
+        "npx",
+        "prettier",
+        "--check",
+        "src/constants.ts",
+        "src/core/llm/openaiCompatibleProvider.ts",
+        "src/utils/llm/model-capability-registry.ts",
+        "src/settings/schema/migrations/index.ts",
+        "src/settings/schema/migrations/version.ts",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts"
+      ],
+      "started": "2026-10-23T10:34:40.415957+00:00",
+      "finished": "2026-10-23T10:34:41.165372+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 526060,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 26156,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 17128,
+          "rssKiB": 12796,
+          "name": "python3"
+        },
+        {
+          "pid": 17129,
+          "rssKiB": 86780,
+          "name": "npm exec pretti"
+        },
+        {
+          "pid": 17144,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 17145,
+          "rssKiB": 111092,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 221232,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/scoped-format.log",
+      "receipt": "logs/scoped-format.json",
+      "interpretation": "all nine changed files pass Prettier"
+    },
+    "eslint-scoped-final": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src/constants.ts",
+        "src/core/llm/openaiCompatibleProvider.ts",
+        "src/utils/llm/model-capability-registry.ts",
+        "src/settings/schema/migrations/index.ts",
+        "src/settings/schema/migrations/version.ts",
+        "src/settings/schema/migrations/89_to_90.ts",
+        "src/settings/schema/migrations/89_to_90.test.ts",
+        "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+        "src/settings/schema/migrations/89_to_90.fixtures.ts"
+      ],
+      "started": "2026-10-23T10:28:58.504719+00:00",
+      "finished": "2026-10-23T10:29:05.328371+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 1546972,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 25180,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16405,
+          "rssKiB": 12868,
+          "name": "python3"
+        },
+        {
+          "pid": 16406,
+          "rssKiB": 1221408,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 221288,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1250",
+      "log": "logs/eslint-scoped-final.log",
+      "receipt": "logs/eslint-scoped-final.json",
+      "interpretation": "all nine changed files pass typed ESLint"
+    },
+    "lint": {
+      "command": ["npm", "run", "lint:check"],
+      "started": "2026-10-23T10:24:51.491690+00:00",
+      "finished": "2026-10-23T10:25:15.798758+00:00",
+      "exit": 1,
+      "aggregateSampledPeakKiB": 716604,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 26208,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16034,
+          "rssKiB": 1904,
+          "name": "sh"
+        },
+        {
+          "pid": 16035,
+          "rssKiB": 262980,
+          "name": "node"
+        },
+        {
+          "pid": 16023,
+          "rssKiB": 63112,
+          "name": "npm run prettie"
+        },
+        {
+          "pid": 16010,
+          "rssKiB": 12852,
+          "name": "python3"
+        },
+        {
+          "pid": 16011,
+          "rssKiB": 62092,
+          "name": "npm run lint:ch"
+        },
+        {
+          "pid": 16022,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 219452,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/lint.log",
+      "receipt": "logs/lint.json",
+      "interpretation": "full gate blocked by identical pinned ragIndexService.test.ts formatting"
+    },
+    "pinned-format-failure": {
+      "command": [
+        "npx",
+        "prettier",
+        "--check",
+        "src/core/rag/ragIndexService.test.ts"
+      ],
+      "started": "2026-10-23T10:33:58.059553+00:00",
+      "finished": "2026-10-23T10:33:58.587372+00:00",
+      "exit": 1,
+      "aggregateSampledPeakKiB": 516924,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 26012,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 17063,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 17064,
+          "rssKiB": 102636,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 17048,
+          "rssKiB": 12848,
+          "name": "python3"
+        },
+        {
+          "pid": 17049,
+          "rssKiB": 87480,
+          "name": "npm exec pretti"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 219944,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/pinned-format-failure.log",
+      "receipt": "logs/pinned-format-failure.json",
+      "interpretation": "same unchanged base blob fails formatting"
+    },
+    "eslint": {
+      "command": [
+        "npx",
+        "eslint",
+        "--cache",
+        "--cache-location",
+        "node_modules/.cache/.eslintcache-runtime-components",
+        "src",
+        "__mocks__",
+        "modules/learning/src",
+        "modules/whiteboard/src",
+        "runtime-components/bash-engine/src",
+        "runtime-components/claude-agent-sdk/src",
+        "runtime-components/embedding-engine/src",
+        "runtime-components/pdf-engine/src",
+        "runtime-components/tokenizer/src"
+      ],
+      "started": "2026-10-23T10:25:37.832360+00:00",
+      "finished": "2026-10-23T10:25:53.736473+00:00",
+      "exit": -9,
+      "aggregateSampledPeakKiB": 1968048,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": true,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 23952,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16109,
+          "rssKiB": 12856,
+          "name": "python3"
+        },
+        {
+          "pid": 16110,
+          "rssKiB": 77648,
+          "name": "npm exec eslint"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 16125,
+          "rssKiB": 1764,
+          "name": "sh"
+        },
+        {
+          "pid": 16126,
+          "rssKiB": 1565680,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 219920,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/eslint.log",
+      "receipt": "logs/eslint.json",
+      "interpretation": "wide lint attempt stopped by aggregate RSS guard"
+    },
+    "eslint-low-heap": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "--cache",
+        "--cache-location",
+        "node_modules/.cache/.eslintcache-runtime-components",
+        "src",
+        "__mocks__",
+        "modules/host-api-conformance/src",
+        "modules/learning/src",
+        "modules/whiteboard/src",
+        "runtime-components/bash-engine/src",
+        "runtime-components/claude-agent-sdk/src",
+        "runtime-components/embedding-engine/src",
+        "runtime-components/pdf-engine/src",
+        "runtime-components/tokenizer/src"
+      ],
+      "started": "2026-10-23T10:26:25.333477+00:00",
+      "finished": "2026-10-23T10:26:45.166168+00:00",
+      "exit": -6,
+      "aggregateSampledPeakKiB": 1665384,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 14018,
+          "rssKiB": 26116,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 16232,
+          "rssKiB": 3496,
+          "name": "bash"
+        },
+        {
+          "pid": 16235,
+          "rssKiB": 5812,
+          "name": "git"
+        },
+        {
+          "pid": 16191,
+          "rssKiB": 1332596,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 16190,
+          "rssKiB": 12860,
+          "name": "python3"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 218276,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1100",
+      "log": "logs/eslint-low-heap.log",
+      "receipt": "logs/eslint-low-heap.json",
+      "interpretation": "full-input ESLint fails V8 heap OOM"
+    },
+    "install": {
+      "command": ["npm", "ci", "--no-audit", "--no-fund"],
+      "started": "2026-10-23T10:08:09.014480+00:00",
+      "finished": "2026-10-23T10:08:30.807983+00:00",
+      "exit": -9,
+      "aggregateSampledPeakKiB": 2049692,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 65536,
+      "resourceLimit": true,
+      "nativePid": 13407,
+      "log": "logs/install.log",
+      "receipt": "logs/install.json",
+      "interpretation": "first dependency acquisition guard failure; original partial measurement retained"
+    },
+    "install-serial": {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund",
+        "--maxsockets=1",
+        "--ignore-scripts"
+      ],
+      "started": "2026-10-23T10:08:49.287085+00:00",
+      "finished": "2026-10-23T10:08:56.755834+00:00",
+      "exit": -9,
+      "aggregateSampledPeakKiB": 2041952,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 65536,
+      "resourceLimit": true,
+      "nativePid": 13407,
+      "peakProcesses": [
+        {
+          "pid": 14506,
+          "rssKiB": 12824,
+          "name": "python3"
+        },
+        {
+          "pid": 14507,
+          "rssKiB": 1812168,
+          "name": "npm ci"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 216960,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=768",
+      "log": "logs/install-serial.log",
+      "receipt": "logs/install-serial.json",
+      "interpretation": "second dependency acquisition guard failure; original partial measurement retained"
+    },
+    "install-lean": {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund",
+        "--maxsockets=1",
+        "--ignore-scripts",
+        "--omit=optional",
+        "--prefer-offline"
+      ],
+      "started": "2026-10-23T10:09:27.127153+00:00",
+      "finished": "2026-10-23T10:09:35.803808+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 1689640,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 65536,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "peakProcesses": [
+        {
+          "pid": 14584,
+          "rssKiB": 12844,
+          "name": "python3"
+        },
+        {
+          "pid": 14588,
+          "rssKiB": 1459144,
+          "name": "npm ci"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 217652,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=512",
+      "log": "logs/install-lean.log",
+      "receipt": "logs/install-lean.json",
+      "interpretation": "preparation succeeded, scripts/optional packages omitted; original partial measurement"
+    },
+    "esbuild-prepare": {
+      "command": ["npm", "rebuild", "esbuild", "--no-audit", "--no-fund"],
+      "started": "2026-10-23T10:21:55.623700+00:00",
+      "finished": "2026-10-23T10:21:56.873754+00:00",
+      "exit": 0,
+      "aggregateSampledPeakKiB": 784772,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 15712,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 15713,
+          "rssKiB": 105180,
+          "name": "npm install @es"
+        },
+        {
+          "pid": 14018,
+          "rssKiB": 25176,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 15687,
+          "rssKiB": 1772,
+          "name": "sh"
+        },
+        {
+          "pid": 15688,
+          "rssKiB": 50696,
+          "name": "node"
+        },
+        {
+          "pid": 15689,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 15690,
+          "rssKiB": 56092,
+          "name": "node"
+        },
+        {
+          "pid": 15706,
+          "rssKiB": 100196,
+          "name": "npm install @es"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 15705,
+          "rssKiB": 1772,
+          "name": "sh"
+        },
+        {
+          "pid": 15674,
+          "rssKiB": 12840,
+          "name": "python3"
+        },
+        {
+          "pid": 15675,
+          "rssKiB": 138804,
+          "name": "npm rebuild esb"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 222464,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=512",
+      "log": "logs/esbuild-prepare.log",
+      "receipt": "logs/esbuild-prepare.json",
+      "interpretation": "locked esbuild executable preparation succeeded; no lock changes"
+    },
+    "full-jest": {
+      "command": ["npx", "jest", "--runInBand"],
+      "started": "2026-10-23T10:20:16.435948+00:00",
+      "finished": "2026-10-23T10:21:11.200704+00:00",
+      "exit": 1,
+      "aggregateSampledPeakKiB": 1636064,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": false,
+      "nativePid": 13407,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 15456,
+          "rssKiB": 12868,
+          "name": "python3"
+        },
+        {
+          "pid": 15457,
+          "rssKiB": 78000,
+          "name": "npm exec jest -"
+        },
+        {
+          "pid": 14018,
+          "rssKiB": 23848,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 15471,
+          "rssKiB": 1776,
+          "name": "sh"
+        },
+        {
+          "pid": 15472,
+          "rssKiB": 1235360,
+          "name": "node"
+        },
+        {
+          "pid": 13399,
+          "rssKiB": 12912,
+          "name": "python3"
+        },
+        {
+          "pid": 13400,
+          "rssKiB": 53316,
+          "name": "node"
+        },
+        {
+          "pid": 13407,
+          "rssKiB": 217984,
+          "name": "codex"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/full-jest.log",
+      "receipt": "logs/full-jest.json",
+      "interpretation": "first full suite failed four suites due to missing esbuild executable"
+    }
+  },
+  "lintBaseline": {
+    "path": "src/core/rag/ragIndexService.test.ts",
+    "baseBlob": "6495db1cadf74caab9db95aad8c9f84b97222d43",
+    "worktreeBlob": "6495db1cadf74caab9db95aad8c9f84b97222d43"
+  },
+  "resources": {
+    "reserveKiB": 2097152,
+    "modelChildren": 0,
+    "heavyVerification": "serial",
+    "completedBuildSampledPeakKiB": 1815568,
+    "completedFullJestSampledPeakKiB": 1445492,
+    "fullLintGuardSampledPeakKiB": 1968048,
+    "fullLintLowHeapOomSampledPeakKiB": 1665384,
+    "smallestLargerReservation": "not established; no larger-reserve execution performed",
+    "initialMeasurementCorrection": "The first install/typecheck receipts counted native process plus command but omitted control overhead. Their historical whole-job peaks are unknown and may have exceeded reserve. Later receipts label the corrected native subtree + CLI wrapper + supervisor scope.",
+    "measurementLimits": "50 ms sampled RSS, shared-page double counting possible, not a cgroup hard cap; 128 MiB guard margin after correction"
+  },
+  "remainingBoundaries": [
+    "full lint: unchanged pinned formatting failure and resource-limited wide ESLint",
+    "actual Obsidian installed/vault lifecycle not run",
+    "no authenticated Models API or live inference/account availability/shutdown observation",
+    "no output-quality or latency parity claim",
+    "arbitrary user request overrides remain user-owned and not universally qualified",
+    "base-rate cost estimate omits cache/Fast/long-context premiums",
+    "ambiguous held entries require manual user/maintainer resolution"
+  ],
+  "contribution": {
+    "aiAssisted": true,
+    "issueFirst": "required for data migration; issue 624 is supplied Root context, not endorsement",
+    "upstreamPr": "none; Root owns submission/integration/installation"
+  },
+  "reproduce": "RECIPE.md",
+  "baselineRecipe": "bash qualification/root4410-b/baseline.sh [provider]",
+  "sources": "SOURCES.md",
+  "logs": "LOG-INDEX.json"
+}

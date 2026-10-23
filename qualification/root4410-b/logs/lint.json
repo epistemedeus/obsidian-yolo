@@ -1,0 +1,70 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "lint:check"
+  ],
+  "started": "2026-10-23T10:24:51.491690+00:00",
+  "finished": "2026-10-23T10:25:15.798758+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 716604,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 26208,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 16034,
+      "rssKiB": 1904,
+      "name": "sh"
+    },
+    {
+      "pid": 16035,
+      "rssKiB": 262980,
+      "name": "node"
+    },
+    {
+      "pid": 16023,
+      "rssKiB": 63112,
+      "name": "npm run prettie"
+    },
+    {
+      "pid": 16010,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 16011,
+      "rssKiB": 62092,
+      "name": "npm run lint:ch"
+    },
+    {
+      "pid": 16022,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 219452,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/lint.log"
+}

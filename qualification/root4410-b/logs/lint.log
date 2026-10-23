@@ -1,0 +1,11 @@
+
+> obsidian-yolo@1.6.12 lint:check
+> npm run prettier:check && eslint --cache --cache-location node_modules/.cache/.eslintcache-runtime-components src __mocks__ modules/*/src runtime-components/*/src
+
+
+> obsidian-yolo@1.6.12 prettier:check
+> prettier --check --cache --cache-strategy content --cache-location node_modules/.cache/.prettiercache src __mocks__ modules/*/src modules/*/module.config.json modules/host-sdk.d.ts modules/tsconfig.json runtime-components/*/src runtime-components/*.ts runtime-components/*.d.ts runtime-components/tsconfig.json runtime-components/*/component.config.json scripts/build-first-party-modules.mjs scripts/watch-first-party-modules.mjs scripts/build-runtime-components.mjs scripts/verify-runtime-component-boundaries.mjs scripts/runtimeComponentAssetName.mjs scripts/runtimeComponentAssetName.test.mjs scripts/runtimeComponentAssetSources.mjs scripts/runtimeComponentImportMetaUrlShim.mjs scripts/runtimeComponentReleaseAssets.mjs scripts/runtimeComponentReleaseAssets.test.mjs scripts/runtime-assets.mjs scripts/smoke-embedding-engine.mjs scripts/distribution.mjs scripts/distribution.test.mjs scripts/download-stats.mjs scripts/download-stats.test.mjs scripts/release.mjs scripts/release.test.mjs scripts/module-release-assets.mjs scripts/module-release-assets.test.mjs scripts/validate-module-release.mjs scripts/validate-module-release.test.mjs scripts/verify-core-release-assets.mjs scripts/sync-dev-artifacts.mjs scripts/minify-styles.mjs .github/workflows/release.yml .github/workflows/module-release.yml .github/workflows/distribution-publish.yml .github/workflows/download-stats.yml package.json app.css eslint.config.mjs postcss.config.cjs
+
+Checking formatting...
+[warn] src/core/rag/ragIndexService.test.ts
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.

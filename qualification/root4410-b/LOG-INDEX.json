@@ -1,0 +1,268 @@
+{
+  "maxExportLogBytes": 32768,
+  "note": "Raw copies are local ephemeral VM evidence. Bounded/whitespace-normalized exports and original raw SHA-256 hashes are recorded per log; no result or diagnostic content was changed.",
+  "logs": [
+    {
+      "path": "logs/baseline-final.log",
+      "originalBytes": 6507,
+      "originalSha256": "04c11d6ce46fdfe28bf56b5312df9102e1155a928afde997d53a97d8266f574a",
+      "bounded": false,
+      "exportBytes": 6505,
+      "exportSha256": "8d464cd3f4dcf574b1d73f2345a2a953049e450f728de4baa7863384ac3ac4a8",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/baseline-final.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/baseline-red.log",
+      "originalBytes": 31353,
+      "originalSha256": "fece6fbd96c1e2279e6a8f4fdc3b0fcb35b8112d53b6b22e1fd45cefc8f859c0",
+      "bounded": false,
+      "exportBytes": 31350,
+      "exportSha256": "4ffcf9eec79e484084d07a8b6b2d62fcb2b911a9f5a901fa23c7ea30edf69413",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/baseline-red.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/esbuild-prepare.log",
+      "originalBytes": 34,
+      "originalSha256": "5fea06889844726ffbf8e27f38feb7a12898a3d5a295ed2d1284ad720672f18e",
+      "bounded": false,
+      "exportBytes": 34,
+      "exportSha256": "5fea06889844726ffbf8e27f38feb7a12898a3d5a295ed2d1284ad720672f18e"
+    },
+    {
+      "path": "logs/eslint-low-heap.log",
+      "originalBytes": 813,
+      "originalSha256": "6a9fa18e4e0b66553261df9b193860062bc3f77a97fb81380c43810655978f6b",
+      "bounded": false,
+      "exportBytes": 813,
+      "exportSha256": "6a9fa18e4e0b66553261df9b193860062bc3f77a97fb81380c43810655978f6b"
+    },
+    {
+      "path": "logs/eslint-scoped-final.log",
+      "originalBytes": 0,
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bounded": false,
+      "exportBytes": 1,
+      "exportSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/eslint-scoped-final.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/eslint-scoped.log",
+      "originalBytes": 1677,
+      "originalSha256": "6186eeeebdcb2af7ca633e7578c56d629da5c0f6536c6e8ffab8a6ebd6c4e2e2",
+      "bounded": false,
+      "exportBytes": 1676,
+      "exportSha256": "60b7c7dcd0dfdaca03249d8b7b2aabf54baea802eebf82e63e9954bfa2d40726",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/eslint-scoped.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/eslint.log",
+      "originalBytes": 0,
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bounded": false,
+      "exportBytes": 1,
+      "exportSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/eslint.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/focused-final.log",
+      "originalBytes": 46117,
+      "originalSha256": "96ff81f21679400d621c215b360feb648aeaa05bb63b1e7766a3df3a1d756851",
+      "bounded": true,
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/focused-final.log",
+      "exportBytes": 32297,
+      "exportSha256": "e1137514bdcf81cff5378feb2d14b956a5cb3f437d21139aa8482fe2d2502bfe"
+    },
+    {
+      "path": "logs/focused-repaired.log",
+      "originalBytes": 45468,
+      "originalSha256": "3273ac447a030fcb152e973107d2cab87088ee6ddfc7066f43bd7b33cd57d83f",
+      "bounded": true,
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/focused-repaired.log",
+      "exportBytes": 32297,
+      "exportSha256": "8a924e768da2dbd7928bf6c5c850e7dddf62a3bf3f711a04f37d9fe1e47e4176"
+    },
+    {
+      "path": "logs/focused.log",
+      "originalBytes": 68606,
+      "originalSha256": "dcda437ce0cb289c2bf7cf735d7587bd50e0a841d3bed5c54c5d35f814242796",
+      "bounded": true,
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/focused.log",
+      "exportBytes": 32297,
+      "exportSha256": "9b1e27225254ffd73bbc3ab87a6b5d67240e25de1c9c756bad7c4175c500d730"
+    },
+    {
+      "path": "logs/format-final.log",
+      "originalBytes": 188,
+      "originalSha256": "f28a99fdda940f7d428aa46ebd705568cba04cb895becf8c34ac15766d2b25ab",
+      "bounded": false,
+      "exportBytes": 188,
+      "exportSha256": "f28a99fdda940f7d428aa46ebd705568cba04cb895becf8c34ac15766d2b25ab"
+    },
+    {
+      "path": "logs/format-lint-fixes.log",
+      "originalBytes": 188,
+      "originalSha256": "bf4eba0fd2fe59e151508d978a51448d4299420ba9de8c806133174a729f8905",
+      "bounded": false,
+      "exportBytes": 188,
+      "exportSha256": "bf4eba0fd2fe59e151508d978a51448d4299420ba9de8c806133174a729f8905"
+    },
+    {
+      "path": "logs/format-review.log",
+      "originalBytes": 113,
+      "originalSha256": "71b99916ec87e46b4a1a51cbf9bb3408c2b08b27998bebf77584501c9a931ffa",
+      "bounded": false,
+      "exportBytes": 113,
+      "exportSha256": "71b99916ec87e46b4a1a51cbf9bb3408c2b08b27998bebf77584501c9a931ffa"
+    },
+    {
+      "path": "logs/format.log",
+      "originalBytes": 476,
+      "originalSha256": "e7033c2039827977d48b24f30480b36911faeca9b392d5027b7cff4f43050996",
+      "bounded": false,
+      "exportBytes": 476,
+      "exportSha256": "e7033c2039827977d48b24f30480b36911faeca9b392d5027b7cff4f43050996"
+    },
+    {
+      "path": "logs/full-jest-repaired.log",
+      "originalBytes": 392865,
+      "originalSha256": "603305127f023ae9792bf58856f4a8c6e597d03ee2805d6fbd66539369a62332",
+      "bounded": true,
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/full-jest-repaired.log",
+      "exportBytes": 32297,
+      "exportSha256": "e6a26b29a880149da8830c854dc590b83ec1151bbaa5c4e2cf7f4ea2a37d8cab"
+    },
+    {
+      "path": "logs/full-jest.log",
+      "originalBytes": 496275,
+      "originalSha256": "6b0878b1625c8af2c065d479f480f2919f51e5b59c0b6ba244778d74718eb94c",
+      "bounded": true,
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/full-jest.log",
+      "exportBytes": 32291,
+      "exportSha256": "58ac825121be9998e5e3e821fed17d4998d30a71e83dab0c1069dee6eb656d62",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/install-lean.log",
+      "originalBytes": 155,
+      "originalSha256": "6decbaf6e991a8cfd8e9ea8312babfaa0a9a68a7e0c4ebca928e0d74f35f4d1f",
+      "bounded": false,
+      "exportBytes": 155,
+      "exportSha256": "6decbaf6e991a8cfd8e9ea8312babfaa0a9a68a7e0c4ebca928e0d74f35f4d1f"
+    },
+    {
+      "path": "logs/install-serial.log",
+      "originalBytes": 0,
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bounded": false,
+      "exportBytes": 1,
+      "exportSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/install-serial.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/install.log",
+      "originalBytes": 278,
+      "originalSha256": "c1becc66f6626cdeb9f1b332bc38d20d5359c9c9c1abe7f12f201e0a8b3de2b8",
+      "bounded": false,
+      "exportBytes": 278,
+      "exportSha256": "c1becc66f6626cdeb9f1b332bc38d20d5359c9c9c1abe7f12f201e0a8b3de2b8"
+    },
+    {
+      "path": "logs/lint.log",
+      "originalBytes": 1838,
+      "originalSha256": "b77b6403b08d148da54f05cb36a1b223bc51afdda9271fdd90845eaf8472d276",
+      "bounded": false,
+      "exportBytes": 1838,
+      "exportSha256": "b77b6403b08d148da54f05cb36a1b223bc51afdda9271fdd90845eaf8472d276"
+    },
+    {
+      "path": "logs/migration-green-2.log",
+      "originalBytes": 7095,
+      "originalSha256": "55567775b226616cd92ac1b1c8fbd5b804b19414b0984c144e70ed238a343c99",
+      "bounded": false,
+      "exportBytes": 7095,
+      "exportSha256": "55567775b226616cd92ac1b1c8fbd5b804b19414b0984c144e70ed238a343c99"
+    },
+    {
+      "path": "logs/migration-green.log",
+      "originalBytes": 8080,
+      "originalSha256": "8c6df836d7bb1dd80c78b12c1708efc4738a1bcddc19a4738347541a54336272",
+      "bounded": false,
+      "exportBytes": 8080,
+      "exportSha256": "8c6df836d7bb1dd80c78b12c1708efc4738a1bcddc19a4738347541a54336272"
+    },
+    {
+      "path": "logs/pinned-format-failure.log",
+      "originalBytes": 151,
+      "originalSha256": "97b338bec12e3d4e175f595c5572916dcd3255e106f621ed215f298643442392",
+      "bounded": false,
+      "exportBytes": 151,
+      "exportSha256": "97b338bec12e3d4e175f595c5572916dcd3255e106f621ed215f298643442392"
+    },
+    {
+      "path": "logs/production-build.log",
+      "originalBytes": 858,
+      "originalSha256": "22fadf48daaffe9b79c42e8569721da3ff09268d945606b073ea8ee79585723c",
+      "bounded": false,
+      "exportBytes": 858,
+      "exportSha256": "22fadf48daaffe9b79c42e8569721da3ff09268d945606b073ea8ee79585723c"
+    },
+    {
+      "path": "logs/provider-baseline-final.log",
+      "originalBytes": 4396,
+      "originalSha256": "94d967642e795ac3f4d5d6feaa08f7942e71f6e88f019c48ab8de7cb20bd8c15",
+      "bounded": false,
+      "exportBytes": 4396,
+      "exportSha256": "94d967642e795ac3f4d5d6feaa08f7942e71f6e88f019c48ab8de7cb20bd8c15"
+    },
+    {
+      "path": "logs/provider-shape-red.log",
+      "originalBytes": 4543,
+      "originalSha256": "827d5e1b526dc9cc0415ff70d7d203ee33c8eda0c9517f6d3709df2ae7ed653b",
+      "bounded": false,
+      "exportBytes": 4543,
+      "exportSha256": "827d5e1b526dc9cc0415ff70d7d203ee33c8eda0c9517f6d3709df2ae7ed653b"
+    },
+    {
+      "path": "logs/receiving-green.log",
+      "originalBytes": 5942,
+      "originalSha256": "e836eb2d268e99433a6bab6fce9489ddf00d08411d8abf2febeca14706e11074",
+      "bounded": false,
+      "exportBytes": 5942,
+      "exportSha256": "e836eb2d268e99433a6bab6fce9489ddf00d08411d8abf2febeca14706e11074"
+    },
+    {
+      "path": "logs/scoped-format.log",
+      "originalBytes": 66,
+      "originalSha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+      "bounded": false,
+      "exportBytes": 66,
+      "exportSha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20"
+    },
+    {
+      "path": "logs/typecheck-final.log",
+      "originalBytes": 134,
+      "originalSha256": "90bdf29738d4017322f55f7ab18f7f1c6193264aefd1e7c2723c7833550dc65b",
+      "bounded": false,
+      "exportBytes": 133,
+      "exportSha256": "24ee0c0d9042031abc34bded36194478b68bce3705f068f79a9586f0d434db75",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/typecheck-final.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    },
+    {
+      "path": "logs/typecheck.log",
+      "originalBytes": 134,
+      "originalSha256": "90bdf29738d4017322f55f7ab18f7f1c6193264aefd1e7c2723c7833550dc65b",
+      "bounded": false,
+      "exportBytes": 133,
+      "exportSha256": "24ee0c0d9042031abc34bded36194478b68bce3705f068f79a9586f0d434db75",
+      "retainedLocalRawCopy": "/tmp/root4410-b-raw-logs-mmdzucu0/typecheck.log",
+      "normalization": "Export only: trailing line whitespace and extra EOF blank lines removed."
+    }
+  ]
+}

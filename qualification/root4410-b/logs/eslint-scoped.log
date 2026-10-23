@@ -1,0 +1,18 @@
+
+/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/settings/schema/migrations/89_to_90.receiving.test.ts
+   1:1   error  Do not import Node.js builtin module "node:fs"                                                     import/no-nodejs-modules
+   2:1   error  Do not import Node.js builtin module "node:http"                                                   import/no-nodejs-modules
+   3:1   error  Do not import Node.js builtin module "node:https"                                                  import/no-nodejs-modules
+   4:1   error  Do not import Node.js builtin module "node:os"                                                     import/no-nodejs-modules
+   5:1   error  Do not import Node.js builtin module "node:path"                                                   import/no-nodejs-modules
+  90:28  error  'input' may use Object's default stringification format ('[object Object]') when stringified       @typescript-eslint/no-base-to-string
+  91:40  error  'init?.body' may use Object's default stringification format ('[object Object]') when stringified  @typescript-eslint/no-base-to-string
+
+/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/settings/schema/migrations/89_to_90.test.ts
+  3:3  error  Member 'DEFAULT_CHAT_MODELS' of the import declaration should be sorted alphabetically  sort-imports
+
+/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/src/settings/schema/migrations/89_to_90.ts
+  157:21  error  Do not delete dynamically computed property keys  @typescript-eslint/no-dynamic-delete
+
+✖ 9 problems (9 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.

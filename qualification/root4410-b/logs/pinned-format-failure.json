@@ -1,0 +1,61 @@
+{
+  "command": [
+    "npx",
+    "prettier",
+    "--check",
+    "src/core/rag/ragIndexService.test.ts"
+  ],
+  "started": "2026-10-23T10:33:58.059553+00:00",
+  "finished": "2026-10-23T10:33:58.587372+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 516924,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 26012,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 17063,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 17064,
+      "rssKiB": 102636,
+      "name": "node"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 17048,
+      "rssKiB": 12848,
+      "name": "python3"
+    },
+    {
+      "pid": 17049,
+      "rssKiB": 87480,
+      "name": "npm exec pretti"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 219944,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/pinned-format-failure.log"
+}

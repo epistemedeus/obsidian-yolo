@@ -1,0 +1,45 @@
+{
+  "command": [
+    "npx",
+    "jest",
+    "src/settings/schema/migrations/89_to_90.receiving.test.ts",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T10:15:41.872592+00:00",
+  "finished": "2026-10-23T10:15:43.384351+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 554172,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 65536,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "peakProcesses": [
+    {
+      "pid": 15015,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 15016,
+      "rssKiB": 86508,
+      "name": "npm exec jest s"
+    },
+    {
+      "pid": 15033,
+      "rssKiB": 233560,
+      "name": "node"
+    },
+    {
+      "pid": 15032,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 219476,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/provider-shape-red.log"
+}

@@ -1,0 +1,3 @@
+
+> obsidian-yolo@1.6.12 type:check
+> tsc --noEmit --incremental --tsBuildInfoFile node_modules/.cache/tsconfig.typecheck.tsbuildinfo

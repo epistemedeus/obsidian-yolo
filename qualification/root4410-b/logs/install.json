@@ -1,0 +1,17 @@
+{
+  "command": [
+    "npm",
+    "ci",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "started": "2026-10-23T10:08:09.014480+00:00",
+  "finished": "2026-10-23T10:08:30.807983+00:00",
+  "exit": -9,
+  "aggregateSampledPeakKiB": 2049692,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 65536,
+  "resourceLimit": true,
+  "nativePid": 13407,
+  "log": "logs/install.log"
+}

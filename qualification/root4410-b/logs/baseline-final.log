@@ -1,0 +1,84 @@
+FAIL src/settings/schema/migrations/89_to_90.test.ts
+  v89 model retirement migration through the normal settings chain
+    ✕ updates the catalog without changing fresh empty settings or primary chat default (5 ms)
+    ✕ migrates saved selections, reasoning preferences and all owning reference slots (4 ms)
+    ○ skipped preserves labels, tuning, explicit modalities, order, credentials and unrelated selections
+    ○ skipped holds a same-ID provider whose identity is customized: {"presetType":"openai-compatible"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"presetType":"azure-openai"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"presetType":"openai","type":"openai-compatible"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"presetType":"openai","apiType":"anthropic"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"baseUrl":"https://proxy.example/v1"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com.evil.example/v1"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com/v1?proxy=true"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"baseUrl":"http://api.openai.com/v1"}
+    ○ skipped holds a same-ID provider whose identity is customized: {"baseUrl":"https://user:secret@api.openai.com/v1"}
+    ○ skipped preserves a customized model byte-for-byte: {"providerId":"custom-openai"}
+    ○ skipped preserves a customized model byte-for-byte: {"model":"my-deployment"}
+    ○ skipped preserves a customized model byte-for-byte: {"model":"gpt-4.1-nano-2025-04-14"}
+    ○ skipped preserves a customized model byte-for-byte: {"id":"my-nano"}
+    ○ skipped preserves a customized model byte-for-byte: {"providerType":"openai-compatible"}
+    ○ skipped preserves a customized model byte-for-byte: {"customParameters":[{"key":"model","value":"another-model"}]}
+    ○ skipped preserves a customized model byte-for-byte: {"customParameters":[{"key":" model ","value":"another-model"}]}
+    ○ skipped accepts the exact direct endpoint:
+    ○ skipped accepts the exact direct endpoint: https://api.openai.com/v1
+    ○ skipped accepts the exact direct endpoint:  https://api.openai.com/v1/
+    ○ skipped recognizes the provider type alias that the owning schema still accepts
+    ○ skipped holds duplicate source IDs or any replacement ID collision
+    ○ skipped holds duplicate source IDs or any replacement ID collision
+    ○ skipped holds duplicate source IDs or any replacement ID collision
+    ○ skipped holds duplicate source IDs or any replacement ID collision
+    ○ skipped does not rewrite a selected missing record or invent a replacement
+    ○ skipped holds duplicate providers and preserves an absent provider list
+    ○ skipped runs after the existing v88 migration and is idempotent even if reapplied
+    ○ skipped retains both preferences when a replacement reasoning key is already saved
+    ○ skipped preserves sparse/invalid fields for the owning parser: {}
+    ○ skipped preserves sparse/invalid fields for the owning parser: {"chatModels":null,"providers":null}
+    ○ skipped preserves sparse/invalid fields for the owning parser: {"chatModels":[null,"invalid"]}
+
+  ● v89 model retirement migration through the normal settings chain › updates the catalog without changing fresh empty settings or primary chat default
+
+    expect(received).toContainEqual(expected) // deep equality
+
+    Expected value: ObjectContaining {"enable": true, "id": "openai/gpt-5.6-luna", "model": "gpt-5.6-luna", "providerId": "openai", "reasoningType": "openai"}
+    Received array: [{"enable": false, "id": "anthropic/claude-sonnet-4.0", "model": "claude-sonnet-4-0", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-opus-4.1", "model": "claude-opus-4-1", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.7-sonnet", "model": "claude-3-7-sonnet-latest", "providerId": "anthropic", "reasoningType": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.5-sonnet", "model": "claude-3-5-sonnet-latest", "providerId": "anthropic"}, {"enable": false, "id": "anthropic/claude-3.5-haiku", "model": "claude-3-5-haiku-latest", "providerId": "anthropic"}, {"enable": true, "id": "openai/gpt-5", "model": "gpt-5", "providerId": "openai"}, {"enable": false, "id": "chatgpt-oauth/gpt-5.3-codex-spark", "model": "gpt-5.3-codex-spark", "name": "GPT-5.3 Codex Spark", "providerId": "chatgpt-oauth", "reasoningType": "openai"}, {"enable": false, "id": "chatgpt-oauth/gpt-5.4", "model": "gpt-5.4", "name": "GPT-5.4", "providerId": "chatgpt-oauth", "reasoningType": "openai"}, {"enable": false, "id": "openai/gpt-5-mini", "model": "gpt-5-mini", "providerId": "openai"}, {"enable": false, "id": "openai/gpt-5-nano", "model": "gpt-5-nano", "providerId": "openai"}, …]
+
+      41 |       [terraId, 'gpt-5.6-terra', false],
+      42 |     ]) {
+    > 43 |       expect(DEFAULT_CHAT_MODELS).toContainEqual(
+         |                                   ^
+      44 |         expect.objectContaining({
+      45 |           id,
+      46 |           model,
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:43:35)
+
+  ● v89 model retirement migration through the normal settings chain › migrates saved selections, reasoning preferences and all owning reference slots
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Array [
+        "openai/gpt-5",
+    -   "openai/gpt-5.6-luna",
+    -   "openai/gpt-5.6-terra",
+    +   "openai/gpt-4.1-nano",
+    +   "openai/o4-mini",
+      ]
+
+      70 |     const before = JSON.stringify(raw)
+      71 |     const result = parseYoloSettings(raw)
+    > 72 |     expect(result.chatModels.map((m) => m.id)).toEqual([
+         |                                                ^
+      73 |       primaryV89.id,
+      74 |       lunaId,
+      75 |       terraId,
+
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.test.ts:72:48)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 32 skipped, 34 total
+Snapshots:   0 total
+Time:        3.141 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90.test.ts/i with tests matching "updates the catalog|migrates saved selections".

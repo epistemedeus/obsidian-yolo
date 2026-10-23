@@ -1,0 +1,192 @@
+npm warn Unknown env config "jobs". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/settings/schema/migrations/89_to_90.test.ts
+  v89 model retirement migration through the normal settings chain
+    ✓ updates the catalog without changing fresh empty settings or primary chat default (7 ms)
+    ✓ migrates saved selections, reasoning preferences and all owning reference slots (23 ms)
+    ✓ preserves labels, tuning, explicit modalities, order, credentials and unrelated selections (2 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"presetType":"openai-compatible"} (2 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"presetType":"azure-openai"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"presetType":"openai","type":"openai-compatible"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"presetType":"openai","apiType":"anthropic"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"baseUrl":"https://proxy.example/v1"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com.evil.example/v1"} (2 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"baseUrl":"https://api.openai.com/v1?proxy=true"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"baseUrl":"http://api.openai.com/v1"} (1 ms)
+    ✓ holds a same-ID provider whose identity is customized: {"baseUrl":"https://user:secret@api.openai.com/v1"} (2 ms)
+    ✓ preserves a customized model byte-for-byte: {"providerId":"custom-openai"} (1 ms)
+    ✓ preserves a customized model byte-for-byte: {"model":"my-deployment"} (1 ms)
+    ✓ preserves a customized model byte-for-byte: {"model":"gpt-4.1-nano-2025-04-14"}
+    ✓ preserves a customized model byte-for-byte: {"id":"my-nano"}
+    ✓ preserves a customized model byte-for-byte: {"providerType":"openai-compatible"} (1 ms)
+    ✓ preserves a customized model byte-for-byte: {"customParameters":[{"key":"model","value":"another-model"}]} (1 ms)
+    ✓ accepts the exact direct endpoint:  (2 ms)
+    ✓ accepts the exact direct endpoint: https://api.openai.com/v1 (1 ms)
+    ✓ accepts the exact direct endpoint:  https://api.openai.com/v1/  (2 ms)
+    ✓ recognizes the provider type alias that the owning schema still accepts (3 ms)
+    ✓ holds duplicate source IDs or any replacement ID collision (1 ms)
+    ✓ holds duplicate source IDs or any replacement ID collision (1 ms)
+    ✓ holds duplicate source IDs or any replacement ID collision (1 ms)
+    ✓ holds duplicate source IDs or any replacement ID collision (1 ms)
+    ✓ does not rewrite a selected missing record or invent a replacement (2 ms)
+    ✓ holds duplicate providers and preserves an absent provider list (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       28 passed, 28 total
+Snapshots:   0 total
+Time:        0.836 s, estimated 1 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90.test.ts/i.

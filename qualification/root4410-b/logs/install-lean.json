@@ -1,0 +1,39 @@
+{
+  "command": [
+    "npm",
+    "ci",
+    "--no-audit",
+    "--no-fund",
+    "--maxsockets=1",
+    "--ignore-scripts",
+    "--omit=optional",
+    "--prefer-offline"
+  ],
+  "started": "2026-10-23T10:09:27.127153+00:00",
+  "finished": "2026-10-23T10:09:35.803808+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1689640,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 65536,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "peakProcesses": [
+    {
+      "pid": 14584,
+      "rssKiB": 12844,
+      "name": "python3"
+    },
+    {
+      "pid": 14588,
+      "rssKiB": 1459144,
+      "name": "npm ci"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 217652,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=512",
+  "log": "logs/install-lean.log"
+}

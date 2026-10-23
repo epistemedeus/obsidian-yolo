@@ -1,0 +1,869 @@
+PASS src/core/llm/chatgptOAuthResponsesAdapter.test.ts
+PASS src/settings/schema/settings.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 75 to 76
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 76 to 77
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 77 to 78
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 78 to 79
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 79 to 80
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 80 to 81
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 84 to 85
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 85 to 86
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 86 to 87
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 87 to 88
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 38 to 39
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 39 to 40
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 40 to 41
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 41 to 42
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 42 to 43
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 43 to 44
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 44 to 45
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 45 to 46
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 46 to 47
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 47 to 48
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 48 to 49
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 49 to 50
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 50 to 51
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 51 to 52
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 52 to 53
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 53 to 54
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 54 to 55
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 55 to 56
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 56 to 57
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 57 to 58
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 58 to 59
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 59 to 60
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 60 to 61
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 61 to 62
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 62 to 63
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 63 to 64
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 64 to 65
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 65 to 66
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 66 to 67
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 67 to 68
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 68 to 69
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 69 to 70
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 70 to 71
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 71 to 72
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 72 to 73
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 73 to 74
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 74 to 75
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 75 to 76
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 76 to 77
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 77 to 78
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 78 to 79
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 79 to 80
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 80 to 81
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/sett
+
+[Bounded export: middle omitted. Original SHA-256 and retained local raw copy are in LOG-INDEX.json.]
+
+der key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates network failure and malformed output, then recovers
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › preserves a same-ID proxy selection and its requested model
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps explicit nonreasoning sampling parameters over openai-responses
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps explicit nonreasoning sampling parameters over openai-compatible
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps unrelated models and custom endpoint request shaping unchanged
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › streams through the actual SDK with corrected chat parameters
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+FAIL src/settings/schema/migrations/89_to_90.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  ● v89 model retirement migration through the normal settings chain › preserves sparse/invalid fields for the owning parser: {"chatModels":null,"providers":null}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 0
+
+      Object {
+    -   "chatModels": null,
+        "providers": null,
+        "version": 90,
+      }
+
+      330 |   ])('preserves sparse/invalid fields for the owning parser: %j', (fields) => {
+      331 |     const raw = { version: 89, ...fields }
+    > 332 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({
+          |                                                      ^
+      333 |       ...raw,
+      334 |       version: 90,
+      335 |     })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:332:54
+
+Summary of all failing tests
+FAIL src/settings/schema/migrations/89_to_90.receiving.test.ts
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-responses and parses useful output
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/o4-mini to gpt-5.6-terra over openai-responses and parses useful output
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-compatible and parses useful output
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/o4-mini to gpt-5.6-terra over openai-compatible and parses useful output
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates HTTP 401 and recovers on the same provider
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates HTTP 400 and recovers on the same provider
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates HTTP 429 and recovers on the same provider
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates HTTP 500 and recovers on the same provider
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › propagates network failure and malformed output, then recovers
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › preserves a same-ID proxy selection and its requested model
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps explicit nonreasoning sampling parameters over openai-responses
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps explicit nonreasoning sampling parameters over openai-compatible
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › keeps unrelated models and custom endpoint request shaping unchanged
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › streams through the actual SDK with corrected chat parameters
+
+    Cannot use spyOn on a primitive value; undefined given
+
+      68 |       throw new Error('Unexpected network egress in offline receiving')
+      69 |     }
+    > 70 |     jest.spyOn(http, 'request').mockImplementation(noSocket)
+         |          ^
+      71 |     jest.spyOn(https, 'request').mockImplementation(noSocket)
+      72 |     // The SDK and production transport stay real. Every HTTP attempt is
+      73 |     // intercepted in memory; no provider key, socket, or original fetch is used.
+
+      at ModuleMocker.spyOn (node_modules/jest-mock/build/index.js:719:13)
+      at Object.<anonymous> (src/settings/schema/migrations/89_to_90.receiving.test.ts:70:10)
+
+FAIL src/settings/schema/migrations/89_to_90.test.ts
+  ● v89 model retirement migration through the normal settings chain › preserves sparse/invalid fields for the owning parser: {"chatModels":null,"providers":null}
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 0
+
+      Object {
+    -   "chatModels": null,
+        "providers": null,
+        "version": 90,
+      }
+
+      330 |   ])('preserves sparse/invalid fields for the owning parser: %j', (fields) => {
+      331 |     const raw = { version: 89, ...fields }
+    > 332 |     expect(migrateYoloSettingsData(freezeDeep(raw))).toEqual({
+          |                                                      ^
+      333 |       ...raw,
+      334 |       version: 90,
+      335 |     })
+
+      at src/settings/schema/migrations/89_to_90.test.ts:332:54
+
+
+Test Suites: 2 failed, 107 passed, 109 total
+Tests:       15 failed, 743 passed, 758 total
+Snapshots:   0 total
+Time:        7.78 s
+Ran all test suites matching /src\/settings\/schema|src\/core\/llm|src\/utils\/llm\/provider-config.test.ts|src\/utils\/llm\/model-capability-registry.test.ts/i.

@@ -1,0 +1,107 @@
+npm warn Unknown env config "jobs". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+FAIL src/settings/schema/migrations/89_to_90.receiving.test.ts
+  v89 saved selection → real resolver/provider → locked OpenAI SDK
+    ✓ resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-responses and parses useful output (27 ms)
+    ✓ resolves saved openai/o4-mini to gpt-5.6-terra over openai-responses and parses useful output (4 ms)
+    ✕ resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-compatible and parses useful output (5 ms)
+    ✕ resolves saved openai/o4-mini to gpt-5.6-terra over openai-compatible and parses useful output (3 ms)
+    ✓ propagates HTTP 401 and recovers on the same provider (16 ms)
+    ✓ propagates HTTP 400 and recovers on the same provider (4 ms)
+    ✓ propagates HTTP 429 and recovers on the same provider (3 ms)
+    ✓ propagates HTTP 500 and recovers on the same provider (3 ms)
+    ✓ propagates network failure and malformed output, then recovers (13 ms)
+    ✓ preserves a same-ID proxy selection and its requested model (3 ms)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-compatible and parses useful output
+
+    expect(received).not.toHaveProperty(path)
+
+    Expected path: not "max_tokens"
+
+    Received value: 128
+
+      72 |       expect(url).toBe(`https://api.openai.com/v1/${apiType === 'openai-responses' ? 'responses' : 'chat/completions'}`)
+      73 |       expect(body.model).toBe(replacement)
+    > 74 |       expect(body).not.toHaveProperty('max_tokens')
+         |                        ^
+      75 |       expect(body).not.toHaveProperty('reasoningLevel')
+      76 |       if (apiType === 'openai-responses') {
+      77 |         expect(body).toMatchObject({ reasoning: { effort: 'high' }, max_output_tokens: 128, store: false })
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:74:24
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/o4-mini to gpt-5.6-terra over openai-compatible and parses useful output
+
+    expect(received).not.toHaveProperty(path)
+
+    Expected path: not "max_tokens"
+
+    Received value: 128
+
+      72 |       expect(url).toBe(`https://api.openai.com/v1/${apiType === 'openai-responses' ? 'responses' : 'chat/completions'}`)
+      73 |       expect(body.model).toBe(replacement)
+    > 74 |       expect(body).not.toHaveProperty('max_tokens')
+         |                        ^
+      75 |       expect(body).not.toHaveProperty('reasoningLevel')
+      76 |       if (apiType === 'openai-responses') {
+      77 |         expect(body).toMatchObject({ reasoning: { effort: 'high' }, max_output_tokens: 128, store: false })
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:74:24
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 8 passed, 10 total
+Snapshots:   0 total
+Time:        0.953 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90.receiving.test.ts/i.

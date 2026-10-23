@@ -1,0 +1,29 @@
+
+> obsidian-yolo@1.6.12 build
+> tsc -noEmit -skipLibCheck && npm run module:typecheck && npm run runtime:typecheck && npm run styles:build && npm run runtime:build && npm run module:build && node esbuild.config.mjs production && npm run runtime:verify
+
+
+> obsidian-yolo@1.6.12 module:typecheck
+> tsc --noEmit -p modules/tsconfig.json
+
+
+> obsidian-yolo@1.6.12 runtime:typecheck
+> tsc --noEmit -p runtime-components/tsconfig.json
+
+
+> obsidian-yolo@1.6.12 styles:build
+> postcss src/styles/index.css -o styles.css && node scripts/minify-styles.mjs
+
+
+> obsidian-yolo@1.6.12 runtime:build
+> node scripts/build-runtime-components.mjs --production
+
+
+> obsidian-yolo@1.6.12 module:build
+> node scripts/build-first-party-modules.mjs
+
+
+> obsidian-yolo@1.6.12 runtime:verify
+> node scripts/verify-runtime-component-boundaries.mjs
+
+Runtime component boundaries verified

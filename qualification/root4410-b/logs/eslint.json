@@ -1,0 +1,71 @@
+{
+  "command": [
+    "npx",
+    "eslint",
+    "--cache",
+    "--cache-location",
+    "node_modules/.cache/.eslintcache-runtime-components",
+    "src",
+    "__mocks__",
+    "modules/learning/src",
+    "modules/whiteboard/src",
+    "runtime-components/bash-engine/src",
+    "runtime-components/claude-agent-sdk/src",
+    "runtime-components/embedding-engine/src",
+    "runtime-components/pdf-engine/src",
+    "runtime-components/tokenizer/src"
+  ],
+  "started": "2026-10-23T10:25:37.832360+00:00",
+  "finished": "2026-10-23T10:25:53.736473+00:00",
+  "exit": -9,
+  "aggregateSampledPeakKiB": 1968048,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": true,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 23952,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 16109,
+      "rssKiB": 12856,
+      "name": "python3"
+    },
+    {
+      "pid": 16110,
+      "rssKiB": 77648,
+      "name": "npm exec eslint"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 16125,
+      "rssKiB": 1764,
+      "name": "sh"
+    },
+    {
+      "pid": 16126,
+      "rssKiB": 1565680,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 219920,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/eslint.log"
+}

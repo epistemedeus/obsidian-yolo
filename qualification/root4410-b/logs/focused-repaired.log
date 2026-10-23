@@ -1,0 +1,1042 @@
+PASS src/settings/schema/migrations/89_to_90.receiving.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/settings/schema/migrations/89_to_90.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/settings/schema/settings.test.ts
+  ● Console
+
+    console.debug
+      Migrating settings from 75 to 76
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 76 to 77
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 77 to 78
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 78 to 79
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 79 to 80
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 80 to 81
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    conso
+
+[Bounded export: middle omitted. Original SHA-256 and retained local raw copy are in LOG-INDEX.json.]
+
+gs.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 84 to 85
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 85 to 86
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 86 to 87
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 87 to 88
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 43 to 44
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 44 to 45
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 45 to 46
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 46 to 47
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 47 to 48
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 48 to 49
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 49 to 50
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 50 to 51
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 51 to 52
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 52 to 53
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 53 to 54
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 54 to 55
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 55 to 56
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 56 to 57
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 57 to 58
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 58 to 59
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 59 to 60
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 60 to 61
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 61 to 62
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 62 to 63
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 63 to 64
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 64 to 65
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 65 to 66
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 66 to 67
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 67 to 68
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 68 to 69
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 69 to 70
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 70 to 71
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 71 to 72
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 72 to 73
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 73 to 74
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 74 to 75
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 75 to 76
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 76 to 77
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 77 to 78
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 78 to 79
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 79 to 80
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 80 to 81
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 84 to 85
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 85 to 86
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 86 to 87
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 87 to 88
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 66 to 67
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 67 to 68
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 68 to 69
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 69 to 70
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 70 to 71
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 71 to 72
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 72 to 73
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 73 to 74
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 74 to 75
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 75 to 76
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 76 to 77
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 77 to 78
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 78 to 79
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 79 to 80
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 80 to 81
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 84 to 85
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 85 to 86
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 86 to 87
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 87 to 88
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 81 to 82
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 82 to 83
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 83 to 84
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 84 to 85
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 85 to 86
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 86 to 87
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 87 to 88
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 88 to 89
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+    console.debug
+      Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+PASS src/core/llm/chatgptOAuthResponsesAdapter.test.ts
+PASS src/core/llm/debugMarkdown.test.ts
+PASS src/settings/schema/migrations/35_to_36.test.ts
+PASS src/core/llm/bedrockProvider.test.ts
+PASS src/core/llm/copilotProvider.test.ts
+  ● Console
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/v1/messages',
+        model: 'claude-opus-5-5',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/v1/messages',
+        model: 'claude-opus-5-5',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/responses',
+        model: 'gpt-5',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/responses',
+        model: 'gpt-5',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/chat/completions',
+        model: 'gemini',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+    console.error
+      [YOLO][LLM] Provider request failed {
+        providerId: 'copilot',
+        transportMode: 'browser',
+        method: 'POST',
+        url: 'https://api.individual.githubcopilot.com/chat/completions',
+        model: 'gemini',
+        status: 401,
+        statusText: '',
+        requestId: undefined,
+        contentType: 'application/json',
+        responseBody: { error: { message: 'unauthorized' } },
+        responseBodyTruncated: false
+      }
+
+      280 |     const parsedBody = body.text ? parseJson(body.text) : undefined
+      281 |     const message = extractProviderErrorMessage(parsedBody)
+    > 282 |     console.error('[YOLO][LLM] Provider request failed', {
+          |             ^
+      283 |       providerId: context.providerId,
+      284 |       transportMode: context.transportMode,
+      285 |       method: getRequestMethod(input, init),
+
+      at src/core/llm/providerErrors.ts:282:13
+      at fulfilled (node_modules/tslib/tslib.js:115:62)
+
+PASS src/core/llm/health-check.test.ts
+PASS src/settings/schema/migrations/1_to_2.test.ts
+PASS src/core/llm/gemini.test.ts
+  ● Console
+
+    console.debug
+      [YOLO] Gemini non-stream tool calls detected: { finishReason: 'STOP', count: 1, firstTool: 'yolo_local__fs_read' }
+
+      at Function.Object.<anonymous>.GeminiProvider.parseNonStreamingResponse (src/core/llm/gemini.ts:707:15)
+
+    console.debug
+      [YOLO] Gemini stream tool call deltas: { finishReason: 'STOP', count: 1, firstTool: 'yolo_local__fs_search' }
+
+      at Function.Object.<anonymous>.GeminiProvider.parseStreamingResponseChunk (src/core/llm/gemini.ts:834:15)
+
+    console.debug
+      [YOLO] Gemini non-stream tool calls detected: { finishReason: 'STOP', count: 1, firstTool: 'yolo_local__fs_list' }
+
+      at Function.Object.<anonymous>.GeminiProvider.parseNonStreamingResponse (src/core/llm/gemini.ts:707:15)
+
+PASS src/core/llm/providerErrors.test.ts
+PASS src/settings/schema/migrations/69_to_70.test.ts
+PASS src/settings/schema/migrations/78_to_79.test.ts
+PASS src/settings/schema/migrations/61_to_62.test.ts
+PASS src/core/llm/manager.test.ts
+PASS src/core/llm/copilotFetch.test.ts
+PASS src/core/llm/debugCapture.test.ts
+PASS src/settings/schema/migrations/23_to_24.test.ts
+PASS src/core/llm/chatgptOAuthProvider.test.ts
+PASS src/core/llm/proxyDispatcherAgent.test.ts
+PASS src/settings/schema/migrations/80_to_81.test.ts
+PASS src/core/llm/transportWrapFetch.test.ts
+PASS src/core/llm/anthropicReplay.test.ts
+PASS src/core/llm/anthropicWebSearch.test.ts
+PASS src/settings/schema/migrations/81_to_82.test.ts
+PASS src/settings/schema/migrations/73_to_74.test.ts
+PASS src/core/llm/requestTransport.test.ts
+PASS src/core/llm/openaiMessageAdapter.test.ts
+PASS src/core/llm/claudeOAuthProvider.test.ts
+PASS src/core/llm/bedrockCatalog.test.ts
+PASS src/settings/schema/migrations/74_to_75.test.ts
+PASS src/core/llm/openaiCompatibleProvider.test.ts
+PASS src/core/llm/claude-sdk/messageMapping.test.ts
+PASS src/core/llm/requestPolicy.test.ts
+PASS src/core/llm/chatgptOAuthModelCatalog.test.ts
+PASS src/settings/schema/migrations/68_to_69.test.ts
+PASS src/settings/schema/migrations/64_to_65.test.ts
+PASS src/core/llm/providerErrorClassification.test.ts
+PASS src/core/llm/deepseekAnthropicProvider.test.ts
+PASS src/core/llm/copilotAutoSession.test.ts
+PASS src/core/llm/copilotModelCatalog.test.ts
+PASS src/core/llm/anthropicPromptCache.test.ts
+PASS src/core/llm/openRouterMessageAdapter.test.ts
+PASS src/core/llm/lightweight-request-policy.test.ts
+PASS src/core/llm/baseUrlDetection.test.ts
+PASS src/core/llm/copilotRequestTraits.test.ts
+PASS src/core/llm/claudeReasoning.test.ts
+PASS src/settings/schema/migrations/6_to_7.test.ts
+PASS src/core/llm/claude-sdk/sessionPool.test.ts
+PASS src/core/llm/geminiModelCatalog.test.ts
+PASS src/core/llm/base.test.ts
+PASS src/settings/schema/migrations/9_to_10.test.ts
+PASS src/settings/schema/migrations/55_to_56.test.ts
+PASS src/settings/schema/migrations/31_to_32.test.ts
+PASS src/settings/schema/migrations/22_to_23.test.ts
+PASS src/settings/schema/migrations/11_to_12.test.ts
+PASS src/settings/schema/migrations/87_to_88.test.ts
+PASS src/settings/schema/migrations/12_to_13.test.ts
+PASS src/settings/schema/migrations/86_to_87.test.ts
+PASS src/settings/schema/migrations/5_to_6.test.ts
+PASS src/settings/schema/migrations/2_to_3.test.ts
+PASS src/core/llm/kimiMessageAdapter.test.ts
+PASS src/settings/schema/migrations/7_to_8.test.ts
+PASS src/settings/schema/migrations/20_to_21.test.ts
+PASS src/core/llm/openaiCompatibleCapabilities.test.ts
+PASS src/settings/schema/migrations/24_to_25.test.ts
+PASS src/settings/schema/migrations/15_to_16.test.ts
+PASS src/utils/llm/model-capability-registry.test.ts
+PASS src/core/llm/reasoningContentMessageAdapter.test.ts
+PASS src/settings/schema/migrations/48_to_49.test.ts
+PASS src/settings/schema/migrations/14_to_15.test.ts
+PASS src/settings/schema/migrations/8_to_9.test.ts
+PASS src/settings/schema/migrations/51_to_52.test.ts
+PASS src/settings/schema/migrations/85_to_86.test.ts
+PASS src/settings/schema/migrations/72_to_73.test.ts
+PASS src/settings/schema/migrations/3_to_4.test.ts
+PASS src/settings/schema/migrations/13_to_14.test.ts
+PASS src/core/llm/responseDeliveryMode.test.ts
+PASS src/settings/schema/migrations/10_to_11.test.ts
+PASS src/settings/schema/migrations/84_to_85.test.ts
+PASS src/settings/schema/migrations/83_to_84.test.ts
+PASS src/settings/schema/migrations/58_to_59.test.ts
+PASS src/settings/schema/migrations/33_to_34.test.ts
+PASS src/settings/schema/migrations/32_to_33.test.ts
+PASS src/settings/schema/migrations/26_to_27.test.ts
+PASS src/settings/schema/migrations/19_to_20.test.ts
+PASS src/settings/schema/migrations/17_to_18.test.ts
+PASS src/settings/schema/migrations/79_to_80.test.ts
+PASS src/settings/schema/migrations/75_to_76.test.ts
+PASS src/settings/schema/migrations/70_to_71.test.ts
+PASS src/settings/schema/migrations/67_to_68.test.ts
+PASS src/settings/schema/migrations/47_to_48.test.ts
+PASS src/settings/schema/migrations/34_to_35.test.ts
+PASS src/settings/schema/migrations/0_to_1.test.ts
+PASS src/core/llm/deepseekCapabilities.test.ts
+PASS src/settings/schema/migrations/88_to_89.test.ts
+PASS src/settings/schema/migrations/82_to_83.test.ts
+PASS src/settings/schema/migrations/65_to_66.test.ts
+PASS src/settings/schema/migrations/38_to_39.test.ts
+PASS src/settings/schema/migrations/30_to_31.test.ts
+PASS src/utils/llm/provider-config.test.ts
+PASS src/settings/schema/migrations/76_to_77.test.ts
+PASS src/settings/schema/migrations/71_to_72.test.ts
+PASS src/settings/schema/migrations/62_to_63.test.ts
+PASS src/settings/schema/migrations/4_to_5.test.ts
+PASS src/settings/schema/migrations/43_to_44.test.ts
+PASS src/settings/schema/migrations/63_to_64.test.ts
+PASS src/settings/schema/migrations/77_to_78.test.ts
+
+Test Suites: 109 passed, 109 total
+Tests:       758 passed, 758 total
+Snapshots:   0 total
+Time:        6.337 s, estimated 8 s
+Ran all test suites matching /src\/settings\/schema|src\/core\/llm|src\/utils\/llm\/provider-config.test.ts|src\/utils\/llm\/model-capability-registry.test.ts/i.

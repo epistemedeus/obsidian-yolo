@@ -1,0 +1,75 @@
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+  console.debug
+    Migrating settings from 89 to 90
+
+      at migrateYoloSettingsData (src/settings/schema/settings.ts:135:15)
+
+FAIL src/settings/schema/migrations/89_to_90.receiving.test.ts
+  v89 saved selection → real resolver/provider → locked OpenAI SDK
+    ✕ resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-compatible and parses useful output (31 ms)
+    ✕ resolves saved openai/o4-mini to gpt-5.6-terra over openai-compatible and parses useful output (8 ms)
+    ○ skipped resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-responses and parses useful output
+    ○ skipped resolves saved openai/o4-mini to gpt-5.6-terra over openai-responses and parses useful output
+    ○ skipped propagates HTTP 401 and recovers on the same provider
+    ○ skipped propagates HTTP 400 and recovers on the same provider
+    ○ skipped propagates HTTP 429 and recovers on the same provider
+    ○ skipped propagates HTTP 500 and recovers on the same provider
+    ○ skipped propagates network failure and malformed output, then recovers
+    ○ skipped preserves a same-ID proxy selection and its requested model
+    ○ skipped keeps explicit nonreasoning sampling parameters over openai-responses
+    ○ skipped keeps explicit nonreasoning sampling parameters over openai-compatible
+    ○ skipped keeps unrelated models and custom endpoint request shaping unchanged
+    ○ skipped resolves a valid same-ID custom record without changing its provider: {"providerId":"custom","presetType":"openai-compatible","baseUrl":"https://proxy.example/v1","modelName":"gpt-4.1-nano"}
+    ○ skipped resolves a valid same-ID custom record without changing its provider: {"providerId":"openai","presetType":"openai-compatible","baseUrl":"https://proxy.example/v1","modelName":"gpt-4.1-nano"}
+    ○ skipped resolves a valid same-ID custom record without changing its provider: {"providerId":"openai","presetType":"openai","baseUrl":"https://api.openai.com/v1","modelName":"my-deployment"}
+    ○ skipped keeps the resolver first-match identity when duplicate IDs exist (proxy first: false)
+    ○ skipped keeps the resolver first-match identity when duplicate IDs exist (proxy first: true)
+    ○ skipped streams through the actual SDK with corrected chat parameters
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/gpt-4.1-nano to gpt-5.6-luna over openai-compatible and parses useful output
+
+    expect(received).not.toHaveProperty(path)
+
+    Expected path: not "max_tokens"
+
+    Received value: 128
+
+      186 |         )
+      187 |         expect(body.model).toBe(replacement)
+    > 188 |         expect(body).not.toHaveProperty('max_tokens')
+          |                          ^
+      189 |         expect(body).not.toHaveProperty('reasoningLevel')
+      190 |         if (apiType === 'openai-responses') {
+      191 |           expect(body).toMatchObject({
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:188:26
+      at fulfilled (../../home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:115:62)
+
+  ● v89 saved selection → real resolver/provider → locked OpenAI SDK › resolves saved openai/o4-mini to gpt-5.6-terra over openai-compatible and parses useful output
+
+    expect(received).not.toHaveProperty(path)
+
+    Expected path: not "max_tokens"
+
+    Received value: 128
+
+      186 |         )
+      187 |         expect(body.model).toBe(replacement)
+    > 188 |         expect(body).not.toHaveProperty('max_tokens')
+          |                          ^
+      189 |         expect(body).not.toHaveProperty('reasoningLevel')
+      190 |         if (apiType === 'openai-responses') {
+      191 |           expect(body).toMatchObject({
+
+      at src/settings/schema/migrations/89_to_90.receiving.test.ts:188:26
+      at fulfilled (../../home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/node_modules/tslib/tslib.js:115:62)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 17 skipped, 19 total
+Snapshots:   0 total
+Time:        3.086 s
+Ran all test suites matching /src\/settings\/schema\/migrations\/89_to_90.receiving.test.ts/i with tests matching "over openai-compatible and parses".

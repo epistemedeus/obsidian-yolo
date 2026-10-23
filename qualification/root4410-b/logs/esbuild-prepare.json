@@ -1,0 +1,92 @@
+{
+  "command": [
+    "npm",
+    "rebuild",
+    "esbuild",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "started": "2026-10-23T10:21:55.623700+00:00",
+  "finished": "2026-10-23T10:21:56.873754+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 784772,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 15712,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 15713,
+      "rssKiB": 105180,
+      "name": "npm install @es"
+    },
+    {
+      "pid": 14018,
+      "rssKiB": 25176,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 15687,
+      "rssKiB": 1772,
+      "name": "sh"
+    },
+    {
+      "pid": 15688,
+      "rssKiB": 50696,
+      "name": "node"
+    },
+    {
+      "pid": 15689,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 15690,
+      "rssKiB": 56092,
+      "name": "node"
+    },
+    {
+      "pid": 15706,
+      "rssKiB": 100196,
+      "name": "npm install @es"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 15705,
+      "rssKiB": 1772,
+      "name": "sh"
+    },
+    {
+      "pid": 15674,
+      "rssKiB": 12840,
+      "name": "python3"
+    },
+    {
+      "pid": 15675,
+      "rssKiB": 138804,
+      "name": "npm rebuild esb"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 222464,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=512",
+  "log": "logs/esbuild-prepare.log"
+}

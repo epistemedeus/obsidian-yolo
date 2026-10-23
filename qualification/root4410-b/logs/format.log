@@ -1,0 +1,9 @@
+src/constants.ts 121ms (unchanged)
+src/settings/schema/migrations/89_to_90.ts 46ms
+src/settings/schema/migrations/89_to_90.test.ts 52ms
+src/settings/schema/migrations/89_to_90.receiving.test.ts 57ms
+src/settings/schema/migrations/89_to_90.fixtures.ts 6ms
+src/settings/schema/migrations/index.ts 25ms (unchanged)
+src/settings/schema/migrations/version.ts 1ms (unchanged)
+src/core/llm/openaiCompatibleProvider.ts 41ms
+src/utils/llm/model-capability-registry.ts 11ms (unchanged)

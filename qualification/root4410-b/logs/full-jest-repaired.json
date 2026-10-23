@@ -1,0 +1,65 @@
+{
+  "command": [
+    "npx",
+    "jest",
+    "--runInBand"
+  ],
+  "started": "2026-10-23T10:30:02.381671+00:00",
+  "finished": "2026-10-23T10:30:48.691990+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1445492,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 13407,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 14018,
+      "rssKiB": 23972,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 16521,
+      "rssKiB": 14728,
+      "name": "downloaded-@esb"
+    },
+    {
+      "pid": 16490,
+      "rssKiB": 12848,
+      "name": "python3"
+    },
+    {
+      "pid": 16491,
+      "rssKiB": 78092,
+      "name": "npm exec jest -"
+    },
+    {
+      "pid": 13399,
+      "rssKiB": 12912,
+      "name": "python3"
+    },
+    {
+      "pid": 13400,
+      "rssKiB": 53316,
+      "name": "node"
+    },
+    {
+      "pid": 16506,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 16507,
+      "rssKiB": 1031024,
+      "name": "node"
+    },
+    {
+      "pid": 13407,
+      "rssKiB": 216824,
+      "name": "codex"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/full-jest-repaired.log"
+}
