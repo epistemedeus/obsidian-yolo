@@ -175,6 +175,31 @@ export class OpenAICompatibleProvider extends BaseLLMProvider<LLMProvider> {
     this.nodeClient = clients.nodeClient
   }
 
+  private prepareDirectOpenAIRequest<
+    T extends OpenAICompatibleRequest | OpenAICompatibleStreamingRequest,
+  >(request: T): T {
+    if (
+      this.provider.presetType !== 'openai' ||
+      this.resolvedBaseUrl !== 'https://api.openai.com/v1' ||
+      (request.model !== 'gpt-5.6-luna' && request.model !== 'gpt-5.6-terra')
+    )
+      return request
+
+    // The migration preserves the user's Chat Completions apiType. Its token
+    // limit is max_completion_tokens, and reasoning_effort (already set by
+    // applyOpenAICompatibleCapabilities) is the only reasoning field there.
+    // Do this before explicit custom parameters so those remain user-owned.
+    const next = { ...request }
+    if (next.max_tokens !== undefined) {
+      if (next.max_completion_tokens === undefined) {
+        next.max_completion_tokens = next.max_tokens
+      }
+      delete next.max_tokens
+    }
+    delete next.reasoning
+    return next
+  }
+
   async generateResponse(
     model: ChatModel,
     request: LLMRequestNonStreaming,
@@ -204,6 +229,7 @@ export class OpenAICompatibleProvider extends BaseLLMProvider<LLMProvider> {
       baseUrl: this.resolvedBaseUrl,
     })
 
+    formattedRequest = this.prepareDirectOpenAIRequest(formattedRequest)
     formattedRequest = this.applyCustomModelParameters(model, formattedRequest)
     return runWithRequestTransport({
       mode: this.requestTransportMode,
@@ -259,6 +285,7 @@ export class OpenAICompatibleProvider extends BaseLLMProvider<LLMProvider> {
       baseUrl: this.resolvedBaseUrl,
     })
 
+    formattedRequest = this.prepareDirectOpenAIRequest(formattedRequest)
     formattedRequest = this.applyCustomModelParameters(model, formattedRequest)
     return runWithRequestTransportForStream({
       mode: this.requestTransportMode,

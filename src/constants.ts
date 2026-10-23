@@ -631,9 +631,11 @@ export const DEFAULT_CHAT_MODELS: readonly ChatModel[] = [
   },
   {
     providerId: PROVIDER_PRESET_INFO.openai.defaultProviderId,
-    id: 'openai/gpt-4.1-nano',
-    model: 'gpt-4.1-nano',
+    id: 'openai/gpt-5.6-luna',
+    model: 'gpt-5.6-luna',
     enable: true,
+    reasoningType: 'openai',
+    modalities: ['text', 'vision'],
   },
   {
     providerId: PROVIDER_PRESET_INFO.openai.defaultProviderId,
@@ -649,10 +651,11 @@ export const DEFAULT_CHAT_MODELS: readonly ChatModel[] = [
   },
   {
     providerId: PROVIDER_PRESET_INFO.openai.defaultProviderId,
-    id: 'openai/o4-mini',
-    model: 'o4-mini',
+    id: 'openai/gpt-5.6-terra',
+    model: 'gpt-5.6-terra',
     enable: false,
     reasoningType: 'openai',
+    modalities: ['text', 'vision'],
   },
   {
     providerId: PROVIDER_PRESET_INFO.openai.defaultProviderId,
@@ -745,6 +748,11 @@ type ModelPricing = {
 }
 
 export const OPENAI_PRICES: Record<string, ModelPricing> = {
+  // Standard text rates (USD / 1M tokens), qualified 2026-10-23:
+  // https://developers.openai.com/api/docs/models/gpt-5.6-luna
+  // https://developers.openai.com/api/docs/models/gpt-5.6-terra
+  'gpt-5.6-luna': { input: 0.2, output: 1.2 },
+  'gpt-5.6-terra': { input: 2, output: 12 },
   'gpt-5': { input: 1.25, output: 10 },
   'gpt-5-mini': { input: 0.25, output: 2 },
   'gpt-5-nano': { input: 0.05, output: 0.4 },
