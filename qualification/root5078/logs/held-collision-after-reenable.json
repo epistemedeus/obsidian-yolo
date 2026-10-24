@@ -1,0 +1,171 @@
+{
+  "command": [
+    "timeout",
+    "300",
+    "python3",
+    "qualification/root5078/app-host.py"
+  ],
+  "started": "2026-10-24T02:06:58.989964+00:00",
+  "finished": "2026-10-24T02:07:03.525999+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1439144,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 109057,
+      "rssKiB": 9504,
+      "name": "gnome-keyring-d"
+    },
+    {
+      "pid": 108944,
+      "rssKiB": 12988,
+      "name": "python3"
+    },
+    {
+      "pid": 108945,
+      "rssKiB": 1956,
+      "name": "timeout"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25272,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 108946,
+      "rssKiB": 18636,
+      "name": "python3"
+    },
+    {
+      "pid": 109073,
+      "rssKiB": 29952,
+      "name": "gcr-prompter"
+    },
+    {
+      "pid": 108949,
+      "rssKiB": 25480,
+      "name": "Xvfb"
+    },
+    {
+      "pid": 108952,
+      "rssKiB": 84188,
+      "name": "xfwm4"
+    },
+    {
+      "pid": 108953,
+      "rssKiB": 4120,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 108954,
+      "rssKiB": 170776,
+      "name": "obsidian"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    },
+    {
+      "pid": 108960,
+      "rssKiB": 55504,
+      "name": "obsidian"
+    },
+    {
+      "pid": 108961,
+      "rssKiB": 55840,
+      "name": "obsidian"
+    },
+    {
+      "pid": 108965,
+      "rssKiB": 2448,
+      "name": "dbus-launch"
+    },
+    {
+      "pid": 100902,
+      "rssKiB": 221828,
+      "name": "codex"
+    },
+    {
+      "pid": 108966,
+      "rssKiB": 2724,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 108968,
+      "rssKiB": 7968,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 108974,
+      "rssKiB": 4036,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 108976,
+      "rssKiB": 11560,
+      "name": "obsidian"
+    },
+    {
+      "pid": 108991,
+      "rssKiB": 8116,
+      "name": "at-spi2-registr"
+    },
+    {
+      "pid": 109000,
+      "rssKiB": 5848,
+      "name": "xfconfd"
+    },
+    {
+      "pid": 109142,
+      "rssKiB": 52440,
+      "name": "node"
+    },
+    {
+      "pid": 106488,
+      "rssKiB": 3544,
+      "name": "bash"
+    },
+    {
+      "pid": 109019,
+      "rssKiB": 145816,
+      "name": "obsidian"
+    },
+    {
+      "pid": 109024,
+      "rssKiB": 77616,
+      "name": "obsidian"
+    },
+    {
+      "pid": 109031,
+      "rssKiB": 7068,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 108280,
+      "rssKiB": 22436,
+      "name": "python3"
+    },
+    {
+      "pid": 106489,
+      "rssKiB": 12420,
+      "name": "python3"
+    },
+    {
+      "pid": 109054,
+      "rssKiB": 292564,
+      "name": "obsidian"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/held-collision-after-reenable.log"
+}

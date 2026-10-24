@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-24T02:11:18.864209+00:00",
+  "scope": "Owned overlap-stop helpers only; identities joined to resource snapshot",
+  "processes": [
+    {
+      "pid": 103281,
+      "startTicks": 4255128,
+      "name": "dbus-daemon",
+      "parentPid": 103275,
+      "beforeState": "S",
+      "signal": "SIGTERM",
+      "afterState": "Z"
+    },
+    {
+      "pid": 103275,
+      "startTicks": 4255128,
+      "name": "at-spi-bus-laun",
+      "parentPid": 100894,
+      "beforeState": "S",
+      "signal": "SIGTERM",
+      "afterState": "Z"
+    },
+    {
+      "pid": 103273,
+      "startTicks": 4255128,
+      "name": "dbus-daemon",
+      "parentPid": 100894,
+      "beforeState": "S",
+      "signal": "SIGTERM",
+      "afterState": "Z"
+    }
+  ],
+  "aliasRemoved": "/tmp/r5078-3o_23lq2",
+  "removedOwnedLinks": [
+    "/tmp/r5078-3o_23lq2/tmp",
+    "/tmp/r5078-3o_23lq2/run"
+  ],
+  "nonChildReap": "Only admission supervisor100894 can reap its defunct children; worker does not signal that supervisor"
+}

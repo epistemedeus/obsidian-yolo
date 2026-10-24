@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Owned Xvfb, foreground D-Bus and sandboxed extracted official Obsidian.
+
+This is only an actual application host. It never simulates a plugin or writes
+its settings. CDP/UI observations and commands remain separate case evidence.
+"""
+import ctypes
+import datetime
+import hashlib
+import json
+import os
+from pathlib import Path
+import select
+import signal
+import socket
+import socketserver
+import subprocess
+import threading
+import time
+
+q=Path(__file__).resolve().parent
+rt=Path('runtime/root5084-private').resolve()
+spec=Path('/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/RESUME-SPEC.json')
+assert hashlib.sha256(spec.read_bytes()).hexdigest()=='afd52f0b09bef9110c289b631ecd3a04d135ae8430f454bc6136a8e4ad6c107d'
+end=datetime.datetime.fromisoformat(json.loads(spec.read_text())['executionLifetime']['requiredUntil'].replace('Z','+00:00'))
+assert datetime.datetime.now(datetime.timezone.utc)<end
+# Adopt/reap only this host's orphaned children, avoiding prior D-Bus zombies.
+libc=ctypes.CDLL(None,use_errno=True)
+assert libc.prctl(36,1,0,0,0)==0
+for name in ['config','cache','data','state','tmp','xdg-run']:
+    (rt/name).mkdir(exist_ok=True,mode=0o700)
+env={k:os.environ[k] for k in ['PATH','HOME','USER','LOGNAME','LANG','SHELL'] if k in os.environ}
+env.update(XDG_CONFIG_HOME=str(rt/'config'),XDG_CACHE_HOME=str(rt/'cache'),XDG_DATA_HOME=str(rt/'data'),XDG_STATE_HOME=str(rt/'state'),XDG_RUNTIME_DIR=str(rt/'xdg-run'),TMPDIR=str(rt/'tmp'))
+# AppRun adds --no-sandbox if this exact probe fails; do not invoke it then.
+probe=subprocess.run(['unshare','-Ur','true'],env=env,capture_output=True,text=True,timeout=3)
+assert probe.returncode==0,probe.stderr
+class Deny(socketserver.BaseRequestHandler):
+    def handle(self):
+        self.request.settimeout(2)
+        try:self.request.recv(4096);self.request.sendall(b'HTTP/1.1 403 Forbidden\r\nContent-Length: 0\r\nConnection: close\r\n\r\n')
+        except OSError:pass
+proxy=socketserver.ThreadingTCPServer(('127.0.0.1',0),Deny);proxy.daemon_threads=True
+threading.Thread(target=proxy.serve_forever,daemon=True).start()
+record={'startedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'operation':'root5084-yolo-supported-app-setup-20261024','status':'starting','appVersionOutput':None,'sandboxNamespaceProbeExit':probe.returncode,'sandboxDisabled':False,'ownedPids':[],'appCasesRun':0}
+children=[]
+def child(command,role,log,**kwargs):
+    with (rt/log).open('w') as out:p=subprocess.Popen(command,env=env,stdout=out,stderr=subprocess.STDOUT,**kwargs)
+    children.append(p);record['ownedPids'].append({'pid':p.pid,'role':role});return p
+rfd,wfd=os.pipe();app=None
+try:
+    display=child(['Xvfb','-displayfd',str(wfd),'-screen','0','1280x900x24','-nolisten','tcp'],'private Xvfb','display.log',pass_fds=(wfd,));os.close(wfd)
+    assert select.select([rfd],[],[],4)[0], 'Display allocation timeout'
+    env['DISPLAY']=':'+os.read(rfd,32).decode().strip();record['display']=env['DISPLAY']
+    # Foreground daemon is a direct owned child, with no session-launcher fork.
+    bus=subprocess.Popen(['dbus-daemon','--session','--nofork','--print-address=1'],env=env,stdout=subprocess.PIPE,stderr=(rt/'dbus.log').open('w'),text=True)
+    children.append(bus);record['ownedPids'].append({'pid':bus.pid,'role':'private foreground D-Bus'})
+    assert select.select([bus.stdout],[],[],4)[0], 'D-Bus startup timeout'
+    env['DBUS_SESSION_BUS_ADDRESS']=bus.stdout.readline().strip()
+    with socket.socket() as reserved:reserved.bind(('127.0.0.1',0));port=reserved.getsockname()[1]
+    command=[str(rt/'squashfs-root/AppRun'),'--proxy-server=http://127.0.0.1:'+str(proxy.server_address[1]),'--remote-debugging-port='+str(port)]
+    record['appCommand']=command;record['cdpPort']=port
+    app=child(command,'official extracted application','app.log')
+    (rt/'HOST.json').write_text(json.dumps(record,indent=2)+'\n')
+    # Keep the real application alive for independent supported developer/UI work.
+    while app.poll() is None and not (rt/'STOP').exists():
+        if datetime.datetime.now(datetime.timezone.utc)>=end-datetime.timedelta(seconds=120):
+            record['horizonStop']=True;break
+        if Path('/proc/'+str(app.pid)+'/cmdline').exists():
+            args=Path('/proc/'+str(app.pid)+'/cmdline').read_bytes().split(b'\0')
+            assert b'--no-sandbox' not in args, 'Refuse sandbox-disabled app'
+        time.sleep(.1)
+    record['appExitBeforeCleanup']=app.poll()
+    if app.poll() is None:
+        # Request actual UI quit; if not received, retain the forced-stop limit.
+        subprocess.run(['xdotool','key','--clearmodifiers','ctrl+q'],env=env,capture_output=True,timeout=3)
+        try:app.wait(timeout=8);record['gracefulUiQuit']=True
+        except subprocess.TimeoutExpired:record['gracefulUiQuit']=False
+    record['status']='application-exited' if app.poll() is not None else 'application-forced-stop-required'
+except Exception as error:
+    record['failure']={'type':type(error).__name__,'message':str(error)};record['status']='application-setup-failed'
+finally:
+    for p in reversed(children):
+        if p.poll() is None:
+            p.terminate()
+            try:p.wait(timeout=4)
+            except subprocess.TimeoutExpired:p.kill();p.wait(timeout=2)
+    reaped=[]
+    until=time.monotonic()+3
+    while time.monotonic()<until:
+        try:
+            pid,status=os.waitpid(-1,os.WNOHANG)
+            if pid:reaped.append({'pid':pid,'waitStatus':status});continue
+        except ChildProcessError:break
+        time.sleep(.05)
+    for p in record['ownedPids']:p['reaped']=not Path('/proc/'+str(p['pid'])).exists()
+    record['adoptedChildrenReaped']=reaped
+    proxy.shutdown();proxy.server_close();os.close(rfd)
+    record['finishedAt']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    record['appDiagnostic']=(rt/'app.log').read_text()[:16000] if (rt/'app.log').exists() else None
+    (q/'APP-HOST-RESULT.json').write_text(json.dumps(record,indent=2)+'\n');(rt/'HOST.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record))
+raise SystemExit(0 if record.get('gracefulUiQuit') else 1)

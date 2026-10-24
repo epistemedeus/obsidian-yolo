@@ -1,0 +1,86 @@
+{
+  "command": [
+    "timeout",
+    "6000",
+    "python3",
+    "qualification/root5078/app-host.py"
+  ],
+  "started": "2026-10-24T01:47:06.075951+00:00",
+  "finished": "2026-10-24T01:47:07.120387+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 593164,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 101826,
+      "rssKiB": 3788,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 101827,
+      "rssKiB": 101052,
+      "name": "obsidian"
+    },
+    {
+      "pid": 100902,
+      "rssKiB": 226180,
+      "name": "codex"
+    },
+    {
+      "pid": 101833,
+      "rssKiB": 55120,
+      "name": "obsidian"
+    },
+    {
+      "pid": 101834,
+      "rssKiB": 55300,
+      "name": "obsidian"
+    },
+    {
+      "pid": 101823,
+      "rssKiB": 15844,
+      "name": "Xvfb"
+    },
+    {
+      "pid": 101838,
+      "rssKiB": 11584,
+      "name": "obsidian"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25292,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 101812,
+      "rssKiB": 12796,
+      "name": "python3"
+    },
+    {
+      "pid": 101819,
+      "rssKiB": 1952,
+      "name": "timeout"
+    },
+    {
+      "pid": 101820,
+      "rssKiB": 17760,
+      "name": "python3"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/extracted-app-host.log"
+}

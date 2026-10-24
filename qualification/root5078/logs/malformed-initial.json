@@ -1,0 +1,166 @@
+{
+  "command": [
+    "timeout",
+    "300",
+    "python3",
+    "qualification/root5078/app-host.py"
+  ],
+  "started": "2026-10-24T02:07:43.142223+00:00",
+  "finished": "2026-10-24T02:07:49.361219+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1518492,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 110976,
+      "rssKiB": 7992,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 110982,
+      "rssKiB": 4076,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 110984,
+      "rssKiB": 11616,
+      "name": "obsidian"
+    },
+    {
+      "pid": 111245,
+      "rssKiB": 56448,
+      "name": "node"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 24040,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 111001,
+      "rssKiB": 7908,
+      "name": "at-spi2-registr"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    },
+    {
+      "pid": 111007,
+      "rssKiB": 6096,
+      "name": "xfconfd"
+    },
+    {
+      "pid": 111136,
+      "rssKiB": 5800,
+      "name": "dconf-service"
+    },
+    {
+      "pid": 111140,
+      "rssKiB": 338956,
+      "name": "obsidian"
+    },
+    {
+      "pid": 100902,
+      "rssKiB": 222700,
+      "name": "codex"
+    },
+    {
+      "pid": 111027,
+      "rssKiB": 161660,
+      "name": "obsidian"
+    },
+    {
+      "pid": 111032,
+      "rssKiB": 77496,
+      "name": "obsidian"
+    },
+    {
+      "pid": 111039,
+      "rssKiB": 7192,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 111066,
+      "rssKiB": 9520,
+      "name": "gnome-keyring-d"
+    },
+    {
+      "pid": 110950,
+      "rssKiB": 22468,
+      "name": "python3"
+    },
+    {
+      "pid": 111079,
+      "rssKiB": 30208,
+      "name": "gcr-prompter"
+    },
+    {
+      "pid": 110952,
+      "rssKiB": 12852,
+      "name": "python3"
+    },
+    {
+      "pid": 110953,
+      "rssKiB": 1952,
+      "name": "timeout"
+    },
+    {
+      "pid": 110954,
+      "rssKiB": 18652,
+      "name": "python3"
+    },
+    {
+      "pid": 110957,
+      "rssKiB": 33536,
+      "name": "Xvfb"
+    },
+    {
+      "pid": 110960,
+      "rssKiB": 84100,
+      "name": "xfwm4"
+    },
+    {
+      "pid": 110961,
+      "rssKiB": 4152,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 110962,
+      "rssKiB": 185932,
+      "name": "obsidian"
+    },
+    {
+      "pid": 110968,
+      "rssKiB": 55588,
+      "name": "obsidian"
+    },
+    {
+      "pid": 110969,
+      "rssKiB": 55904,
+      "name": "obsidian"
+    },
+    {
+      "pid": 110973,
+      "rssKiB": 2404,
+      "name": "dbus-launch"
+    },
+    {
+      "pid": 110974,
+      "rssKiB": 2748,
+      "name": "dbus-daemon"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/malformed-initial.log"
+}

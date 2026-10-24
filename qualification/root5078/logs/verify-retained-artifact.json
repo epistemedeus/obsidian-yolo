@@ -1,0 +1,50 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import hashlib,json,pathlib,shutil; p=pathlib.Path(\"runtime/root4998-private/Obsidian-1.14.5.AppImage\"); h=hashlib.file_digest(p.open(\"rb\"),\"sha256\").hexdigest(); assert h==\"306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952\"; assert p.stat().st_size==139238201; t=pathlib.Path(\"runtime/root5084-private/Obsidian-1.14.5.AppImage\");shutil.copyfile(p,t); t.chmod(0o700);print(json.dumps({\"bytes\":t.stat().st_size,\"sha256\":h,\"reusedVerifiedOriginalArtifact\":True}))"
+  ],
+  "started": "2026-10-24T01:43:49.623053+00:00",
+  "finished": "2026-10-24T01:43:49.937991+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 344816,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 100902,
+      "rssKiB": 223800,
+      "name": "codex"
+    },
+    {
+      "pid": 101648,
+      "rssKiB": 12868,
+      "name": "python3"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25504,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 101655,
+      "rssKiB": 16148,
+      "name": "python3"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/verify-retained-artifact.log"
+}

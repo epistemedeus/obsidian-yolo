@@ -1,0 +1,198 @@
+{
+  "id": "held-max-tokens",
+  "phase": "saved",
+  "observedAt": "2026-10-24T02:05:46.168Z",
+  "appPid": 105597,
+  "targetId": "5802DB75258987238E09AA46609A0777",
+  "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/held-max-tokens",
+  "appTitle": "New tab - held-max-tokens - Obsidian 1.14.5",
+  "versions": {
+    "node": "24.22.0",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.8",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.2",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "148",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "0.0.0",
+    "simdjson": "4.6.11",
+    "simdutf": "7.7.0",
+    "sqlite": "3.53.4",
+    "tz": "2026d",
+    "undici": "7.29.1",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "15.0.245.31-electron.0",
+    "zlib": "1.3.2.1-motley",
+    "zstd": "1.6.0",
+    "electron": "43.8.3",
+    "chrome": "150.0.7871.250"
+  },
+  "enabled": true,
+  "notices": [],
+  "installedMembers": {
+    "main.js": {
+      "bytes": 5821537,
+      "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+    },
+    "manifest.json": {
+      "bytes": 412,
+      "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+    },
+    "styles.css": {
+      "bytes": 496523,
+      "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+    }
+  },
+  "data": {
+    "bytes": 6392,
+    "sha256": "34f74c2ad1c7fd033d733b3a6227cb8462590c8f3a7263cbe6889e236747fe17"
+  },
+  "liveSettingsSha256": "a9fbbe63ef76dfb3097177f1643769553bbe670dc32c0b01a90d5eb55f6acd0d",
+  "liveProjection": {
+    "chatModelId": "openai/gpt-4.1-nano",
+    "chatTitleModelId": "openai/gpt-5.6-terra",
+    "models": [
+      {
+        "id": "openai/gpt-5",
+        "providerId": "openai",
+        "model": "gpt-5",
+        "enable": true
+      },
+      {
+        "id": "openai/gpt-4.1-nano",
+        "providerId": "openai",
+        "model": "gpt-4.1-nano",
+        "enable": true,
+        "customParameters": [
+          {
+            "key": "max_tokens",
+            "value": "64",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "providerId": "openai",
+        "model": "gpt-5.6-terra",
+        "enable": false,
+        "reasoningType": "openai"
+      }
+    ],
+    "continuationModelId": "openai/gpt-4.1-nano",
+    "tabCompletionModelId": "openai/gpt-5.6-terra",
+    "assistantModelIds": [
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5"
+    ],
+    "reasoningLevelByModelId": {
+      "openai/gpt-4.1-nano": "off",
+      "openai/gpt-5.6-terra": "high"
+    },
+    "delegation": {
+      "disabled": true,
+      "allowedModelIds": [
+        "openai/gpt-4.1-nano",
+        "openai/gpt-5.6-terra",
+        "openai/gpt-5"
+      ],
+      "preferredModelId": "openai/gpt-4.1-nano"
+    },
+    "systemPrompt": "ROOT4958 synthetic unrelated control",
+    "providers": [
+      {
+        "id": "openai",
+        "presetType": "openai",
+        "apiType": "openai-compatible",
+        "additionalSettings": {
+          "requestTransportMode": "browser"
+        }
+      }
+    ],
+    "cliModelIdByRuntime": {
+      "codex": "gpt-4.1-nano"
+    }
+  },
+  "persistedProjection": {
+    "chatModelId": "openai/gpt-4.1-nano",
+    "chatTitleModelId": "openai/gpt-5.6-terra",
+    "models": [
+      {
+        "id": "openai/gpt-5",
+        "providerId": "openai",
+        "model": "gpt-5",
+        "enable": true
+      },
+      {
+        "id": "openai/gpt-4.1-nano",
+        "providerId": "openai",
+        "model": "gpt-4.1-nano",
+        "enable": true,
+        "customParameters": [
+          {
+            "key": "max_tokens",
+            "value": "64",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "providerId": "openai",
+        "model": "gpt-5.6-terra",
+        "enable": false,
+        "reasoningType": "openai"
+      }
+    ],
+    "continuationModelId": "openai/gpt-4.1-nano",
+    "tabCompletionModelId": "openai/gpt-5.6-terra",
+    "assistantModelIds": [
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5"
+    ],
+    "reasoningLevelByModelId": {
+      "openai/gpt-4.1-nano": "off",
+      "openai/gpt-5.6-terra": "high"
+    },
+    "delegation": {
+      "disabled": true,
+      "allowedModelIds": [
+        "openai/gpt-4.1-nano",
+        "openai/gpt-5.6-terra",
+        "openai/gpt-5"
+      ],
+      "preferredModelId": "openai/gpt-4.1-nano"
+    },
+    "systemPrompt": "ROOT4958 synthetic unrelated control",
+    "providers": [
+      {
+        "id": "openai",
+        "presetType": "openai",
+        "apiType": "openai-compatible",
+        "additionalSettings": {
+          "requestTransportMode": "browser"
+        }
+      }
+    ],
+    "cliModelIdByRuntime": {
+      "codex": "gpt-4.1-nano"
+    }
+  },
+  "chatFontScale": 1.05,
+  "metadata": {
+    "updatedAt": 1792807546107,
+    "deviceId": "ce6ad6ad-96fe-4551-9202-3f7963a8bf7d"
+  }
+}

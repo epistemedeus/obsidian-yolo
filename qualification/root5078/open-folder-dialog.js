@@ -1,0 +1,1 @@
+(()=>{const e=[...document.querySelectorAll('button')].find(e=>e.textContent==='Open');if(!e)throw Error('Actual Open folder as vault control missing');setTimeout(()=>e.click(),0);return {scheduledActualFolderPicker:true}})()

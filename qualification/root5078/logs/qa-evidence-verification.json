@@ -1,0 +1,51 @@
+{
+  "command": [
+    "timeout",
+    "30",
+    "python3",
+    "qualification/root5078/verify-evidence.py"
+  ],
+  "started": "2026-10-24T02:13:04.622205+00:00",
+  "finished": "2026-10-24T02:13:04.679606+00:00",
+  "exit": 1,
+  "aggregateSampledPeakKiB": 326680,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 100902,
+      "rssKiB": 220052,
+      "name": "codex"
+    },
+    {
+      "pid": 113327,
+      "rssKiB": 12844,
+      "name": "python3"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25332,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 113329,
+      "rssKiB": 1956,
+      "name": "timeout"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/qa-evidence-verification.log"
+}

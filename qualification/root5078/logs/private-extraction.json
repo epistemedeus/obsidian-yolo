@@ -1,0 +1,62 @@
+{
+  "command": [
+    "timeout",
+    "90",
+    "sh",
+    "-c",
+    "cd runtime/root5084-private && ./Obsidian-1.14.5.AppImage --appimage-extract"
+  ],
+  "started": "2026-10-24T01:43:49.982397+00:00",
+  "finished": "2026-10-24T01:43:51.658336+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 334968,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 100902,
+      "rssKiB": 224308,
+      "name": "codex"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25504,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 101658,
+      "rssKiB": 12792,
+      "name": "python3"
+    },
+    {
+      "pid": 101659,
+      "rssKiB": 1944,
+      "name": "timeout"
+    },
+    {
+      "pid": 101660,
+      "rssKiB": 1776,
+      "name": "sh"
+    },
+    {
+      "pid": 101661,
+      "rssKiB": 2148,
+      "name": "Obsidian-1.14.5"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/private-extraction.log"
+}

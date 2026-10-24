@@ -1,0 +1,197 @@
+{
+  "preparedAt": "2026-10-24T01:47:06.018239+00:00",
+  "immutablePriorManifest": "qualification/root4958/CASE-MANIFEST.json",
+  "immutablePriorManifestSha256": "bb1306821bfc8aa4549d85f5ff4a8dd776ead35d2b289016ade66cb6b1aea9c1",
+  "expectedCasesUnchanged": true,
+  "cases": [
+    {
+      "id": "eligible-nano",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/eligible-nano",
+      "fixture": "qualification/root4958/fixtures/eligible-nano.json",
+      "beforeDataSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "eligible-o4",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/eligible-o4",
+      "fixture": "qualification/root4958/fixtures/eligible-o4.json",
+      "beforeDataSha256": "aa32bae4c6169b44b4b3907b767ff5de7f53e7860dd02bff38fdc202a80022b4",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-max-tokens",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/held-max-tokens",
+      "fixture": "qualification/root4958/fixtures/held-max-tokens.json",
+      "beforeDataSha256": "07b6c0d2375172714f600ad5aedbd756e13a140cf3bb140fc208e7c43fc5bce4",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-endpoint",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/held-endpoint",
+      "fixture": "qualification/root4958/fixtures/held-endpoint.json",
+      "beforeDataSha256": "9b3034b1392a88cf03836118ac3f6bff93e6c7e0daef086913c184d55e93cfdc",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-provider",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/held-provider",
+      "fixture": "qualification/root4958/fixtures/held-provider.json",
+      "beforeDataSha256": "db94462123c1e0904b7114b69958cd272df74cefbbbc77c0e4446e1f3ec2d9bd",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "held-collision",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/held-collision",
+      "fixture": "qualification/root4958/fixtures/held-collision.json",
+      "beforeDataSha256": "d5bc85db367ca009d1984ab016bcb912017aee627b68739bafe97c3d06d4acfc",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "explicit-v90",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/explicit-v90",
+      "fixture": "qualification/root4958/fixtures/explicit-v90.json",
+      "beforeDataSha256": "1d669e5b095fc33b5307a26433234fd664451af91a04da5d0d60fb897443bafe",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "restored-v89",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/restored-v89",
+      "fixture": "qualification/root4958/fixtures/restored-v89.json",
+      "beforeDataSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    },
+    {
+      "id": "malformed",
+      "vault": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/malformed",
+      "fixture": "qualification/root4958/fixtures/malformed.txt",
+      "beforeDataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f",
+      "copiedMembers": {
+        "main.js": {
+          "bytes": 5821537,
+          "sha256": "7e21483b1e4c9a10d18137d751304888544ed3f11dfa7205a9f59fe756f51413"
+        },
+        "manifest.json": {
+          "bytes": 412,
+          "sha256": "a93590756e3474785dae4e51bd4dbb5dd8d9be015dd124105c360c4afb05314e"
+        },
+        "styles.css": {
+          "bytes": 496523,
+          "sha256": "a446a504255f1dd193b6df8a0416d0fe2533c0c93a3b73adacb9e995f94ccc15"
+        }
+      },
+      "lifecycleStatus": "unrun"
+    }
+  ]
+}

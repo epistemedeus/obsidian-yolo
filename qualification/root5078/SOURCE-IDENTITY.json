@@ -1,0 +1,35 @@
+{
+  "sourceBase": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25",
+  "continuationStart": "fa1c479fdcd3138400588f8388a0ffd6783c7bc1",
+  "origin": "https://github.com/epistemedeus/obsidian-yolo.git",
+  "branch": "codex/root4410-b-yolo-model-migration-20261023",
+  "pilotInput": "epistemedeus/pilot@57a56a78113d595c74c4cf18ebfc8fb481abfd22",
+  "packageAndLock": {
+    "package.json": "6926d85d76e60c6921fde561ef65ad4aa1a8dfd8bdfdca8345f608aeca3b771f",
+    "package-lock.json": "5371aec26e72be83af7fb4c4f185cd121ddbb91b08c3f773a307ec78843dd783"
+  },
+  "controlNode": "v22.23.4",
+  "controlNpm": "10.9.9",
+  "installedSdk": {
+    "openai": "4.91.1",
+    "obsidian": "1.8.7",
+    "jest": "29.7.0"
+  },
+  "pluginManifest": {
+    "id": "yolo",
+    "name": "YOLO",
+    "version": "1.6.12",
+    "minAppVersion": "1.8.7",
+    "description": "Agent-native AI assistant \u2014 chat, write, search, orchestrate, all in one.",
+    "author": "Lapix0x0",
+    "authorUrl": "https://github.com/Lapis0x0",
+    "fundingUrl": {
+      "\u7231\u53d1\u7535": "https://afdian.com/a/lapis0x0",
+      "Buy Me a Coffee": "https://buymeacoffee.com/lapis0x0"
+    },
+    "isDesktopOnly": false
+  },
+  "dependencyAcquisition": false,
+  "buildReplayed": false,
+  "productSourceChanged": false
+}

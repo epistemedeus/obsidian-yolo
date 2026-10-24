@@ -1,0 +1,11 @@
+{
+  "restoredAt": "2026-10-24T02:09:21.604568+00:00",
+  "appWasClosed": true,
+  "originalMalformedSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f",
+  "source": "qualification/root4958/fixtures/restored-v89.json",
+  "sourceSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+  "target": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/vaults/malformed/.obsidian/plugins/yolo/data.json",
+  "restoredTargetSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31",
+  "originalFixtureUnchanged": true,
+  "recoveryLifecycle": "not yet run; restoration alone is not receiving"
+}

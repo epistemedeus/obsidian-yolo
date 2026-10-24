@@ -1,0 +1,73 @@
+{
+  "startedAt": "2026-10-24T01:47:51.652163+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 101890,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 101893,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 101894,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "appCasesRun": 0,
+  "privateTemporaryAlias": "/tmp/r5078-jj6vxajr",
+  "physicalTemporaryDirectory": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp",
+  "display": ":0",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:54539",
+    "--remote-debugging-port=53331"
+  ],
+  "cdpPort": 53331,
+  "appExitBeforeCleanup": 0,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 101941,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101958,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101971,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101991,
+      "waitStatus": 15
+    },
+    {
+      "pid": 102103,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101900,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101901,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101984,
+      "waitStatus": 0
+    }
+  ],
+  "privateTemporaryAliasRemoved": true,
+  "finishedAt": "2026-10-24T01:59:35.510488+00:00",
+  "appDiagnostic": "[101894:1024/014751.725906:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\nIgnored: Error: ENOENT: no such file or directory, open '/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/config/obsidian/obsidian.json'\n2026-10-24 01:47:51 Loaded main app package /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/obsidian.asar\nCLI server error: Error: listen EINVAL: invalid argument /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/xdg-run/.obsidian-cli.sock\n    at Server.setupListenHandle [as _listen2] (node:net:2368:21)\n    at listenInCluster (node:net:2499:12)\n    at Server.listen (node:net:2641:5)\n    at module.exports (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/obsidian.asar/main.js:64:405)\n    at loadApp (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/app.asar/main.js:313:3)\n    at Object.<anonymous> (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/app.asar/main.js:473:12)\n    at Module._compile (node:internal/modules/cjs/loader:1937:14)\n    at Object..js (node:internal/modules/cjs/loader:2070:10)\n    at Module.load (node:internal/modules/cjs/loader:1658:32)\n    at node:internal/modules/cjs/loader:1450:12 {\n  code: 'EINVAL',\n  errno: -22,\n  syscall: 'listen',\n  address: '/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/xdg-run/.obsidian-cli.sock',\n  port: -1\n}\n\nDevTools listening on ws://127.0.0.1:53331/devtools/browser/313e938e-b36b-49d0-8598-7e9b82423f95\n2026-10-24 01:47:51 Checking for update using Github\n2026-10-24 01:57:30 Failed to check for update using Github (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\n    at openDialog (node:electron/js2c/browser_init:2:30619)\n    at Object.showOpenDialogSync (node:electron/js2c/browser_init:2:26560)\n    at /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/app.asar/node_modules/@electron/remote/dist/src/main/server.js:480:71\n    at IpcMainImpl.<anonymous> (/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/app.asar/node_modules/@electron/remote/dist/src/main/server.js:323:27)\n    at IpcMainImpl.emit (node:events:514:28)\n    at Session.<anonymous> (node:electron/js2c/browser_init:2:120277)\n    at Session.emit (node:events:514:28)\n2026-10-24 01:57:30 Checking for update using obsidian.md\nIgnored: Error: ENOENT: no such file or directory, open '/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/config/obsidian/49a8bd79908c1366.json'\n2026-10-24 01:57:30 Failed to check for update using obsidian.md (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\n"
+}

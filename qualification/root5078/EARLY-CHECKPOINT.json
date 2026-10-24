@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-24T01:50:34.920949+00:00",
+  "status": "application-ui-received-lifecycle-in-progress",
+  "sourceHead": "fa1c479fdcd3138400588f8388a0ffd6783c7bc1",
+  "checkpointBy": "2026-10-24T01:51:27.112Z",
+  "requiredUntil": "2026-10-24T03:36:47.634Z",
+  "completed": [
+    "Actual native ordinary admission verified",
+    "Retained AppImage/plugin/fixture SHA256 matched",
+    "Supported private extraction completed without FUSE",
+    "Namespace sandbox probe passed; app process has no sandbox-disable switch",
+    "First extracted-app long-TMPDIR Unix socket failure retained; short owned temporary alias fixed it",
+    "Actual Obsidian1.14.5/Electron43.8.3 starter UI received through its DevTools target",
+    "Native Open folder as vault UI action opened real folder chooser"
+  ],
+  "remaining": [
+    "Complete native folder selection and actual plugin load",
+    "All nine actual load/save/graceful restart/plugin reload/hold/malformed/recovery cases",
+    "Self-review and scoped evidence export"
+  ],
+  "appCasesPassed": 0,
+  "appCasesUnrun": 9,
+  "firstControlLimit": "CDP click waiting on native folder modal timed out; no plugin or lifecycle assertion inferred from it."
+}

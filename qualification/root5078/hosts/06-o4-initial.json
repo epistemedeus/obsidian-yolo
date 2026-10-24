@@ -1,0 +1,96 @@
+{
+  "startedAt": "2026-10-24T02:01:48.132155+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "appHostPid": 103916,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 103919,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 103922,
+      "role": "private window manager",
+      "reaped": true
+    },
+    {
+      "pid": 103923,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 103924,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "runLabel": "06-o4-initial",
+  "privateTemporaryAlias": "/tmp/r5078-ejkp098u",
+  "physicalTemporaryDirectory": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp",
+  "display": ":0",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:57663",
+    "--remote-debugging-port=36611",
+    "obsidian://choose-vault"
+  ],
+  "cdpPort": 36611,
+  "appExitBeforeCleanup": 0,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 103936,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103938,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103963,
+      "waitStatus": 256
+    },
+    {
+      "pid": 103970,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104000,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104028,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104035,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104134,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104172,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103930,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103931,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103944,
+      "waitStatus": 0
+    }
+  ],
+  "privateTemporaryAliasRemoved": true,
+  "finishedAt": "2026-10-24T02:03:22.749775+00:00",
+  "appDiagnostic": "[103924:1024/020148.198260:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\n2026-10-24 02:01:48 Loaded main app package /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/obsidian.asar\n\nDevTools listening on ws://127.0.0.1:36611/devtools/browser/07c04c8a-4142-4e47-9d48-00dad890ee2f\nReceived callback URL obsidian://choose-vault\n2026-10-24 02:01:48 Checking for update using Github\n2026-10-24 02:02:03 Failed to check for update using Github (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\n2026-10-24 02:02:03 Checking for update using obsidian.md\n2026-10-24 02:02:03 Failed to check for update using obsidian.md (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\nIgnored: Error: ENOENT: no such file or directory, open '/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/config/obsidian/755e8a7f46c8f2b3.json'\n"
+}

@@ -1,0 +1,50 @@
+{
+  "command": [
+    "unshare",
+    "-Ur",
+    "true"
+  ],
+  "started": "2026-10-24T01:44:36.505502+00:00",
+  "finished": "2026-10-24T01:44:36.561090+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 328400,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 100902,
+      "rssKiB": 223752,
+      "name": "codex"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 25292,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 101713,
+      "rssKiB": 12860,
+      "name": "python3"
+    },
+    {
+      "pid": 101714,
+      "rssKiB": 0,
+      "name": "true"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/sandbox-user-namespace-probe.log"
+}

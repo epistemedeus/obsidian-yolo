@@ -1,0 +1,631 @@
+{
+  "collectedAt": "2026-10-24T02:17:36.835093+00:00",
+  "reserveKiB": 2097152,
+  "samplePeriodMs": 50,
+  "measurement": "Aggregate sampled RSS includes native subtree, CLI wrapper and admission supervisor; shared pages double-counted; not a cgroup hard cap",
+  "guardMarginKiB": 131072,
+  "zeroModelChildren": true,
+  "peakAcrossAllAttemptsKiB": 1970272,
+  "guardExceptions": [
+    {
+      "command": [
+        "timeout",
+        "1200",
+        "python3",
+        "qualification/root5078/app-host.py"
+      ],
+      "started": "2026-10-24T02:00:06.384831+00:00",
+      "finished": "2026-10-24T02:00:35.904331+00:00",
+      "exit": -9,
+      "aggregateSampledPeakKiB": 1970272,
+      "reserveKiB": 2097152,
+      "guardMarginKiB": 131072,
+      "resourceLimit": true,
+      "nativePid": 100902,
+      "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+      "peakProcesses": [
+        {
+          "pid": 103300,
+          "rssKiB": 8024,
+          "name": "at-spi2-registr"
+        },
+        {
+          "pid": 103559,
+          "rssKiB": 12852,
+          "name": "python3"
+        },
+        {
+          "pid": 103560,
+          "rssKiB": 1956,
+          "name": "timeout"
+        },
+        {
+          "pid": 103561,
+          "rssKiB": 18432,
+          "name": "python3"
+        },
+        {
+          "pid": 103307,
+          "rssKiB": 6092,
+          "name": "xfconfd"
+        },
+        {
+          "pid": 103564,
+          "rssKiB": 17252,
+          "name": "Xvfb"
+        },
+        {
+          "pid": 103567,
+          "rssKiB": 82716,
+          "name": "xfwm4"
+        },
+        {
+          "pid": 101520,
+          "rssKiB": 25512,
+          "name": "codex-code-mode"
+        },
+        {
+          "pid": 103568,
+          "rssKiB": 4028,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 103569,
+          "rssKiB": 122500,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103575,
+          "rssKiB": 55552,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103576,
+          "rssKiB": 55600,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103580,
+          "rssKiB": 2456,
+          "name": "dbus-launch"
+        },
+        {
+          "pid": 103581,
+          "rssKiB": 2572,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 100894,
+          "rssKiB": 12924,
+          "name": "python3"
+        },
+        {
+          "pid": 100895,
+          "rssKiB": 53572,
+          "name": "node"
+        },
+        {
+          "pid": 103327,
+          "rssKiB": 146448,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103583,
+          "rssKiB": 7972,
+          "name": "at-spi-bus-laun"
+        },
+        {
+          "pid": 103332,
+          "rssKiB": 77824,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103589,
+          "rssKiB": 4112,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 100902,
+          "rssKiB": 220820,
+          "name": "codex"
+        },
+        {
+          "pid": 103591,
+          "rssKiB": 11464,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103337,
+          "rssKiB": 7144,
+          "name": "at-spi-bus-laun"
+        },
+        {
+          "pid": 103606,
+          "rssKiB": 8184,
+          "name": "at-spi2-registr"
+        },
+        {
+          "pid": 103352,
+          "rssKiB": 350624,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103615,
+          "rssKiB": 6040,
+          "name": "xfconfd"
+        },
+        {
+          "pid": 103364,
+          "rssKiB": 9840,
+          "name": "gnome-keyring-d"
+        },
+        {
+          "pid": 103628,
+          "rssKiB": 63724,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103377,
+          "rssKiB": 29996,
+          "name": "gcr-prompter"
+        },
+        {
+          "pid": 103250,
+          "rssKiB": 12844,
+          "name": "python3"
+        },
+        {
+          "pid": 103252,
+          "rssKiB": 1948,
+          "name": "timeout"
+        },
+        {
+          "pid": 103253,
+          "rssKiB": 18556,
+          "name": "python3"
+        },
+        {
+          "pid": 103637,
+          "rssKiB": 61560,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103638,
+          "rssKiB": 27208,
+          "name": "exe"
+        },
+        {
+          "pid": 103256,
+          "rssKiB": 24932,
+          "name": "Xvfb"
+        },
+        {
+          "pid": 103259,
+          "rssKiB": 84176,
+          "name": "xfwm4"
+        },
+        {
+          "pid": 103260,
+          "rssKiB": 3972,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 103261,
+          "rssKiB": 168828,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103267,
+          "rssKiB": 55692,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103268,
+          "rssKiB": 55640,
+          "name": "obsidian"
+        },
+        {
+          "pid": 103272,
+          "rssKiB": 2280,
+          "name": "dbus-launch"
+        },
+        {
+          "pid": 103273,
+          "rssKiB": 2768,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 103275,
+          "rssKiB": 7940,
+          "name": "at-spi-bus-laun"
+        },
+        {
+          "pid": 103281,
+          "rssKiB": 4108,
+          "name": "dbus-daemon"
+        },
+        {
+          "pid": 103283,
+          "rssKiB": 11588,
+          "name": "obsidian"
+        }
+      ],
+      "nodeOptions": "--max-old-space-size=1400",
+      "log": "logs/nano-reopen.log",
+      "receipt": "qualification/root5078/logs/nano-reopen.json"
+    }
+  ],
+  "successfulSerialApplicationPeakKiB": 1568384,
+  "receipts": [
+    {
+      "path": "qualification/root5078/logs/held-collision-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1439144,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:58.989964+00:00",
+      "finished": "2026-10-24T02:07:03.525999+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/qa-evidence-verification-final.json",
+      "exit": 0,
+      "peakKiB": 370564,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:13:21.998352+00:00",
+      "finished": "2026-10-24T02:13:22.322896+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/explicit-v90-reopen.json",
+      "exit": 0,
+      "peakKiB": 1526576,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:09.872733+00:00",
+      "finished": "2026-10-24T02:07:16.557197+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/private-extraction.json",
+      "exit": 0,
+      "peakKiB": 334968,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:43:49.982397+00:00",
+      "finished": "2026-10-24T01:43:51.658336+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-endpoint-initial.json",
+      "exit": 0,
+      "peakKiB": 1558680,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:10.775526+00:00",
+      "finished": "2026-10-24T02:06:16.999808+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-initial-observer-received-recovery.json",
+      "exit": 0,
+      "peakKiB": 1497792,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:09:21.675907+00:00",
+      "finished": "2026-10-24T02:09:26.655603+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-initial.json",
+      "exit": 0,
+      "peakKiB": 1518492,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:43.142223+00:00",
+      "finished": "2026-10-24T02:07:49.361219+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-provider-reopen.json",
+      "exit": 0,
+      "peakKiB": 1537176,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:34.687525+00:00",
+      "finished": "2026-10-24T02:06:41.361256+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-reopen-observer-received.json",
+      "exit": 0,
+      "peakKiB": 1518988,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:08:34.261644+00:00",
+      "finished": "2026-10-24T02:08:41.014473+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-o4-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1360064,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:04:27.956997+00:00",
+      "finished": "2026-10-24T02:04:42.459723+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-nano-reopen-received.json",
+      "exit": 0,
+      "peakKiB": 1432508,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:14:51.773738+00:00",
+      "finished": "2026-10-24T02:14:56.286384+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-endpoint-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1438076,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:23.809215+00:00",
+      "finished": "2026-10-24T02:06:28.331357+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-initial-observer-received.json",
+      "exit": 0,
+      "peakKiB": 1507140,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:08:28.674335+00:00",
+      "finished": "2026-10-24T02:08:34.190376+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/sandbox-user-namespace-probe.json",
+      "exit": 0,
+      "peakKiB": 328400,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:44:36.505502+00:00",
+      "finished": "2026-10-24T01:44:36.561090+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/extracted-app-host.json",
+      "exit": 1,
+      "peakKiB": 593164,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:47:06.075951+00:00",
+      "finished": "2026-10-24T01:47:07.120387+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/restored-v89-reopen.json",
+      "exit": 0,
+      "peakKiB": 1529640,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:27.434157+00:00",
+      "finished": "2026-10-24T02:07:34.141068+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/verify-retained-artifact.json",
+      "exit": 0,
+      "peakKiB": 344816,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:43:49.623053+00:00",
+      "finished": "2026-10-24T01:43:49.937991+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-provider-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1441004,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:41.429380+00:00",
+      "finished": "2026-10-24T02:06:45.897750+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/qa-evidence-verification.json",
+      "exit": 1,
+      "peakKiB": 326680,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:13:04.622205+00:00",
+      "finished": "2026-10-24T02:13:04.679606+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-nano-reopen-explicit-vault-received.json",
+      "exit": 0,
+      "peakKiB": 1500712,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:16:22.082001+00:00",
+      "finished": "2026-10-24T02:16:28.809341+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/restored-v89-initial.json",
+      "exit": 0,
+      "peakKiB": 1539296,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:21.188823+00:00",
+      "finished": "2026-10-24T02:07:27.390774+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-max-tokens-initial.json",
+      "exit": 0,
+      "peakKiB": 1552888,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:05:43.652312+00:00",
+      "finished": "2026-10-24T02:05:49.388616+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/extracted-app-short-tmp.json",
+      "exit": 1,
+      "peakKiB": 1380244,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:47:51.622380+00:00",
+      "finished": "2026-10-24T01:59:35.533568+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-provider-initial.json",
+      "exit": 0,
+      "peakKiB": 1568384,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:28.437732+00:00",
+      "finished": "2026-10-24T02:06:34.617200+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/qa-export-verification.json",
+      "exit": 0,
+      "peakKiB": 395592,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:17:36.434276+00:00",
+      "finished": "2026-10-24T02:17:36.812697+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/qa-evidence-normal-exits.json",
+      "exit": 0,
+      "peakKiB": 346524,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:16:33.500234+00:00",
+      "finished": "2026-10-24T02:16:33.879001+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/restored-v89-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1438692,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:34.206250+00:00",
+      "finished": "2026-10-24T02:07:38.693698+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/nano-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1805692,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:00:35.697012+00:00",
+      "finished": "2026-10-24T02:00:39.285997+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/nano-reopen.json",
+      "exit": -9,
+      "peakKiB": 1970272,
+      "resourceLimit": true,
+      "started": "2026-10-24T02:00:06.384831+00:00",
+      "finished": "2026-10-24T02:00:35.904331+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-after-reenable-observer-received.json",
+      "exit": 0,
+      "peakKiB": 1429100,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:08:41.076840+00:00",
+      "finished": "2026-10-24T02:08:45.578597+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/prepare-cases.json",
+      "exit": 0,
+      "peakKiB": 362220,
+      "resourceLimit": false,
+      "started": "2026-10-24T01:47:05.839688+00:00",
+      "finished": "2026-10-24T01:47:06.050228+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/o4-initial.json",
+      "exit": 0,
+      "peakKiB": 1425748,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:01:48.102001+00:00",
+      "finished": "2026-10-24T02:03:22.784082+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-max-tokens-reopen.json",
+      "exit": 0,
+      "peakKiB": 1516992,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:05:49.446175+00:00",
+      "finished": "2026-10-24T02:05:56.269371+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-max-tokens-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1421780,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:05:56.316220+00:00",
+      "finished": "2026-10-24T02:06:00.825017+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/nano-after-reenable-serial.json",
+      "exit": 0,
+      "peakKiB": 1389924,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:01:10.344179+00:00",
+      "finished": "2026-10-24T02:01:29.601515+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-o4-reopen.json",
+      "exit": 0,
+      "peakKiB": 1558920,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:04:22.586429+00:00",
+      "finished": "2026-10-24T02:04:27.905056+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-collision-reopen.json",
+      "exit": 0,
+      "peakKiB": 1563344,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:52.230915+00:00",
+      "finished": "2026-10-24T02:06:58.917061+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-after-reenable-observer-received-recovery.json",
+      "exit": 0,
+      "peakKiB": 1422768,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:09:33.410176+00:00",
+      "finished": "2026-10-24T02:09:37.910149+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/malformed-reopen-observer-received-recovery.json",
+      "exit": 0,
+      "peakKiB": 1538452,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:09:26.708599+00:00",
+      "finished": "2026-10-24T02:09:33.372130+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-o4-after-reenable-received.json",
+      "exit": 0,
+      "peakKiB": 1413564,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:05:24.366410+00:00",
+      "finished": "2026-10-24T02:05:28.869176+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/explicit-v90-after-reenable.json",
+      "exit": 0,
+      "peakKiB": 1438592,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:16.618447+00:00",
+      "finished": "2026-10-24T02:07:21.101354+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-nano-after-reenable-explicit-vault-received.json",
+      "exit": 0,
+      "peakKiB": 1426380,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:16:28.857138+00:00",
+      "finished": "2026-10-24T02:16:33.372118+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-collision-initial.json",
+      "exit": 0,
+      "peakKiB": 1543096,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:45.987323+00:00",
+      "finished": "2026-10-24T02:06:52.172082+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/eligible-o4-reopen-received.json",
+      "exit": 0,
+      "peakKiB": 1534460,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:05:15.558313+00:00",
+      "finished": "2026-10-24T02:05:24.321180+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/held-endpoint-reopen.json",
+      "exit": 0,
+      "peakKiB": 1525092,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:06:17.032189+00:00",
+      "finished": "2026-10-24T02:06:23.758996+00:00"
+    },
+    {
+      "path": "qualification/root5078/logs/explicit-v90-initial.json",
+      "exit": 0,
+      "peakKiB": 1561528,
+      "resourceLimit": false,
+      "started": "2026-10-24T02:07:03.622863+00:00",
+      "finished": "2026-10-24T02:07:09.824469+00:00"
+    }
+  ],
+  "largerSingleAppRequirementMeasured": false,
+  "overlapException": "An owner sequencing mistake overlapped two app hosts; guard stopped the first check at 1970272KiB. The repeated serialized route fit. Reservation and host floors unchanged."
+}

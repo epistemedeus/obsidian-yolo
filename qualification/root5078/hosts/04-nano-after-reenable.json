@@ -1,0 +1,74 @@
+{
+  "startedAt": "2026-10-24T02:00:35.728120+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 103564,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 103567,
+      "role": "private window manager",
+      "reaped": true
+    },
+    {
+      "pid": 103568,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 103569,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "runLabel": "04-nano-after-reenable",
+  "privateTemporaryAlias": "/tmp/r5078-g34b8bis",
+  "physicalTemporaryDirectory": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp",
+  "display": ":2",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:36221",
+    "--remote-debugging-port=48547"
+  ],
+  "cdpPort": 48547,
+  "appExitBeforeCleanup": 0,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 103581,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103583,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103606,
+      "waitStatus": 256
+    },
+    {
+      "pid": 103615,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103575,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103576,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103589,
+      "waitStatus": 0
+    }
+  ],
+  "privateTemporaryAliasRemoved": true,
+  "finishedAt": "2026-10-24T02:00:39.232379+00:00",
+  "appDiagnostic": "[103569:1024/020035.793446:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\n\nDevTools listening on ws://127.0.0.1:48547/devtools/browser/515d60fc-e5e5-4616-8cd7-da55c8cfb997\nCommand line interface is not enabled. Please turn it on in Settings > General > Advanced.\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000{\"argv\":[],\"tty\":false,\"cwd\":\"/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023\"}\nReceived command line []\n"
+}

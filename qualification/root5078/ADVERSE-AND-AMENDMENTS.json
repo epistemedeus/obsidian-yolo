@@ -1,0 +1,98 @@
+{
+  "recordedAt": "2026-10-24T02:14:15.096657+00:00",
+  "prior4958": "Immutable prior failure/export retained: missing libfuse.so.2, before plugin load; nine cases unrun in that operation. No retrospective pass claimed.",
+  "newFailures": [
+    {
+      "case": "first-extracted-start",
+      "command": "python3 qualification/root5078/run-bounded.py extracted-app-host timeout 6000 python3 qualification/root5078/app-host.py",
+      "hostExit": 1,
+      "actualAppExit": -5,
+      "diagnostic": "FATAL process_singleton_posix.cc:335 Socket path too long",
+      "receipt": "APP-ATTEMPT-1.json",
+      "consequentialRemedy": "Owned short /tmp symlink into ignored private TMPDIR; original app bytes and sandbox flags unchanged."
+    },
+    {
+      "case": "CLI-runtime-socket",
+      "diagnostic": "listen EINVAL at the long private XDG_RUNTIME_DIR/.obsidian-cli.sock",
+      "receipt": "hosts/02-first-vault.json",
+      "consequentialRemedy": "Owned short runtime alias; CLI was never enabled or used for lifecycle receiving."
+    },
+    {
+      "case": "native-modal-control",
+      "diagnostic": "Initial CDP button action waited on native folder modal and timed out. A combined shell continued to a window query and exited0; that is not a successful CDP action receipt.",
+      "receipt": "EARLY-CHECKPOINT.json",
+      "consequentialRemedy": "Owned window manager, asynchronous real button activation, identity-scoped X11 dialog control."
+    },
+    {
+      "case": "new-keyring-prompt",
+      "diagnostic": "Before the WM exposed the prompt, a synthetic vault path was typed into an unconfirmed new-keyring password field. No confirmation/Continue, account setup, keyring creation or credential was supplied. Prompt canceled; profiles remain disposable.",
+      "consequentialRemedy": "Cancel this owned prompt before any typing; actual folder picker identity/focus verified first."
+    },
+    {
+      "case": "owner-overlap",
+      "exit": 137,
+      "guardCheckExit": -9,
+      "peakKiB": 1970272,
+      "receipt": "logs/nano-reopen.json",
+      "consequentialRemedy": "Exclusive application-host lock plus waiting for actual exit/reap before next boot. The second transient host exit0 is not a case pass. Single-app route subsequently fits2GiB."
+    },
+    {
+      "case": "early-reenable-restart",
+      "command": "python3 qualification/root5078/run-lifecycle.py eligible-o4 --finish-saved",
+      "exit": 1,
+      "diagnostic": "Plugin loaded in memory but enabled-plugin persistence was not finished before close; next startup had community-plugins.json=[] and plugin readiness timed out.",
+      "receipt": "CASE-COMMANDS.ndjson",
+      "consequentialRemedy": "Wait for actual enabled-plugin list to persist, close settings, then close app. Repeat same case through real UI; all stages received."
+    },
+    {
+      "case": "malformed-save-observer",
+      "command": "python3 qualification/root5078/run-lifecycle.py malformed",
+      "exit": 1,
+      "diagnostic": "Observer asserted save-refusal notice in main window only; actual settings run in a separate BrowserWindow.",
+      "receipt": "CASE-COMMANDS.ndjson",
+      "consequentialRemedy": "Observe notices in both real page targets; repeat actual UI save; receive refusal notice and unchanged malformed bytes."
+    },
+    {
+      "case": "evidence-self-review",
+      "command": "python3 qualification/root5078/run-bounded.py qa-evidence-verification timeout 30 python3 qualification/root5078/verify-evidence.py",
+      "exit": 1,
+      "diagnostic": "Selected oldest malformed initial receipt, which came from a different actual app run than the successfully repeated save.",
+      "receipt": "logs/qa-evidence-verification.json",
+      "consequentialRemedy": "Join initial receipt to the actual save PID; preserve both observations. Final evidence verification exit0."
+    },
+    {
+      "case": "nano-graceful-exit-self-review",
+      "diagnostic": "Early nano re-enable observation was followed by the owner overlap guard stop, which cannot count as a graceful close.",
+      "consequentialRemedy": "Repeat the saved nano restart/re-enable/restart portion under the serial lock; final verifier joins every selected stage to appExitBeforeCleanup0."
+    },
+    {
+      "case": "explicit-vault-binding",
+      "command": "python3 qualification/root5078/run-lifecycle.py eligible-nano --finish-saved",
+      "exit": 1,
+      "diagnostic": "The first late nano repetition reopened the last-used malformed vault; actual vault-path assertion rejected it. No nano pass inferred.",
+      "receipt": "CASE-COMMANDS.ndjson",
+      "consequentialRemedy": "Supply the documented obsidian://open?vault=<sealed-case> URI for registered-vault reopens. Repeated nano lifecycle passed; original wrong-vault host/observations remain."
+    }
+  ],
+  "archivedUsefulSources": {
+    "qualification/root5078/historical/host-attempt1.py.txt": {
+      "bytes": 6167,
+      "sha256": "1683e5bbb33760a615daf7e6f6c3f07d68787b20d8b52b01db9c8611a1f96e53"
+    },
+    "qualification/root5078/historical/host-attempt2.py.txt": {
+      "bytes": 6466,
+      "sha256": "1109e0b6455539f7db11a64d5aa0638b1ca3a557c58f55055bac69c5580093c2"
+    },
+    "qualification/root5078/historical/lifecycle-controller-first.py.txt": {
+      "bytes": 5581,
+      "sha256": "37b059947ee94b57352f3b308a84e6566305363c34b2d2b15b3c8714b84e4948"
+    },
+    "qualification/root5078/historical/lifecycle-last-vault-assumption.py.txt": {
+      "bytes": 6439,
+      "sha256": "cb462f89e2eea4d25c8f42d8c5ecd44c5a131ea11cf801fce65f8a8d44a6ed6d"
+    }
+  },
+  "productFixes": [],
+  "reservationRaised": false,
+  "originalFailureAndFullLintLimits": "Prior ROOT4410-B/ROOT4604 evidence unchanged, including baseline-red regressions, OY-1 missing-record normalization, unrelated full-lint formatting failure and wide-lint memory limitation."
+}

@@ -1,0 +1,87 @@
+{
+  "verifiedAt": "2026-10-24T02:09:55.533224+00:00",
+  "retainedAcquisitionProvenance": "qualification/root4958/APP-PROVENANCE.json",
+  "retainedProvenanceSha256": "ca9e27fcc5d927e4d44a097b4cc6402be47ab90ebd9d154ce0e074cad502bde7",
+  "artifact": {
+    "requestedUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage",
+    "redirects": [
+      {
+        "urlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/262342594/e662ca78-a4ab-4dc0-bf56-6f384ccb2524",
+        "querySha256": "38f5a4281cea1611f630903f1d6f4984424952fcf243df642775941b61c037ec",
+        "queryOmitted": "ephemeral signed public-download redirect parameters retained only in ignored private runtime"
+      }
+    ],
+    "bytes": 139238201,
+    "sha256": "306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+    "publisherAssetDigest": "sha256:306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+    "publisherAssetDigestMatches": true,
+    "officialIntegrityEvidence": "GitHub official publisher release asset metadata; digest presence recorded, not an independent signature attestation",
+    "separateSignatureVerification": "not established"
+  },
+  "extraction": {
+    "documentedCommand": "./Obsidian-1.14.5.AppImage --appimage-extract",
+    "exit": 0,
+    "mutatedApplicationBytes": false,
+    "fuseMountRequired": false
+  },
+  "extractedMembers": {
+    "AppRun": {
+      "bytes": 3483,
+      "sha256": "12ed742d4f81a3369dfacaca45fdffae09673499e346a718ba31a271764247f3",
+      "mode": "0o755",
+      "uid": 1000
+    },
+    "obsidian": {
+      "bytes": 225008888,
+      "sha256": "d1789e4e4d51885a5500dd30fe141cf732d03f78c87541f1552972ab277cbb5c",
+      "mode": "0o755",
+      "uid": 1000
+    },
+    "chrome-sandbox": {
+      "bytes": 15232,
+      "sha256": "d7d2a29b6bd265950a83d583a3901c5b7d6daba6ab7eca9439076bcf99343cc9",
+      "mode": "0o755",
+      "uid": 1000
+    },
+    "resources/app.asar": {
+      "bytes": 73695,
+      "sha256": "bc9de7b91c478a0e30fb4e312f041ac441e9cabccd026713117353f065877dfb",
+      "mode": "0o664",
+      "uid": 1000
+    },
+    "resources/obsidian.asar": {
+      "bytes": 28177896,
+      "sha256": "3a349274f789b62c5b35ad19de10311909a94e8783033569c2210a4bac491780",
+      "mode": "0o775",
+      "uid": 1000
+    },
+    "obsidian-cli": {
+      "bytes": 18576,
+      "sha256": "55593b4a4da034b73a3678de1aed4dba7a7f24b86adae592ef4cdbcc5ebc905b",
+      "mode": "0o775",
+      "uid": 1000
+    }
+  },
+  "actualApplicationVersion": "1.14.5",
+  "actualElectronVersion": "43.8.3",
+  "actualEmbeddedNodeVersion": "24.22.0",
+  "actualChromeVersion": "150.0.7871.250",
+  "sandbox": {
+    "AppRunAutomaticFallbackInspected": true,
+    "AppRunUnshareProbeExit": 0,
+    "fallbackNotUsed": true,
+    "noSandboxDisableSwitch": true,
+    "chromeSandboxHelperNotChownedOrSetuid": true,
+    "scope": "launch arguments and successful namespace probe; not a complete Electron sandbox audit"
+  },
+  "officialSetupSources": [
+    "https://obsidian.md/help/install",
+    "https://obsidian.md/help/uri",
+    "https://github.com/AppImage/AppImageKit/wiki/FUSE",
+    "https://docs.appimage.org/user-guide/run-appimages.html",
+    "https://www.electronjs.org/docs/latest/api/command-line-switches",
+    "https://chromedevtools.github.io/devtools-protocol/tot/Browser/"
+  ],
+  "display": "Actual Xvfb windows under an owned xfwm4, no application headless flag",
+  "isolation": "Private ignored XDG paths; short owned /tmp aliases into that runtime; loopback DevTools and reject-only HTTP proxy; HOME unchanged; no kernel no-egress assertion"
+}

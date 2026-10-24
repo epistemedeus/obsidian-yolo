@@ -1,0 +1,87 @@
+{
+  "startedAt": "2026-10-24T02:01:10.374946+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "appHostPid": 103690,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 103693,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 103696,
+      "role": "private window manager",
+      "reaped": true
+    },
+    {
+      "pid": 103697,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 103698,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "runLabel": "05-nano-after-reenable-serial",
+  "privateTemporaryAlias": "/tmp/r5078-d2ru_m5l",
+  "physicalTemporaryDirectory": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp",
+  "display": ":0",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:56573",
+    "--remote-debugging-port=42771"
+  ],
+  "cdpPort": 42771,
+  "appExitBeforeCleanup": 0,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 103710,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103712,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103737,
+      "waitStatus": 256
+    },
+    {
+      "pid": 103744,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103774,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103801,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103809,
+      "waitStatus": 15
+    },
+    {
+      "pid": 103704,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103705,
+      "waitStatus": 0
+    },
+    {
+      "pid": 103718,
+      "waitStatus": 0
+    }
+  ],
+  "privateTemporaryAliasRemoved": true,
+  "finishedAt": "2026-10-24T02:01:29.581451+00:00",
+  "appDiagnostic": "[103698:1024/020110.443115:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\n2026-10-24 02:01:10 Loaded main app package /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/obsidian.asar\n\nDevTools listening on ws://127.0.0.1:42771/devtools/browser/6d717ae9-9885-46b9-a4b4-c661f3cc7d0d\n2026-10-24 02:01:10 Checking for update using Github\n"
+}

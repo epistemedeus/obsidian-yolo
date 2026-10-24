@@ -1,0 +1,1105 @@
+{
+  "observedAt": "2026-10-24T02:17:36.837929+00:00",
+  "liveOwnedAppDisplayProcesses": [],
+  "ownedPidStates": [
+    {
+      "pid": 101823,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 101826,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 101827,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 101890,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 101893,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 101894,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 102358,
+      "role": "separately owned initial window manager (tool session14061 reaped exit1 after display closed)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103256,
+      "role": "Xvfb (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255122,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103259,
+      "role": "xfwm4 (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103260,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103261,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103267,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255126,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103268,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255126,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103272,
+      "role": "dbus-launch (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103273,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103275,
+      "role": "at-spi-bus-laun (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103281,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103283,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103300,
+      "role": "at-spi2-registr (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255130,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103307,
+      "role": "xfconfd (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255131,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103327,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255135,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103332,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255136,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103337,
+      "role": "at-spi-bus-laun (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255137,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103352,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255138,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103364,
+      "role": "gnome-keyring-d (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255140,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103377,
+      "role": "gcr-prompter (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255140,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103564,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103567,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103568,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103569,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103575,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103576,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103580,
+      "role": "dbus-launch (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4258058,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103581,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103583,
+      "role": "at-spi-bus-laun (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103589,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103591,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103606,
+      "role": "at-spi2-registr (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103615,
+      "role": "xfconfd (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103628,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103637,
+      "role": "obsidian (owned overlap snapshot)",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103693,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103696,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103697,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103698,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103919,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103922,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103923,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 103924,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104434,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104437,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104438,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104439,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104750,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104753,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104754,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104755,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104986,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104989,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104990,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 104991,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105351,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105354,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105355,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105356,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105592,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105595,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105596,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105597,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105928,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105931,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105932,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 105933,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106251,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106254,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106255,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106256,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106496,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106499,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106500,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106501,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106837,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106840,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106841,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 106842,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107162,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107165,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107166,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107167,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107387,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107390,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107391,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107392,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107728,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107731,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107732,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 107733,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108061,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108064,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108065,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108066,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108286,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108289,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108290,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108291,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108623,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108626,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108627,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108628,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108949,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108952,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108953,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 108954,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109177,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109180,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109181,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109182,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109515,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109518,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109519,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109520,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109835,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109838,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109839,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 109840,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110064,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110067,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110068,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110069,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110409,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110412,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110413,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110414,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110729,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110732,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110733,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110734,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110957,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110960,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110961,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 110962,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111360,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111363,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111364,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111365,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111650,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111653,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111654,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111655,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111971,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111974,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111975,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 111976,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112227,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112230,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112231,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112232,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112520,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112523,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112524,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112525,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112859,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112862,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112863,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 112864,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113531,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113534,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113535,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113536,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113811,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113814,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113815,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 113816,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 114145,
+      "role": "private Xvfb",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 114148,
+      "role": "private window manager",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 114149,
+      "role": "private foreground D-Bus",
+      "status": "absent/reaped"
+    },
+    {
+      "pid": 114150,
+      "role": "official extracted application",
+      "status": "absent/reaped"
+    }
+  ],
+  "remainingZombies": [
+    {
+      "pid": 103256,
+      "role": "Xvfb (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255122,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103259,
+      "role": "xfwm4 (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103260,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103261,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255124,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103267,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255126,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103268,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255126,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103272,
+      "role": "dbus-launch (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103273,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103275,
+      "role": "at-spi-bus-laun (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103281,
+      "role": "dbus-daemon (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255128,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103300,
+      "role": "at-spi2-registr (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255130,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103307,
+      "role": "xfconfd (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255131,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103327,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255135,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103332,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255136,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103337,
+      "role": "at-spi-bus-laun (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255137,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103352,
+      "role": "obsidian (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255138,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103364,
+      "role": "gnome-keyring-d (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255140,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103377,
+      "role": "gcr-prompter (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4255140,
+      "rssKiB": 0
+    },
+    {
+      "pid": 103580,
+      "role": "dbus-launch (owned overlap snapshot)",
+      "state": "Z",
+      "parentPid": 100894,
+      "startTicks": 4258058,
+      "rssKiB": 0
+    }
+  ],
+  "allOrdinaryReceivedRunsExitZero": true,
+  "exceptions": "Initial extracted-app socket signal5 and the overlap guard termination are preserved. The guard-killed check could not run its finally reaper. Listed defunct processes belong to native admission supervisor100894, which only its parent/controller can reap; no non-child wait or other-job termination attempted. Root receives native terminal/claim cleanup separately.",
+  "temporaryAliasesRemaining": []
+}

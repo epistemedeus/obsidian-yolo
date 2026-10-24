@@ -1,0 +1,1 @@
+(()=>{const button=[...document.querySelectorAll('button')].find(e=>e.textContent==='Trust author and enable plugins');if(!button)throw Error('Synthetic-vault enable confirmation missing');button.click();return {enabledKnownSyntheticFixture:true}})()

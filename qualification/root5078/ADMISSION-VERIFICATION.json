@@ -1,0 +1,133 @@
+{
+  "verifiedAt": "2026-10-24T01:43:49.596043+00:00",
+  "contextSha256": "cd9b425eef74634c1218803dd2e4688bdf010fc4099d05710f891a5bfcc473c9",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "session": "01a16839-cd1f-7871-a243-c794eaaf81fd",
+  "ownAdmission": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/admissions/fb7e4a6c-8e6c-4e9f-8604-9a1b19873c53/OWN-ADMISSION.json",
+  "spec": {
+    "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/RESUME-SPEC.json",
+    "sha256": "afd52f0b09bef9110c289b631ecd3a04d135ae8430f454bc6136a8e4ad6c107d"
+  },
+  "claimId": "58164f5a6939483098a6aede66d41b65",
+  "claimSolBindingsMatched": true,
+  "nativeProcessStartTimesMatched": true,
+  "ordinaryAdmission": "fresh ordinary-admitted; selected gpt-6.1-sol/xhigh; no historical credit authority used",
+  "executionLifetime": {
+    "enrollment": {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/LIFETIME-ENROLLMENT.json",
+      "sha256": "0b9da7c7d984ff8130e5cae034680758e3fe1f6eb35cc6e9acb9bbb937f1058a"
+    },
+    "host": {
+      "provider": "cursor",
+      "agentId": "bc-5f9c9a54-299d-4699-929e-589622608e64",
+      "bootId": "d9551aaa-044f-4a54-90ae-4b19ff129cac"
+    },
+    "operationId": "root5084-yolo-supported-app-setup-20261024",
+    "route": "finite-foreground",
+    "requiredUntil": "2026-10-24T03:36:47.634Z",
+    "checkpointBy": "2026-10-24T01:51:27.112Z",
+    "expiresAt": "2026-10-24T03:39:47.634517Z",
+    "providerRetentionGuaranteed": false
+  },
+  "sourceHead": "fa1c479fdcd3138400588f8388a0ffd6783c7bc1",
+  "nestedPointersVerified": [
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/CONTINUATION-CONFIG.json",
+      "sha256": "19a326da0763e57928444acf54f26e90ca46914e7896e45e3e73b89b6117cfcb"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/RUN.json",
+      "joinedThrough": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/PREDECESSOR-RUN.json",
+      "sha256": "1b4e9c06c6f513520f1c834d9039406927eeb31fbe9c9ebba35e579bf83fef9c"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/AMENDMENT.md",
+      "sha256": "b5aa7f47d1f074ffa8dee3aa471dd6296de84b64b9e1fa89ba5761bfd7fb609f"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/RESUME-SPEC.json",
+      "sha256": "afd52f0b09bef9110c289b631ecd3a04d135ae8430f454bc6136a8e4ad6c107d"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/ORDINARY-ADMISSION.json",
+      "sha256": "2f486752f62ed64370a9926d59da0f733abffca7830b999a3fc970e861f8f050"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/PREPARATION.json",
+      "sha256": "3bfed8fd6666bf78d618aa8be1c26d1e263676cca6c0f24a7a08e859960220a7"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/CONTROL-OBSERVATION.json",
+      "sha256": "24222684e81e389941b7a7279a0ed1dc07faf46b7fa16589e5cf0ec25eb18e29"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/LIFETIME-ENROLLMENT.json",
+      "sha256": "0b9da7c7d984ff8130e5cae034680758e3fe1f6eb35cc6e9acb9bbb937f1058a"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/CURRENT-OBSERVATION.json",
+      "sha256": "5f1860d8fbe1a303441d305bdbedff9603e951901842a47e40c678b8f8195e2f"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/LIFETIME-ENROLLMENT.json",
+      "sha256": "0b9da7c7d984ff8130e5cae034680758e3fe1f6eb35cc6e9acb9bbb937f1058a"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/CONTINUATION-CONFIG.json",
+      "sha256": "19a326da0763e57928444acf54f26e90ca46914e7896e45e3e73b89b6117cfcb"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/SPEC.json",
+      "sha256": "7b66e75abacbc49407cb4dc5c6eb3fa916446f5e37caa3ca0375f250d63ad919"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root4410-b-yolo-model-migration-20261023/RUN.json",
+      "joinedThrough": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/PREDECESSOR-RUN.json",
+      "sha256": "1b4e9c06c6f513520f1c834d9039406927eeb31fbe9c9ebba35e579bf83fef9c"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/AMENDMENT.md",
+      "sha256": "b5aa7f47d1f074ffa8dee3aa471dd6296de84b64b9e1fa89ba5761bfd7fb609f"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/inputs/RECEIPT.json",
+      "sha256": "c541554f5622ccbd52c8a18aec97c1bdc8b88a5aef86c43d7e71d97e04367bfb"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/ORIGINAL-SPEC.json",
+      "sha256": "7b66e75abacbc49407cb4dc5c6eb3fa916446f5e37caa3ca0375f250d63ad919"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/PREDECESSOR-RUN.json",
+      "sha256": "1b4e9c06c6f513520f1c834d9039406927eeb31fbe9c9ebba35e579bf83fef9c"
+    },
+    {
+      "path": "/home/ubuntu/root-sol-window100337/root5084-yolo-supported-app-setup-20261024/inputs/RECEIPT.json",
+      "sha256": "c541554f5622ccbd52c8a18aec97c1bdc8b88a5aef86c43d7e71d97e04367bfb"
+    }
+  ],
+  "stagedMembers": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c2dc6304ed19e7ec9d3370353408667ebb61355b0c54b8f750fa4390f59c68a3",
+      "blob": "1948fb788970e41ca2524cb7f743e58241ba04c5"
+    },
+    {
+      "path": "overview/STATE.md",
+      "sha256": "f761b1ed9ba0a0339e83291301897372ae5c3c7b250f58c4c93fb7b3ecf7b7bb",
+      "blob": "85422e56bf7ca9c85b01f199d0feb557216a049e"
+    },
+    {
+      "path": "overview/MACHINE-COMMERCE-EXECUTION-PLAN.md",
+      "sha256": "c729d6b65ae15f5e70bba544a7d689179036cb9a30eaf83fd44f782e7d316f60",
+      "blob": "af0249dab185ff5ac28a2e40f4e43c522f7cfa72"
+    },
+    {
+      "path": "overview/remote-worker/assignments/ROOT5078-YOLO-SUPPORTED-APPLICATION-SETUP.md",
+      "sha256": "32e6cc136040af46f1d683e3f95288ab59645f3ab15c9ac4155af3691c48f60b",
+      "blob": "a39ecd2cc159ebf282db08db14b60a14868f10dc"
+    }
+  ],
+  "priorCaseManifestSha256": "bb1306821bfc8aa4549d85f5ff4a8dd776ead35d2b289016ade66cb6b1aea9c1",
+  "priorFixturesAndPluginMembersUnchanged": true
+}

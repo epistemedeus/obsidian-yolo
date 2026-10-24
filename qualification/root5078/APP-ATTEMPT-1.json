@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-10-24T01:47:06.109709+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 101823,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 101826,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 101827,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "appCasesRun": 0,
+  "display": ":0",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:56893",
+    "--remote-debugging-port=53875"
+  ],
+  "cdpPort": 53875,
+  "appExitBeforeCleanup": -5,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 101833,
+      "waitStatus": 0
+    },
+    {
+      "pid": 101834,
+      "waitStatus": 0
+    }
+  ],
+  "finishedAt": "2026-10-24T01:47:07.110947+00:00",
+  "appDiagnostic": "[101827:1024/014706.242317:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\n[101827:1024/014706.666050:FATAL:chrome/browser/process_singleton_posix.cc:335] Socket path too long: /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp/scoped_dirJfPefx/SingletonSocket.\n",
+  "hostSourceSha256": "1683e5bbb33760a615daf7e6f6c3f07d68787b20d8b52b01db9c8611a1f96e53"
+}

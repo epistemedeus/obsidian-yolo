@@ -1,0 +1,91 @@
+{
+  "startedAt": "2026-10-24T02:05:15.587959+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "status": "application-exited",
+  "appVersionOutput": null,
+  "appHostPid": 104983,
+  "sandboxNamespaceProbeExit": 0,
+  "sandboxDisabled": false,
+  "ownedPids": [
+    {
+      "pid": 104986,
+      "role": "private Xvfb",
+      "reaped": true
+    },
+    {
+      "pid": 104989,
+      "role": "private window manager",
+      "reaped": true
+    },
+    {
+      "pid": 104990,
+      "role": "private foreground D-Bus",
+      "reaped": true
+    },
+    {
+      "pid": 104991,
+      "role": "official extracted application",
+      "reaped": true
+    }
+  ],
+  "runLabel": "eligible-o4-reopen-received",
+  "privateTemporaryAlias": "/tmp/r5078-rcgev88r",
+  "physicalTemporaryDirectory": "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/tmp",
+  "display": ":0",
+  "appCommand": [
+    "/home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/AppRun",
+    "--proxy-server=http://127.0.0.1:53953",
+    "--remote-debugging-port=44769"
+  ],
+  "cdpPort": 44769,
+  "appExitBeforeCleanup": 0,
+  "adoptedChildrenReaped": [
+    {
+      "pid": 105003,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105005,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105028,
+      "waitStatus": 256
+    },
+    {
+      "pid": 105037,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105067,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105094,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105101,
+      "waitStatus": 15
+    },
+    {
+      "pid": 104997,
+      "waitStatus": 0
+    },
+    {
+      "pid": 104998,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105076,
+      "waitStatus": 0
+    },
+    {
+      "pid": 105020,
+      "waitStatus": 0
+    }
+  ],
+  "privateTemporaryAliasRemoved": true,
+  "finishedAt": "2026-10-24T02:05:24.313827+00:00",
+  "appDiagnostic": "[104991:1024/020515.652048:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: Connection refused\n2026-10-24 02:05:15 Loaded main app package /home/ubuntu/ae14-work/root4410-b-yolo-model-migration-20261023/runtime/root5084-private/squashfs-root/resources/obsidian.asar\n\nDevTools listening on ws://127.0.0.1:44769/devtools/browser/af2bf021-6ad3-4ef7-95b2-622b9f12e44a\n2026-10-24 02:05:15 Checking for update using Github\n2026-10-24 02:05:16 Failed to check for update using Github (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\n2026-10-24 02:05:16 Checking for update using obsidian.md\n2026-10-24 02:05:16 Failed to check for update using obsidian.md (net::ERR_TUNNEL_CONNECTION_FAILED)\nError: net::ERR_TUNNEL_CONNECTION_FAILED\n    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:139483)\n    at SimpleURLLoaderWrapper.emit (node:events:514:28)\n"
+}

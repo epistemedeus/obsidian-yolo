@@ -1,0 +1,156 @@
+{
+  "command": [
+    "timeout",
+    "300",
+    "python3",
+    "qualification/root5078/app-host.py"
+  ],
+  "started": "2026-10-24T02:16:22.082001+00:00",
+  "finished": "2026-10-24T02:16:28.809341+00:00",
+  "exit": 0,
+  "aggregateSampledPeakKiB": 1500712,
+  "reserveKiB": 2097152,
+  "guardMarginKiB": 131072,
+  "resourceLimit": false,
+  "nativePid": 100902,
+  "measurementScope": "native subtree + check + CLI wrapper + supervisor",
+  "peakProcesses": [
+    {
+      "pid": 113857,
+      "rssKiB": 7876,
+      "name": "at-spi2-registr"
+    },
+    {
+      "pid": 113922,
+      "rssKiB": 9440,
+      "name": "gnome-keyring-d"
+    },
+    {
+      "pid": 113863,
+      "rssKiB": 5920,
+      "name": "xfconfd"
+    },
+    {
+      "pid": 113803,
+      "rssKiB": 22476,
+      "name": "python3"
+    },
+    {
+      "pid": 113805,
+      "rssKiB": 12840,
+      "name": "python3"
+    },
+    {
+      "pid": 113934,
+      "rssKiB": 30128,
+      "name": "gcr-prompter"
+    },
+    {
+      "pid": 113807,
+      "rssKiB": 1956,
+      "name": "timeout"
+    },
+    {
+      "pid": 101520,
+      "rssKiB": 23940,
+      "name": "codex-code-mode"
+    },
+    {
+      "pid": 113808,
+      "rssKiB": 18632,
+      "name": "python3"
+    },
+    {
+      "pid": 113811,
+      "rssKiB": 30180,
+      "name": "Xvfb"
+    },
+    {
+      "pid": 113814,
+      "rssKiB": 83916,
+      "name": "xfwm4"
+    },
+    {
+      "pid": 113815,
+      "rssKiB": 4136,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 113816,
+      "rssKiB": 173960,
+      "name": "obsidian"
+    },
+    {
+      "pid": 113883,
+      "rssKiB": 157748,
+      "name": "obsidian"
+    },
+    {
+      "pid": 100894,
+      "rssKiB": 12924,
+      "name": "python3"
+    },
+    {
+      "pid": 100895,
+      "rssKiB": 53572,
+      "name": "node"
+    },
+    {
+      "pid": 113822,
+      "rssKiB": 55340,
+      "name": "obsidian"
+    },
+    {
+      "pid": 113823,
+      "rssKiB": 55684,
+      "name": "obsidian"
+    },
+    {
+      "pid": 113888,
+      "rssKiB": 77912,
+      "name": "obsidian"
+    },
+    {
+      "pid": 113827,
+      "rssKiB": 2480,
+      "name": "dbus-launch"
+    },
+    {
+      "pid": 113828,
+      "rssKiB": 2608,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 100902,
+      "rssKiB": 220576,
+      "name": "codex"
+    },
+    {
+      "pid": 113830,
+      "rssKiB": 7784,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 113895,
+      "rssKiB": 7180,
+      "name": "at-spi-bus-laun"
+    },
+    {
+      "pid": 113836,
+      "rssKiB": 4116,
+      "name": "dbus-daemon"
+    },
+    {
+      "pid": 113838,
+      "rssKiB": 11516,
+      "name": "obsidian"
+    },
+    {
+      "pid": 113910,
+      "rssKiB": 405872,
+      "name": "obsidian"
+    }
+  ],
+  "nodeOptions": "--max-old-space-size=1400",
+  "log": "logs/eligible-nano-reopen-explicit-vault-received.log"
+}

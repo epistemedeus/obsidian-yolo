@@ -1,0 +1,368 @@
+{
+  "verifiedAt": "2026-10-24T02:17:36.763872+00:00",
+  "status": "all-nine-application-cases-and-same-vault-recovery-received",
+  "caseCount": 9,
+  "cases": [
+    {
+      "id": "eligible-nano",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/eligible-nano-initial.json",
+          "normalExitReceipt": "qualification/root5078/APP-HOST-RESULT.json",
+          "appPid": 101894,
+          "dataSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/eligible-nano-saved.json",
+          "normalExitReceipt": "qualification/root5078/APP-HOST-RESULT.json",
+          "appPid": 101894,
+          "dataSha256": "5b1a744fb74daa07f464d36184a56115a88186573df779a87c9a980cd4979bd8"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/eligible-nano-reopened-113816.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-nano-reopen-explicit-vault-received.json",
+          "appPid": 113816,
+          "dataSha256": "e0b712249d9cbd3dda520a7c8d3d85b395011d4498293d90c741e09cac7fce9b"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/eligible-nano-reenabled-113816.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-nano-reopen-explicit-vault-received.json",
+          "appPid": 113816,
+          "dataSha256": "e0b712249d9cbd3dda520a7c8d3d85b395011d4498293d90c741e09cac7fce9b"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/eligible-nano-restarted-after-reenable-114150.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-nano-after-reenable-explicit-vault-received.json",
+          "appPid": 114150,
+          "dataSha256": "e0b712249d9cbd3dda520a7c8d3d85b395011d4498293d90c741e09cac7fce9b"
+        }
+      }
+    },
+    {
+      "id": "eligible-o4",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/eligible-o4-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/06-o4-initial.json",
+          "appPid": 103924,
+          "dataSha256": "aa32bae4c6169b44b4b3907b767ff5de7f53e7860dd02bff38fdc202a80022b4"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/eligible-o4-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/06-o4-initial.json",
+          "appPid": 103924,
+          "dataSha256": "3238a4ad4e7507fd6c702fd7f7f1c261fcdfaf64f288ca6457d51ff45f5b4163"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/eligible-o4-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-o4-reopen-received.json",
+          "appPid": 104991,
+          "dataSha256": "3238a4ad4e7507fd6c702fd7f7f1c261fcdfaf64f288ca6457d51ff45f5b4163"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/eligible-o4-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-o4-reopen-received.json",
+          "appPid": 104991,
+          "dataSha256": "3238a4ad4e7507fd6c702fd7f7f1c261fcdfaf64f288ca6457d51ff45f5b4163"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/eligible-o4-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/eligible-o4-after-reenable-received.json",
+          "appPid": 105356,
+          "dataSha256": "3238a4ad4e7507fd6c702fd7f7f1c261fcdfaf64f288ca6457d51ff45f5b4163"
+        }
+      }
+    },
+    {
+      "id": "held-max-tokens",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/held-max-tokens-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-max-tokens-initial.json",
+          "appPid": 105597,
+          "dataSha256": "07b6c0d2375172714f600ad5aedbd756e13a140cf3bb140fc208e7c43fc5bce4"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/held-max-tokens-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-max-tokens-initial.json",
+          "appPid": 105597,
+          "dataSha256": "34f74c2ad1c7fd033d733b3a6227cb8462590c8f3a7263cbe6889e236747fe17"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/held-max-tokens-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-max-tokens-reopen.json",
+          "appPid": 105933,
+          "dataSha256": "34f74c2ad1c7fd033d733b3a6227cb8462590c8f3a7263cbe6889e236747fe17"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/held-max-tokens-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-max-tokens-reopen.json",
+          "appPid": 105933,
+          "dataSha256": "34f74c2ad1c7fd033d733b3a6227cb8462590c8f3a7263cbe6889e236747fe17"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/held-max-tokens-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-max-tokens-after-reenable.json",
+          "appPid": 106256,
+          "dataSha256": "34f74c2ad1c7fd033d733b3a6227cb8462590c8f3a7263cbe6889e236747fe17"
+        }
+      }
+    },
+    {
+      "id": "held-endpoint",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/held-endpoint-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-endpoint-initial.json",
+          "appPid": 106501,
+          "dataSha256": "9b3034b1392a88cf03836118ac3f6bff93e6c7e0daef086913c184d55e93cfdc"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/held-endpoint-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-endpoint-initial.json",
+          "appPid": 106501,
+          "dataSha256": "1ae7982f5e868bb710763740cbec7dcf8c1957fb3f4f7535e1c9cfc43725812c"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/held-endpoint-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-endpoint-reopen.json",
+          "appPid": 106842,
+          "dataSha256": "1ae7982f5e868bb710763740cbec7dcf8c1957fb3f4f7535e1c9cfc43725812c"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/held-endpoint-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-endpoint-reopen.json",
+          "appPid": 106842,
+          "dataSha256": "1ae7982f5e868bb710763740cbec7dcf8c1957fb3f4f7535e1c9cfc43725812c"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/held-endpoint-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-endpoint-after-reenable.json",
+          "appPid": 107167,
+          "dataSha256": "1ae7982f5e868bb710763740cbec7dcf8c1957fb3f4f7535e1c9cfc43725812c"
+        }
+      }
+    },
+    {
+      "id": "held-provider",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/held-provider-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-provider-initial.json",
+          "appPid": 107392,
+          "dataSha256": "db94462123c1e0904b7114b69958cd272df74cefbbbc77c0e4446e1f3ec2d9bd"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/held-provider-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-provider-initial.json",
+          "appPid": 107392,
+          "dataSha256": "68f2308311e1015c645ef9d2a9433739803e5748d677026fb3608f8f79d8684e"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/held-provider-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-provider-reopen.json",
+          "appPid": 107733,
+          "dataSha256": "68f2308311e1015c645ef9d2a9433739803e5748d677026fb3608f8f79d8684e"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/held-provider-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-provider-reopen.json",
+          "appPid": 107733,
+          "dataSha256": "68f2308311e1015c645ef9d2a9433739803e5748d677026fb3608f8f79d8684e"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/held-provider-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-provider-after-reenable.json",
+          "appPid": 108066,
+          "dataSha256": "68f2308311e1015c645ef9d2a9433739803e5748d677026fb3608f8f79d8684e"
+        }
+      }
+    },
+    {
+      "id": "held-collision",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/held-collision-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-collision-initial.json",
+          "appPid": 108291,
+          "dataSha256": "d5bc85db367ca009d1984ab016bcb912017aee627b68739bafe97c3d06d4acfc"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/held-collision-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-collision-initial.json",
+          "appPid": 108291,
+          "dataSha256": "51e777d62a31c10df3b2432098fe08631fefb81a12f40a23c4b28f1dc65109b8"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/held-collision-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-collision-reopen.json",
+          "appPid": 108628,
+          "dataSha256": "51e777d62a31c10df3b2432098fe08631fefb81a12f40a23c4b28f1dc65109b8"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/held-collision-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-collision-reopen.json",
+          "appPid": 108628,
+          "dataSha256": "51e777d62a31c10df3b2432098fe08631fefb81a12f40a23c4b28f1dc65109b8"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/held-collision-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/held-collision-after-reenable.json",
+          "appPid": 108954,
+          "dataSha256": "51e777d62a31c10df3b2432098fe08631fefb81a12f40a23c4b28f1dc65109b8"
+        }
+      }
+    },
+    {
+      "id": "explicit-v90",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/explicit-v90-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/explicit-v90-initial.json",
+          "appPid": 109182,
+          "dataSha256": "1d669e5b095fc33b5307a26433234fd664451af91a04da5d0d60fb897443bafe"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/explicit-v90-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/explicit-v90-initial.json",
+          "appPid": 109182,
+          "dataSha256": "35154774a3a7719c8e1876aa84562b981ce4d52bbb54132fd2d9484467b3f8bd"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/explicit-v90-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/explicit-v90-reopen.json",
+          "appPid": 109520,
+          "dataSha256": "35154774a3a7719c8e1876aa84562b981ce4d52bbb54132fd2d9484467b3f8bd"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/explicit-v90-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/explicit-v90-reopen.json",
+          "appPid": 109520,
+          "dataSha256": "35154774a3a7719c8e1876aa84562b981ce4d52bbb54132fd2d9484467b3f8bd"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/explicit-v90-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/explicit-v90-after-reenable.json",
+          "appPid": 109840,
+          "dataSha256": "35154774a3a7719c8e1876aa84562b981ce4d52bbb54132fd2d9484467b3f8bd"
+        }
+      }
+    },
+    {
+      "id": "restored-v89",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/restored-v89-initial.json",
+          "normalExitReceipt": "qualification/root5078/hosts/restored-v89-initial.json",
+          "appPid": 110069,
+          "dataSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/restored-v89-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/restored-v89-initial.json",
+          "appPid": 110069,
+          "dataSha256": "e9edfd9f0848fcbbfe29e10bc16dd0089f6b967b2b23f6108e14b9c2ee8e7ab7"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/restored-v89-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/restored-v89-reopen.json",
+          "appPid": 110414,
+          "dataSha256": "e9edfd9f0848fcbbfe29e10bc16dd0089f6b967b2b23f6108e14b9c2ee8e7ab7"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/restored-v89-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/restored-v89-reopen.json",
+          "appPid": 110414,
+          "dataSha256": "e9edfd9f0848fcbbfe29e10bc16dd0089f6b967b2b23f6108e14b9c2ee8e7ab7"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/restored-v89-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/restored-v89-after-reenable.json",
+          "appPid": 110734,
+          "dataSha256": "e9edfd9f0848fcbbfe29e10bc16dd0089f6b967b2b23f6108e14b9c2ee8e7ab7"
+        }
+      }
+    },
+    {
+      "id": "malformed",
+      "status": "received",
+      "stages": {
+        "initial": {
+          "path": "qualification/root5078/observations/malformed-initial-111365.json",
+          "normalExitReceipt": "qualification/root5078/hosts/malformed-initial-observer-received.json",
+          "appPid": 111365,
+          "dataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f"
+        },
+        "saved": {
+          "path": "qualification/root5078/observations/malformed-saved.json",
+          "normalExitReceipt": "qualification/root5078/hosts/malformed-initial-observer-received.json",
+          "appPid": 111365,
+          "dataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f"
+        },
+        "reopened": {
+          "path": "qualification/root5078/observations/malformed-reopened.json",
+          "normalExitReceipt": "qualification/root5078/hosts/malformed-reopen-observer-received.json",
+          "appPid": 111655,
+          "dataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f"
+        },
+        "reenabled": {
+          "path": "qualification/root5078/observations/malformed-reenabled.json",
+          "normalExitReceipt": "qualification/root5078/hosts/malformed-reopen-observer-received.json",
+          "appPid": 111655,
+          "dataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f"
+        },
+        "restarted-after-reenable": {
+          "path": "qualification/root5078/observations/malformed-restarted-after-reenable.json",
+          "normalExitReceipt": "qualification/root5078/hosts/malformed-after-reenable-observer-received.json",
+          "appPid": 111976,
+          "dataSha256": "4b509c3ea525d0959fe047d87ac2d0f8239576ea815a22f7dabceec7206cd61f"
+        }
+      }
+    }
+  ],
+  "malformedSameVaultRecovery": {
+    "initial": {
+      "path": "qualification/root5078/observations/malformed-recovery-initial.json",
+      "normalExitReceipt": "qualification/root5078/hosts/malformed-initial-observer-received-recovery.json",
+      "appPid": 112232,
+      "dataSha256": "ce219ec134b475906db5ff10625ac9b1f61e5940064e32f8cd57b748a09d0d31"
+    },
+    "saved": {
+      "path": "qualification/root5078/observations/malformed-recovery-saved.json",
+      "normalExitReceipt": "qualification/root5078/hosts/malformed-initial-observer-received-recovery.json",
+      "appPid": 112232,
+      "dataSha256": "c2f1984c4eb1a1cd3a31773f07787d81877c70e9248762e8323b27277a524a67"
+    },
+    "reopened": {
+      "path": "qualification/root5078/observations/malformed-recovery-reopened.json",
+      "normalExitReceipt": "qualification/root5078/hosts/malformed-reopen-observer-received-recovery.json",
+      "appPid": 112525,
+      "dataSha256": "6f20e0c03c7cebaba549cc4a14f6a6ede6277aef3b3e8bdfe3638c5e6ed7560e"
+    },
+    "reenabled": {
+      "path": "qualification/root5078/observations/malformed-recovery-reenabled.json",
+      "normalExitReceipt": "qualification/root5078/hosts/malformed-reopen-observer-received-recovery.json",
+      "appPid": 112525,
+      "dataSha256": "6f20e0c03c7cebaba549cc4a14f6a6ede6277aef3b3e8bdfe3638c5e6ed7560e"
+    },
+    "restarted-after-reenable": {
+      "path": "qualification/root5078/observations/malformed-recovery-restarted-after-reenable.json",
+      "normalExitReceipt": "qualification/root5078/hosts/malformed-after-reenable-observer-received-recovery.json",
+      "appPid": 112864,
+      "dataSha256": "6f20e0c03c7cebaba549cc4a14f6a6ede6277aef3b3e8bdfe3638c5e6ed7560e"
+    }
+  },
+  "sealedExpectationsChanged": false,
+  "originalFixturesAndProductSourceUnchanged": true,
+  "qaSyntaxChecks": "Python compile without output files; node --check on every exported JS/CJS helper; all exit0",
+  "productTestSuitesReplayed": false,
+  "nanoInitialDiskSamplingLimit": "Target before hash sampled before app launch; no separate post-load/pre-save disk sample for the first manually controlled case."
+}

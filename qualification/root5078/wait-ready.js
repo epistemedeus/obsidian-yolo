@@ -1,0 +1,1 @@
+(async()=>{const start=Date.now();while(Date.now()-start<10000){if(app.plugins.getPlugin('yolo')?.settings&&app.plugins.enabledPlugins.has('yolo'))return {ready:true,vault:app.vault.adapter.basePath,waitedMs:Date.now()-start};await new Promise(r=>setTimeout(r,100))}throw Error('Real plugin did not finish loading within 10 seconds')})()
