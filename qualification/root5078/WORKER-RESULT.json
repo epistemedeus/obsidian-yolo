@@ -1,0 +1,133 @@
+{
+  "schema": "root5078.application-lifecycle-result.v1",
+  "status": "application-lifecycle-received",
+  "recordedAt": "2026-10-24T02:19:08.645768+00:00",
+  "operation": "root5084-yolo-supported-app-setup-20261024",
+  "session": "01a16839-cd1f-7871-a243-c794eaaf81fd",
+  "declaredModel": "gpt-6.1-sol",
+  "declaredEffort": "xhigh",
+  "modelChildren": 0,
+  "origin": "https://github.com/epistemedeus/obsidian-yolo.git",
+  "branch": "codex/root4410-b-yolo-model-migration-20261023",
+  "upstreamBase": "f5470e7ea1e3fcf5d972fc826b263e2fb0469f25",
+  "continuationStart": "fa1c479fdcd3138400588f8388a0ffd6783c7bc1",
+  "evidenceCommit": "f9fca6c142517076f830a4c736298211651c62ad",
+  "evidenceTree": "960127405c99a18c8a8a71dac8a17e0bba7a76ff",
+  "packetIdentity": "This result and WORKER-HANDBACK.md are a following receipt commit. Exact final export HEAD/tree and push readback are in the controller ROOT5078-WORKER-HANDBACK.json and can be reproduced with git rev-parse HEAD HEAD^{tree}.",
+  "changedPathBoundary": "qualification/root5078/ only; product source, dependencies, locks and prior qualification unchanged",
+  "changedPathsCommand": "git diff --name-only fa1c479fdcd3138400588f8388a0ffd6783c7bc1 HEAD",
+  "pilotInput": "epistemedeus/pilot@57a56a78113d595c74c4cf18ebfc8fb481abfd22",
+  "admission": "ADMISSION-VERIFICATION.json",
+  "ordinaryUsage": "Fresh ordinary account/catalog/model/effort authority received and immutable receipts verified; no historical credit authority or new authentication work used.",
+  "checkpoint": "EARLY-CHECKPOINT.json",
+  "checkpointMet": true,
+  "requiredUntil": "2026-10-24T03:36:47.634Z",
+  "application": {
+    "version": "1.14.5",
+    "electron": "43.8.3",
+    "embeddedNode": "24.22.0",
+    "artifactSha256": "306815f60d15dea8610d72886ef5e50ef4b7e7185e952ffc3bb21bee1582d952",
+    "artifactBytes": 139238201,
+    "provenance": "APP-PROVENANCE.json",
+    "strategy": "Supported private extraction; original bytes, no sandbox-disable switch, actual Xvfb/xfwm4 windows, private XDG paths and short owned aliases",
+    "integrityLimit": "Official publisher release digest matched; independent signature not established; no complete sandbox or kernel egress audit claimed"
+  },
+  "pluginBuildMembers": "Unchanged qualified main.js/manifest.json/styles.css; per-case hashes in CASE-BINDING.json and observations",
+  "packageAndLock": {
+    "package.json": "6926d85d76e60c6921fde561ef65ad4aa1a8dfd8bdfdca8345f608aeca3b771f",
+    "package-lock.json": "5371aec26e72be83af7fb4c4f185cd121ddbb91b08c3f773a307ec78843dd783"
+  },
+  "runtimeIdentities": {
+    "controlNode": "v22.23.4",
+    "controlNpm": "10.9.9",
+    "installedSdk": {
+      "openai": "4.91.1",
+      "obsidian": "1.8.7",
+      "jest": "29.7.0"
+    }
+  },
+  "applicationCases": {
+    "count": 9,
+    "received": 9,
+    "unrun": 0,
+    "ids": [
+      "eligible-nano",
+      "eligible-o4",
+      "held-max-tokens",
+      "held-endpoint",
+      "held-provider",
+      "held-collision",
+      "explicit-v90",
+      "restored-v89",
+      "malformed"
+    ],
+    "receiving": "Actual plugin load, live settings, UI Chat UI scale save1.05, normal exit/reopen, actual Community plugins disable/re-enable and persisted enabled-plugin list, normal exit/restart",
+    "sameVaultMalformedRecoveryReceived": true,
+    "malformedSaveRefusal": "Actual unreadable and Not saved notices received in the real main/settings windows;28 original bytes unchanged; recovery used a separate sealed valid copy while closed",
+    "expectedManifestUnchanged": true,
+    "observations": "CASE-OUTCOMES.json",
+    "receivingLimit": "Target before hash sampled before app launch; no separate post-load/pre-save disk sample for the first manually controlled case."
+  },
+  "sourceQualification": {
+    "reused": true,
+    "newProductSourceChange": false,
+    "newProviderRequests": false,
+    "broadSourceSuitesReplayed": false,
+    "priorIndependentChecks": "Root4670 110 suites/801 cases, received previously; not new app proof",
+    "preservedLimits": [
+      "OY-1 pre-existing missing-record normalization",
+      "Original full-lint unrelated formatting failure and wide-lint resource limitation"
+    ],
+    "originalFailurePacketsUnchanged": [
+      "qualification/root4410-b/",
+      "qualification/root4604/",
+      "qualification/root4958/"
+    ]
+  },
+  "newChecks": {
+    "lastCommand": "python3 qualification/root5078/run-bounded.py qa-export-verification timeout 30 python3 qualification/root5078/verify-evidence.py",
+    "actualCommandArray": [
+      "python3",
+      "qualification/root5078/run-bounded.py",
+      "qa-export-verification",
+      "timeout",
+      "30",
+      "python3",
+      "qualification/root5078/verify-evidence.py"
+    ],
+    "exit": 0,
+    "receipt": "logs/qa-export-verification.json",
+    "scope": "Final evidence/normal-exit/fixture/source identity and exported Python/Node syntax checks; actual app commands/observations are separate",
+    "caseCommandLog": "CASE-COMMANDS.ndjson",
+    "replay": "REPLAY.md",
+    "firstFailuresAndAmendments": "ADVERSE-AND-AMENDMENTS.json"
+  },
+  "resources": {
+    "reserveKiB": 2097152,
+    "successfulSerialApplicationPeakKiB": 1568384,
+    "allAttemptPeakKiB": 1970272,
+    "guardStoppedOverlap": true,
+    "overlapExit": 137,
+    "reservationRaised": false,
+    "largerSingleAppRequirementMeasured": false,
+    "measurementLimit": "Aggregate sampled RSS includes native subtree, CLI wrapper and admission supervisor; shared pages double-counted; not a cgroup hard cap",
+    "receipt": "RESOURCES.json"
+  },
+  "cleanup": {
+    "liveOwnedApplicationDisplayHelpers": 0,
+    "shortAliasesRemaining": [],
+    "defunctNativeSupervisorChildren": 19,
+    "remainingParentReap": "Admission supervisor100894; worker cannot wait on its non-child defunct processes. Root receives canonical native terminal/claim cleanup separately.",
+    "receipt": "OWNED-CLEANUP.json",
+    "orphanHelperReceipt": "ORPHAN-HELPER-CLEANUP.json",
+    "otherJobsOrEnrollmentChanged": false
+  },
+  "productFixes": [],
+  "unmetApplicationConditions": [],
+  "remainingBoundaries": [
+    "Root independent receipt and canonical terminal/export/claim cleanup",
+    "No customer/synced vault, other platform/version or live provider availability/quality claim",
+    "No issue/comment/PR, maintainer approval, release, deployment or public publication performed"
+  ],
+  "aiDisclosure": "Same original native Codex gpt-6.1-sol/xhigh owner performed implementation history and this application qualification; no model children or review fleet."
+}
